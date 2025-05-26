@@ -1,36 +1,42 @@
-// src/app/components/bioinsumos/bioinsumos.component.ts
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Para *ngFor, *ngIf, etc.
-import { FormsModule } from '@angular/forms';   // Para [(ngModel)] no futuro
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; // 👈 IMPORTANTE!
+import { BioinsumosService } from '../../services/bioinsumos.service';
 
 @Component({
   selector: 'app-bioinsumos',
   standalone: true,
   imports: [
-    CommonModule, // Adicionado
-    FormsModule   // Adicionado
+    CommonModule,
+    FormsModule,
+    HttpClientModule // 👈 ADICIONE AQUI
   ],
   templateUrl: './bioinsumos.component.html',
   styleUrl: './bioinsumos.component.scss'
 })
-export class BioinsumosComponent {
-  // No futuro:
-  // termoBusca: string = '';
-  // listaCompletaBioinsumos: any[] = []; // Virá de um serviço
-  // listaFiltradaBioinsumos: any[] = [];
+export class BioinsumosComponent implements OnInit {
+  termoBusca = '';
+  bioinsumos: any[] = [];
 
-  constructor() {
-    // No futuro, carregar dados aqui ou no ngOnInit
+  constructor(private bioService: BioinsumosService) {}
+
+  ngOnInit(): void {
+    this.bioService.getBioinsumos().subscribe(dados => {
+      this.bioinsumos = dados.map(b => ({ ...b, expandido: false }));
+    });
   }
 
-  // No futuro:
-  // buscarBioinsumos(): void {
-  //   if (!this.termoBusca) {
-  //     this.listaFiltradaBioinsumos = [...this.listaCompletaBioinsumos];
-  //   } else {
-  //     this.listaFiltradaBioinsumos = this.listaCompletaBioinsumos.filter(bioinsumo =>
-  //       bioinsumo.nome.toLowerCase().includes(this.termoBusca.toLowerCase())
-  //     );
-  //   }
-  // }
+  get bioinsumosFiltrados() {
+    const termo = this.termoBusca.toLowerCase();
+    return this.bioinsumos.filter(b =>
+      b.nome.toLowerCase().includes(termo) ||
+      b.cultura.toLowerCase().includes(termo) ||
+      b.alvo.toLowerCase().includes(termo)
+    );
+  }
+
+  toggleExpandir(bio: any) {
+    bio.expandido = !bio.expandido;
+  }
 }

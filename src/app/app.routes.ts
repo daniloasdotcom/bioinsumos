@@ -7,5 +7,5 @@ export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, title: 'Página Inicial | Portal Bioinsumos' },
   { path: 'legislacao', component: LegislacaoComponent, title: 'Legislação | Portal Bioinsumos' },
-  { path: 'bioinsumos', component: BioinsumosComponent, title: 'Lista de Bioinsumos | Portal Bioinsumos' } // 2. ADICIONAR A NOVA ROTA
+  { path: 'bioinsumos', component: BioinsumosComponent, title: 'Lista de Bioinsumos | Portal Bioinsumos' }
 ];
