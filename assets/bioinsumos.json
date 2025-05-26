@@ -1,0 +1,82 @@
+[
+  {
+    "nome": "RhizoMax Soja",
+    "categoria": "Inoculante",
+    "cultura": "Soja",
+    "alvo": "Fixação Biológica de Nitrogênio (FBN)",
+    "imagem": "assets/images/rhizomax_soja.png",
+    "descricao": "Contém Bradyrhizobium japonicum e Bradyrhizobium elkanii para maximizar a fixação de nitrogênio e aumentar a produtividade da soja."
+  },
+  {
+    "nome": "TrichoControl Plus",
+    "categoria": "Biofungicida",
+    "cultura": "Hortaliças, Frutas, Grãos",
+    "alvo": "Mofo-branco (Sclerotinia sclerotiorum), Rhizoctonia solani, Fusarium spp.",
+    "imagem": "assets/images/trichocontrol_plus.png",
+    "descricao": "Formulado com Trichoderma harzianum, promove o controle de diversos fungos de solo e melhora a sanidade das plantas."
+  },
+  {
+    "nome": "Boveril WP Milho",
+    "categoria": "Bioinseticida",
+    "cultura": "Milho, Cana-de-açúcar",
+    "alvo": "Cigarrinha-do-milho (Dalbulus maidis), Broca-da-cana (Diatraea saccharalis)",
+    "imagem": "assets/images/boveril_wp_milho.png",
+    "descricao": "À base de Beauveria bassiana, eficaz no controle de importantes pragas em gramíneas, com ação por contato."
+  },
+  {
+    "nome": "AzuGrow Café",
+    "categoria": "Biofertilizante (Promotor de Crescimento)",
+    "cultura": "Café",
+    "alvo": "Promoção de crescimento radicular e aéreo, aumento da absorção de nutrientes",
+    "imagem": "assets/images/azugrow_cafe.png",
+    "descricao": "Contém Azospirillum brasilense, que auxilia na promoção do crescimento vegetal e na maior eficiência do uso de fertilizantes nitrogenados."
+  },
+  {
+    "nome": "NemOut Orgânico",
+    "categoria": "Bionematicida",
+    "cultura": "Soja, Milho, Algodão, Tomate",
+    "alvo": "Nematoides das lesões (Pratylenchus brachyurus), Nematoides das galhas (Meloidogyne spp.)",
+    "imagem": "assets/images/nemout_organico.png",
+    "descricao": "Produto à base de Bacillus subtilis e Paecilomyces lilacinus para o manejo integrado de fitonematoides."
+  },
+  {
+    "nome": "MIP Max HF",
+    "categoria": "Bioinseticida (Manejo Integrado)",
+    "cultura": "Hortifruti em geral (Tomate, Pimentão, Morango)",
+    "alvo": "Mosca-branca (Bemisia tabaci), Pulgões (Aphididae), Tripes",
+    "imagem": "assets/images/mip_max_hf.png",
+    "descricao": "Composto por uma mistura de fungos entomopatogênicos (ex: Metarhizium anisopliae, Isaria fumosorosea) para manejo de um amplo espectro de insetos sugadores."
+  },
+  {
+    "nome": "BioPhos Solúvel",
+    "categoria": "Biofertilizante (Solubilizador de Fosfato)",
+    "cultura": "Todas as culturas",
+    "alvo": "Aumento da disponibilidade de Fósforo no solo",
+    "imagem": "assets/images/biophos_soluvel.png",
+    "descricao": "Contém microrganismos como Bacillus megaterium e Pseudomonas fluorescens que solubilizam o fósforo retido no solo, tornando-o disponível para as plantas."
+  },
+  {
+    "nome": "Serenade Soja e Feijão",
+    "categoria": "Biofungicida e Bactericida",
+    "cultura": "Soja, Feijão",
+    "alvo": "Mancha-alvo (Corynespora cassiicola), Antracnose (Colletotrichum spp.), Oídio",
+    "imagem": "assets/images/serenade_soja_feijao.png",
+    "descricao": "Produto biológico à base de Bacillus subtilis (cepa QST 713), com múltiplos modos de ação contra doenças foliares."
+  },
+  {
+    "nome": "EcoLagarta BT",
+    "categoria": "Bioinseticida",
+    "cultura": "Algodão, Soja, Milho, Hortaliças",
+    "alvo": "Lagartas (ex: Helicoverpa armigera, Spodoptera frugiperda, Chrysodeixis includens)",
+    "imagem": "assets/images/ecolagarta_bt.png",
+    "descricao": "Formulado com Bacillus thuringiensis (Bt), específico para o controle de diversas espécies de lagartas que atacam culturas importantes."
+  },
+  {
+    "nome": "VitaRaiz Cana",
+    "categoria": "Bioestimulante e Condicionador de Solo",
+    "cultura": "Cana-de-açúcar",
+    "alvo": "Melhora do desenvolvimento radicular, aumento da tolerância a estresses abióticos, melhoria da estrutura do solo",
+    "imagem": "assets/images/vitaraiz_cana.png",
+    "descricao": "Composto por extratos de algas, aminoácidos e microrganismos benéficos que promovem a saúde do solo e o vigor da cana-de-açúcar."
+  }
+]
