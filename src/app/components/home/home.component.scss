@@ -1,0 +1,113 @@
+/* src/app/components/home/home.component.css */
+
+/* Adiciona a classe .container ao elemento raiz no home.component.html */
+.home-container {
+  /* Esta classe já existe no styles.css, mas aqui aplicamos o padding vertical */
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.hero {
+  background-color: var(--surface-color);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem; /* Maior na home */
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: var(--text-light-color);
+  margin-bottom: 2rem;
+  max-width: 700px; /* Limita largura do texto */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-color); /* Texto escuro no botão amarelo */
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px; /* Botão arredondado */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.cta-button:hover {
+  background-color: #ffb300; /* Um tom mais escuro do accent no hover */
+  color: var(--text-color);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.features {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.feature-list {
+  display: grid; /* Usando Grid para layout responsivo */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colunas flexíveis */
+  gap: 2rem;
+  text-align: left;
+}
+
+.feature-item {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column; /* Para alinhar o conteúdo verticalmente */
+  align-items: center; /* Centralizar conteúdo do item */
+  text-align: center;
+}
+
+.feature-item img {
+  width: 60px; /* Ajuste o tamanho dos seus ícones */
+  height: 60px;
+  margin-bottom: 1rem;
+  /* Se seus SVGs não pegarem a cor, você pode precisar estilizá-los via CSS */
+  /* fill: var(--primary-color); (para SVGs) */
+}
+
+.feature-item h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  font-size: 0.95rem;
+  color: var(--text-light-color);
+  flex-grow: 1; /* Faz o parágrafo ocupar espaço se os cards tiverem alturas diferentes */
+}
+
+.call-to-action {
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.call-to-action h2 {
+  margin-bottom: 1rem;
+}

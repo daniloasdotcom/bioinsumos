@@ -1,0 +1,82 @@
+/* src/app/app.component.css */
+
+.app-header {
+  background-color: var(--primary-color);
+  color: var(--surface-color); /* Texto branco sobre fundo escuro */
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Cabeçalho fixo no topo (opcional) */
+  top: 0;
+  z-index: 1000;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Usando a classe container global para centralizar e limitar largura */
+}
+
+.app-nav .logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--surface-color);
+  text-decoration: none;
+}
+
+.app-nav .logo:hover {
+  color: var(--accent-color); /* Destaque no hover */
+  text-decoration: none;
+}
+
+.app-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.app-nav ul li {
+  margin-left: 1.5rem;
+}
+
+.app-nav ul li a {
+  color: var(--surface-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0; /* Espaço para a borda inferior no active */
+  border-bottom: 3px solid transparent; /* Para efeito no link ativo */
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.app-nav ul li a:hover {
+  color: var(--accent-color);
+  text-decoration: none; /* Remove sublinhado padrão, já que temos a borda */
+}
+
+.app-nav ul li a.active-link {
+  color: var(--accent-color); /* Cor de destaque para o link ativo */
+  border-bottom-color: var(--accent-color);
+}
+
+.app-main {
+  flex-grow: 1; /* Garante que o main ocupe o espaço até o footer */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* A classe container será adicionada aos componentes internos, se necessário */
+}
+
+.app-footer {
+  background-color: var(--text-color); /* Rodapé mais escuro */
+  color: var(--background-color); /* Texto claro no rodapé */
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto; /* Empurra para o final */
+  font-size: 0.9rem;
+}
+
+.app-footer p {
+  margin-bottom: 0;
+}
