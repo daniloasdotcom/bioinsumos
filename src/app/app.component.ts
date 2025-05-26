@@ -16,5 +16,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router'; //
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  anioActual = new Date().getFullYear();
   // title = 'nome-do-seu-projeto'; // Pode ou não ter essa linha
 }
