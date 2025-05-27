@@ -1,27 +1,35 @@
-# Bioinsumos
+# Portal de Bioinsumos 🌿
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+**Portal de Bioinsumos** é uma plataforma informativa voltada ao uso sustentável de bioinsumos na agricultura brasileira.
 
-## Development server
+## 🔍 O que é?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto tem como objetivo fornecer informações confiáveis e atualizadas sobre o uso de **bioinsumos** — produtos de origem biológica utilizados na produção agropecuária, como inoculantes, biodefensivos e condicionadores biológicos de solo.
 
-## Code scaffolding
+O conteúdo é apresentado de forma clara e objetiva, permitindo que o usuário explore catálogos e legislações pertinentes ao tema.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🎯 Objetivo
 
-## Build
+Oferecer um ambiente acessível e educativo para agricultores, pesquisadores, estudantes e interessados em práticas agrícolas sustentáveis. O portal permite:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Explorar um **catálogo de bioinsumos**, com informações detalhadas por categoria, cultura e aplicação;
+- Consultar **legislação atualizada** sobre o uso e regulamentação de bioinsumos no Brasil;
+- Acompanhar atualizações sobre novas normativas e leis do setor.
 
-## Running unit tests
+## 🛠️ Tecnologias utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular 17**
+- HTML / CSS
+- GitHub Pages para deploy
 
-## Running end-to-end tests
+## 🚧 Status do projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Em desenvolvimento** – novas funcionalidades e melhorias visuais estão sendo implementadas.
 
-## Further help
+## 🌐 Acesse o site
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+👉 [https://daniloasdotcom.github.io/bioinsumos/](https://daniloasdotcom.github.io/bioinsumos/)
+
+## 👨‍💻 Autor
+
+Desenvolvido por [Danilo Andrade Santos](https://daniloas.com)

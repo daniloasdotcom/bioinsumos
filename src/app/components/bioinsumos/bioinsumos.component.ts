@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'; // 👈 IMPORTANTE!
+import { HttpClientModule } from '@angular/common/http';
 import { BioinsumosService } from '../../services/bioinsumos.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { BioinsumosService } from '../../services/bioinsumos.service';
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule // 👈 ADICIONE AQUI
+    HttpClientModule
   ],
   templateUrl: './bioinsumos.component.html',
   styleUrl: './bioinsumos.component.scss'
