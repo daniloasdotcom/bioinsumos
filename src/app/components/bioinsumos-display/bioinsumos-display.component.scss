@@ -1,0 +1,179 @@
+/* src/app/components/bioinsumos-display/bioinsumos-display.component.scss */
+
+/* Estilos para o container de filtros */
+.filtros-container {
+  background-color: #f8f9fa; // Cor de fundo leve (Bootstrap-like)
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #dee2e6; // Borda sutil
+  border-radius: 0.375rem; // Cantos arredondados (Bootstrap-like)
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); // Sombra leve
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem; // Mais espaço abaixo do título dos filtros
+    font-size: 1.5rem; // Tamanho do título
+    color: #343a40; // Cor escura para o título
+  }
+
+  .filtros-controles {
+    display: flex;
+    gap: 20px; // Espaço entre os grupos de filtro
+    flex-wrap: wrap; // Permite que os filtros quebrem a linha em telas menores
+
+    .filtro-item {
+      display: flex;
+      flex-direction: column; // Label em cima, input embaixo
+      flex-grow: 1; // Permite que os itens cresçam para preencher o espaço
+      min-width: 200px; // Largura mínima para cada filtro
+
+      label {
+        margin-bottom: 0.5rem; // Espaço entre label e input
+        font-weight: 500; // Peso da fonte do label
+        font-size: 0.875rem;
+        color: #495057;
+      }
+
+      // Se você não estiver usando a classe .form-control do Bootstrap nos inputs,
+      // você pode estilizar os inputs diretamente aqui:
+      input[type="text"].form-control { // Estilo seletor mais específico se usar .form-control
+         padding: 0.375rem 0.75rem;
+         font-size: 1rem;
+         line-height: 1.5;
+         color: #495057;
+         background-color: #fff;
+         background-clip: padding-box;
+         border: 1px solid #ced4da;
+         border-radius: 0.25rem;
+         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+         &:focus {
+           border-color: #80bdff;
+           outline: 0;
+           box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+         }
+      }
+    }
+  }
+}
+
+/* Estilos para o layout de cards (se não estiver usando Bootstrap ou quiser sobrescrever) */
+/* As classes .row, .col-md-6, .col-lg-4, .mb-4, .d-flex, .align-items-stretch, .w-100
+   são do Bootstrap. Se não usar Bootstrap, precisará definir estilos para elas
+   ou usar sua própria estrutura de grid. */
+
+.card {
+  // Bootstrap já estiliza .card. Adicione aqui se quiser customizar.
+  // Exemplo: border: 1px solid #ddd;
+  // box-shadow: 0 2px 5px rgba(0,0,0,0.1); // Sombra um pouco mais pronunciada
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px); // Efeito sutil ao passar o mouse
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    color: #0056b3; // Cor de destaque para o título do card
+    margin-bottom: 0.5rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.9rem;
+  }
+
+  // .card-body removido porque estava vazio e apenas com comentários
+
+  .produto-detalhes {
+    font-size: 0.85rem; // Reduzir um pouco o tamanho da fonte dos detalhes
+    color: #555; // Cor mais suave para os detalhes
+
+    p {
+      margin-bottom: 0.3rem; // Menor espaço entre os parágrafos de detalhes
+      line-height: 1.4;
+    }
+
+    strong { // Para os rótulos como "Titular:", "Formulação:"
+      color: #333;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 18px; // Ajuste o padding da lista interna
+      margin-top: 2px;
+      margin-bottom: 5px;
+      list-style-type: disc; // Ou outro de sua preferência
+      li {
+          margin-bottom: 2px;
+      }
+    }
+  }
+
+  .btn-outline-primary { // Estilo do botão Agrofit
+    // Bootstrap já define. Adicione aqui para customizar.
+    font-weight: 500;
+  }
+}
+
+
+/* Estilos para a paginação */
+.paginacao {
+  margin-top: 30px; // Mais espaço acima da paginação
+  margin-bottom: 20px;
+  text-align: center;
+
+  // Se não usar classes .btn do Bootstrap nos botões de paginação:
+  button {
+    padding: 0.375rem 0.75rem;
+    margin: 0 5px;
+    font-size: 0.875rem;
+    // border: 1px solid #ced4da; // Estilo de botão Bootstrap
+    // background-color: #fff;
+    // color: #007bff;
+    // cursor: pointer;
+    // border-radius: 0.25rem;
+
+    // &:hover:not(:disabled) {
+    //   background-color: #e2e6ea;
+    // }
+
+    // &:disabled {
+    //   opacity: 0.65;
+    //   cursor: not-allowed;
+    // }
+  }
+
+  span {
+    margin: 0 15px; // Mais espaço ao redor do texto da página
+    font-weight: 500;
+    vertical-align: middle;
+    color: #495057;
+  }
+}
+
+/* Classes de Alerta (Bootstrap já estiliza, mas para referência) */
+.alert {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}

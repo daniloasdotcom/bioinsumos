@@ -1,0 +1,106 @@
+<h1>Página de Bioinsumos da Embrapa</h1>
+
+<div class="filtros-container">
+  <h3>Filtros</h3>
+  <div class="filtros-controles">
+    <div class="filtro-item">
+      <label for="filtroProdutoGeral">Produto/Ingrediente (Busca Geral):</label>
+      <input type="text" id="filtroProdutoGeral" class="form-control" [(ngModel)]="filtros.q" (ngModelChange)="onFiltroChange()">
+    </div>
+    <div class="filtro-item">
+      <label for="filtroMarca">Marca Comercial:</label>
+      <input type="text" id="filtroMarca" class="form-control" [(ngModel)]="filtros.marca_comercial" (ngModelChange)="onFiltroChange()">
+    </div>
+    <div class="filtro-item">
+      <label for="filtroCultura">Cultura:</label>
+      <input type="text" id="filtroCultura" class="form-control" [(ngModel)]="filtros.cultura" (ngModelChange)="onFiltroChange()">
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!isLoading && !erroApi">
+  <div *ngIf="produtosFiltrados.length > 0; else semResultados">
+    <h2>Produtos Biológicos Encontrados: ({{ totalRegistros || produtosFiltrados.length }})</h2>
+
+    <div class="row">
+        <div *ngFor="let produto of produtosFiltrados" class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+        <div class="card shadow-sm w-100">
+            <div class="card-body d-flex flex-column">
+            <h5 class="card-title">
+                {{ produto.marca_comercial?.[0] || 'Nome comercial indisponível' }}
+            </h5>
+            <p class="card-subtitle mb-2 text-muted" *ngIf="produto.numero_registro">
+                Registro: {{ produto.numero_registro }}
+            </p>
+
+            <div class="produto-detalhes mt-auto">
+                <p *ngIf="produto.titular_registro"><small><strong>Titular:</strong> {{ produto.titular_registro }}</small></p>
+                <p *ngIf="produto.produto_biologico !== undefined"><small><strong>Produto Biológico:</strong> {{ produto.produto_biologico ? 'Sim' : 'Não' }}</small></p>
+                <p *ngIf="produto.formulacao"><small><strong>Formulação:</strong> {{ produto.formulacao }}</small></p>
+                <p *ngIf="produto.classe_categoria_agronomica?.length">
+                <small><strong>Classe/Categoria:</strong> {{ produto.classe_categoria_agronomica.join(', ') }}</small>
+                </p>
+                <p *ngIf="produto.ingrediente_ativo?.length">
+                <small><strong>Ingrediente(s) Ativo(s):</strong> {{ produto.ingrediente_ativo.join(', ') }}</small>
+                </p>
+
+                <div *ngIf="produto.ingrediente_ativo_detalhado?.length" class="mt-2">
+                <small><strong>Detalhes do(s) Ingrediente(s) Ativo(s):</strong></small>
+                <ul class="sub-lista">
+                    <li *ngFor="let detalhe of produto.ingrediente_ativo_detalhado">
+                    <small>
+                        {{ detalhe.ingrediente_ativo }}
+                        <span *ngIf="detalhe.concentracao && detalhe.unidade_medida"> ({{ detalhe.concentracao }} {{ detalhe.unidade_medida }})</span>
+                        <span *ngIf="detalhe.percentual"> - {{ detalhe.percentual }}%</span>
+                        <br *ngIf="detalhe.grupo_quimico"><em *ngIf="detalhe.grupo_quimico">Grupo Químico: {{ detalhe.grupo_quimico }}</em>
+                    </small>
+                    </li>
+                </ul>
+                </div>
+
+                <p *ngIf="produto.modo_acao?.length">
+                <small><strong>Modo de Ação:</strong> {{ produto.modo_acao.join(', ') }}</small>
+                </p>
+                <p *ngIf="produto.tecnica_aplicacao?.length">
+                <small><strong>Téc. de Aplicação:</strong> {{ produto.tecnica_aplicacao.join(', ') }}</small>
+                </p>
+
+                <div *ngIf="produto.indicacao_uso?.length" class="indicacoes-uso mt-2">
+                <small><strong>Indicações de Uso:</strong></small>
+                <ul class="sub-lista">
+                    <li *ngFor="let indicacao of produto.indicacao_uso">
+                    <small>Cultura: {{ indicacao.cultura }} | Praga:
+                    {{ indicacao.praga_nome_comum?.length ? indicacao.praga_nome_comum.join(', ') : indicacao.praga_nome_cientifico }}</small>
+                    </li>
+                </ul>
+                </div>
+
+                <p *ngIf="produto.classificacao_toxicologica"><small><strong>Class. Toxicológica:</strong> {{ produto.classificacao_toxicologica }}</small></p>
+                <p *ngIf="produto.classificacao_ambiental"><small><strong>Class. Ambiental:</strong> {{ produto.classificacao_ambiental }}</small></p>
+                <p *ngIf="produto.inflamavel !== null"><small><strong>Inflamável:</strong> {{ produto.inflamavel ? 'Sim' : 'Não' }}</small></p>
+                <p *ngIf="produto.corrosivo !== null"><small><strong>Corrosivo:</strong> {{ produto.corrosivo ? 'Sim' : 'Não' }}</small></p>
+                
+                <p *ngIf="produto.produto_agricultura_organica !== undefined">
+                <small><strong>Agricultura Orgânica:</strong> {{ produto.produto_agricultura_organica ? 'Sim' : 'Não' }}</small>
+                </p>
+            </div>
+            
+            <p *ngIf="produto.url_agrofit" class="mt-auto pt-2">
+                <a [href]="produto.url_agrofit" target="_blank" class="btn btn-sm btn-outline-primary">Ver no Agrofit</a>
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div *ngIf="totalPaginas && totalPaginas > 1" class="paginacao">
+      <button class="btn btn-outline-secondary btn-sm" (click)="mudarPagina(paginaAtual - 1)" [disabled]="paginaAtual === 1">Anterior</button>
+      <span>Página {{ paginaAtual }} de {{ totalPaginas }} (Total: {{totalRegistros}} registros)</span>
+      <button class="btn btn-outline-secondary btn-sm" (click)="mudarPagina(paginaAtual + 1)" [disabled]="paginaAtual === totalPaginas">Próxima</button>
+    </div>
+
+  </div>
+  <ng-template #semResultados>
+    <p class="alert alert-warning">Nenhum produto biológico encontrado com os critérios atuais.</p>
+  </ng-template>
+</div>

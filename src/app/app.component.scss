@@ -1,20 +1,39 @@
-/* src/app/app.component.css */
+/* Define suas variáveis de cor primária, de superfície e de destaque, idealmente em :root ou em um arquivo de variáveis importado */
+:host { // Ou :root se estes estilos forem globais em styles.scss
+  --primary-color: #0056b3; // Exemplo: Azul escuro
+  --surface-color: #ffffff; // Exemplo: Branco
+  --accent-color: #ffc107;  // Exemplo: Amarelo/Âmbar para destaque
+  --text-color: #343a40;    // Exemplo: Cinza escuro para texto geral
+  --background-color: #f8f9fa; // Exemplo: Cinza muito claro para fundos de página
+
+  // Versões RGB para uso com rgba() - Adicione as suas cores
+  --primary-rgb: 0, 86, 179;
+  --surface-rgb: 255, 255, 255;
+  --accent-rgb: 255, 193, 7;
+}
 
 .app-header {
   background-color: var(--primary-color);
-  color: var(--surface-color); /* Texto branco sobre fundo escuro */
+  color: var(--surface-color);
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky; /* Cabeçalho fixo no topo (opcional) */
+  position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1000; // Garante que o header fique sobre outros elementos
 }
 
 .app-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Usando a classe container global para centralizar e limitar largura */
+  // A classe .container é esperada do seu framework CSS (ex: Bootstrap)
+  // ou definida globalmente para centralizar e limitar a largura.
+  // Exemplo de .container se você não tiver um:
+  // max-width: 1140px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
 }
 
 .app-nav .logo {
@@ -22,61 +41,143 @@
   font-weight: bold;
   color: var(--surface-color);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .app-nav .logo:hover {
-  color: var(--accent-color); /* Destaque no hover */
-  text-decoration: none;
+  color: var(--accent-color);
 }
 
-.app-nav ul {
+.app-nav .menu-principal {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
+
+  li {
+    margin-left: 1.5rem;
+
+    &:first-child {
+      margin-left: 0; // Para o primeiro item não ter margem à esquerda desnecessária
+    }
+
+    a {
+      color: var(--surface-color);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.5rem 0.25rem; // Ajuste o padding para melhor área de clique
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+
+      &.active-link {
+        color: var(--accent-color);
+        border-bottom-color: var(--accent-color);
+      }
+    }
+  }
 }
 
-.app-nav ul li {
-  margin-left: 1.5rem;
-}
-
-.app-nav ul li a {
+/* Estilos do Botão Hambúrguer e Menu Mobile */
+.menu-toggle {
+  display: none; // Escondido em telas maiores
+  background: none;
+  border: none;
   color: var(--surface-color);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 0; /* Espaço para a borda inferior no active */
-  border-bottom: 3px solid transparent; /* Para efeito no link ativo */
-  transition: color 0.2s ease, border-color 0.2s ease;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0.5rem; // Área de clique
+  line-height: 1; // Para melhor alinhamento dos ícones
 }
 
-.app-nav ul li a:hover {
-  color: var(--accent-color);
-  text-decoration: none; /* Remove sublinhado padrão, já que temos a borda */
+/* Media Query para responsividade do menu */
+@media (max-width: 768px) { // Ponto de quebra comum para tablets e celulares
+  .app-nav .menu-principal {
+    // Esconde o menu desktop e o transforma em menu dropdown/vertical
+    // quando a classe .menu-aberto é aplicada
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%; // Começa logo abaixo do header
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(var(--surface-rgb), 0.2);
+
+    &.menu-aberto {
+      display: flex; // Mostra o menu quando a classe .menu-aberto está presente
+    }
+
+    li {
+      margin-left: 0;
+      width: 100%;
+
+      a {
+        display: block; // Faz o link ocupar toda a largura
+        padding: 0.75rem 1.5rem; // Padding para itens de menu mobile
+        text-align: left; // Ou center, conforme preferência
+        border-bottom: 1px solid transparent; // Remove borda inferior padrão no mobile
+        
+        &.active-link {
+          border-bottom-color: transparent; // Remove borda do active no mobile
+          // Pode adicionar um background sutil para o item ativo no mobile, se desejar
+          // background-color: rgba(var(--accent-rgb), 0.1);
+        }
+        &:hover {
+           background-color: rgba(var(--surface-rgb), 0.1); // Fundo sutil no hover
+        }
+      }
+      // Remove a borda do último item se você adicionar uma borda para separar
+      // &:not(:last-child) a {
+      //   border-bottom: 1px solid rgba(var(--surface-rgb), 0.1);
+      // }
+    }
+  }
+
+  .menu-toggle {
+    display: block; // Mostra o botão hambúrguer em telas pequenas
+  }
+
+  .app-nav .logo {
+    font-size: 1.5rem; // Reduz um pouco o logo em telas pequenas
+  }
 }
 
-.app-nav ul li a.active-link {
-  color: var(--accent-color); /* Cor de destaque para o link ativo */
-  border-bottom-color: var(--accent-color);
-}
 
 .app-main {
-  flex-grow: 1; /* Garante que o main ocupe o espaço até o footer */
+  flex-grow: 1; // Garante que o main ocupe o espaço disponível
   padding-top: 2rem;
   padding-bottom: 2rem;
-  /* A classe container será adicionada aos componentes internos, se necessário */
+  // A classe .container geralmente é aplicada dentro dos componentes de página,
+  // ou o router-outlet pode estar dentro de um .container no app.component.html
 }
 
 .app-footer {
-  background-color: var(--text-color); /* Rodapé mais escuro */
-  color: var(--background-color); /* Texto claro no rodapé */
+  background-color: var(--text-color); // Cor escura
+  color: var(--background-color);    // Texto claro
   text-align: center;
-  padding: 1.5rem 0;
-  margin-top: auto; /* Empurra para o final */
+  padding: 1.5rem 1rem; // Adicionado padding lateral para telas pequenas
+  margin-top: auto;    // Empurra para o final da viewport se o conteúdo for curto
   font-size: 0.9rem;
-}
+  line-height: 1.6;
 
-.app-footer p {
-  margin-bottom: 0;
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--accent-color); // Links no footer com cor de destaque
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

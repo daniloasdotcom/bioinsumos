@@ -1,0 +1,20 @@
+{
+  "/api-embrapa-token": {
+    "target": "https://api.cnptia.embrapa.br",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api-embrapa-token": "/token"
+    },
+    "logLevel": "debug"
+  },
+  "/api-embrapa-bioinsumos": {
+    "target": "https://api.cnptia.embrapa.br",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api-embrapa-bioinsumos": "/bioinsumos/v2"
+    },
+    "logLevel": "debug"
+  }
+}

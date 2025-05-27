@@ -1,39 +1,290 @@
-.bioinsumo-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  background-color: #fff;
-
-  &:hover {
-    background-color: #f8f8f8;
-  }
-
-  .card-header {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .bioinsumo-image {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-  }
-
-  .card-details {
-    margin-top: 0.5rem;
-    border-top: 1px solid #eee;
-    padding-top: 0.5rem;
-  }
+/* src/app/components/bioinsumos/bioinsumos.component.scss */
+:host {
+  --primary-color: #1886fc;
+  --surface-color: #ffffff;
+  --primary-color-hover: #014185;
+  --primary-color-active: #005cbf;
+  --text-color: #343a40;
+  --background-color: #f8f9fa;
+  --accent-color: #ffc107;
 }
 
-.search-input {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+// Mixin para estilos de botão base (exemplo de otimização se você tiver muitos botões customizados)
+@mixin base-button-style {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease;
+}
+
+.bioinsumos-container {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+
+  .page-header {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+      color: #212529;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: #495057;
+      max-width: 600px;
+      margin: 0 auto 1rem auto;
+    }
+
+    .info-adicional {
+      font-size: 0.85em;
+      color: #555;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+
+      p {
+        font-size: inherit;
+        max-width: none;
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .search-section {
+    margin-bottom: 2rem;
+
+    .filtros-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 0.375rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.06);
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        color: var(--text-color);
+      }
+
+      .filtros-controles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        align-items: end;
+
+        .filtro-item {
+          label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: #495057;
+          }
+
+          .form-control { // Estilo para input e select
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #ced4da;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+            &:focus {
+              border-color: #66afe9;
+              box-shadow: 0 0 0 0.2rem rgba(102, 175, 233, 0.25);
+              outline: none;
+            }
+          }
+
+          &.filtro-botao-limpar button { // Estilo para o botão de limpar
+            width: 100%;
+            padding: 0.75rem 1rem; // Consistente com .form-control
+            font-size: 0.9rem;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .bioinsumos-list-section {
+    h2 {
+      margin-bottom: 0.75rem;
+      font-size: 1.8rem;
+      color: var(--text-color);
+    }
+
+    .area-download {
+      margin-bottom: 1.5rem;
+
+      .btn-download-texto { // Estilo para o botão de download JSON/TXT
+        @include base-button-style; // Usando o mixin para estilos base
+        color: var(--surface-color);
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        margin-right: 10px; // Para espaçar botões de download se houver mais de um
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background-color: var(--primary-color-hover);
+          border-color: var(--primary-color-hover);
+        }
+
+        &:active {
+          background-color: var(--primary-color-active);
+          border-color: var(--primary-color-active);
+        }
+      }
+    }
+  }
+
+  .bioinsumo-card {
+    border: none;
+    border-radius: 1rem;
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.06);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header-custom {
+      margin-bottom: 1rem;
+      h3 {
+        margin: 0 0 0.25rem 0;
+        font-size: 1.6rem;
+        color: var(--primary-color);
+      }
+      p.categoria {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #6c757d;
+      }
+    }
+
+    .card-details {
+      margin-top: 1rem;
+      border-top: 1px solid #e9ecef;
+      padding-top: 1rem;
+
+      p, div:not(.sub-details) {
+        margin-bottom: 0.6rem;
+        font-size: 1rem;
+        color: #343a40;
+        small {
+          line-height: 1.5;
+          strong {
+            color: #495057;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .sub-details {
+        margin-bottom: 0.6rem;
+        ul {
+          padding-left: 1.5rem;
+          list-style-type: disc;
+          margin-top: 0.25rem;
+          font-size: 0.95rem;
+          color: #495057;
+          li {
+            margin-bottom: 0.2rem;
+          }
+        }
+      }
+
+      hr {
+        margin: 1rem 0;
+      }
+
+      .agrofit-link {
+        margin-top: 1rem;
+        a {
+          font-weight: bold;
+          color: #17a2b8;
+          text-decoration: underline;
+          &:hover {
+            color: #117a8b;
+          }
+        }
+      }
+    }
+  }
+
+  .paginacao {
+    margin-top: 2rem;
+    text-align: center;
+
+    button { // Estilo para botões de paginação
+      margin: 0 0.5rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      color: #6c757d;
+      background-color: transparent;
+      border: 1px solid #6c757d;
+      transition: background-color 0.2s ease, color 0.2s ease;
+
+      &:hover:not(:disabled) {
+        background-color: #6c757d;
+        color: white;
+      }
+      &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin: 0 1rem;
+      font-size: 1rem;
+      color: #6c757d;
+      vertical-align: middle;
+    }
+  }
+
+  .alert {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+  }
+  .alert-warning {
+    border-left: 5px solid #ffc107;
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  .alert.alert-light {
+    background-color: #f8f9fa;
+    border-color: #dadce0;
+    color: #3c4043;
+  }
 }

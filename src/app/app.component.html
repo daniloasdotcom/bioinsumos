@@ -1,10 +1,17 @@
 <header class="app-header">
-  <nav class="app-nav container"> <a routerLink="/home" class="logo">Portal Bioinsumos</a>
-    <ul>
-      <li><a routerLink="/home" routerLinkActive="active-link">Home</a></li>
-      <li><a routerLink="/legislacao" routerLinkActive="active-link">Legislação</a></li>
-      <li><a routerLink="/bioinsumos" routerLinkActive="active-link">Bioinsumos</a></li>
-    </ul>
+  <nav class="app-nav container">
+    <a routerLink="/home" class="logo">Portal Bioinsumos</a>
+
+    <ul class="menu-principal" [class.menu-aberto]="menuAberto">
+      <li><a routerLink="/home" routerLinkActive="active-link" (click)="fecharMenuSeMobile()">Home</a></li>
+      <li><a routerLink="/legislacao" routerLinkActive="active-link" (click)="fecharMenuSeMobile()">Legislação</a></li>
+      <li><a routerLink="/bioinsumos" routerLinkActive="active-link" (click)="fecharMenuSeMobile()">Bioinsumos</a></li>
+      </ul>
+
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Abrir menu de navegação" [attr.aria-expanded]="menuAberto">
+      <span *ngIf="!menuAberto" class="icon-hamburguer">&#9776;</span>
+      <span *ngIf="menuAberto" class="icon-fechar">&#10005;</span>
+    </button>
   </nav>
 </header>
 
