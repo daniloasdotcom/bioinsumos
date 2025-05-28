@@ -1,0 +1,123 @@
+<div class="inoculantes-container container">
+  <header class="page-header">
+    <h1>Catálogo de Inoculantes</h1>
+    <p>Encontre informações detalhadas sobre inoculantes registrados.</p>
+    <div class="info-adicional">
+      <p>
+        Fonte de dados: Arquivo Local (todos_inoculantes.json) - Dados originários da API Embrapa
+      </p>
+    </div>
+  </header>
+
+  <section class="search-section">
+    <div class="filtros-container">
+      <h3>Filtros</h3>
+      <div class="filtros-controles">
+        <div class="filtro-item">
+          <label for="termoBuscaInoculante">Pesquisa Geral (Empresa, Registro, Cultura, Espécie):</label>
+          <input
+            type="text"
+            id="termoBuscaInoculante"
+            class="form-control"
+            [(ngModel)]="termoBusca"
+            (ngModelChange)="onFiltroChange()"
+            placeholder="Digite aqui para buscar..."
+          />
+        </div>
+        <div class="filtro-item">
+          <label for="filtroTipoInoculante">Tipo de Inoculante:</label>
+          <select
+            id="filtroTipoInoculante"
+            class="form-control"
+            [(ngModel)]="filtroTipo"
+            (ngModelChange)="onFiltroChange()">
+            <option value="">Todos os Tipos</option>
+            <option *ngFor="let tipo of tiposUnicos" [value]="tipo">
+              {{ tipo }}
+            </option>
+          </select>
+        </div>
+        <div class="filtro-item filtro-botao-limpar">
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="limparTodosOsFiltros()"
+            [disabled]="!algumFiltroAtivo">
+            Limpar Filtros
+          </button>
+        </div>
+      </div> </div> </section>
+
+  <div *ngIf="isLoading" class="alert alert-info">
+    <p>Carregando dados dos inoculantes...</p>
+  </div>
+
+  <div *ngIf="erroCarregamento && !isLoading" class="alert alert-danger">
+    <strong>Erro ao carregar dados:</strong>
+    <p>{{ erroCarregamento }}</p>
+  </div>
+
+  <section class="inoculantes-list-section" *ngIf="!isLoading && !erroCarregamento">
+    <div *ngIf="primeiraBuscaRealizada || inoculantesFiltradosPrincipal.length > 0">
+      
+      <div class="area-botoes-download-container"> <h2>Resultados ({{ inoculantesFiltradosPrincipal.length }})</h2>
+        <div class="botoes-download" *ngIf="inoculantesFiltradosPrincipal.length > 0">
+          <button
+            type="button"
+            class="btn-download-texto"
+            (click)="baixarResultadosFiltradosJSON()"
+            title="Baixar resultados filtrados em formato JSON">
+            Baixar JSON
+          </button>
+          <button
+            type="button"
+            class="btn-download-texto"
+            (click)="baixarResultadosFiltradosTXT()"
+            title="Baixar resultados filtrados em formato TXT">
+            Baixar TXT
+          </button>
+        </div>
+      </div>
+
+      <div *ngIf="inoculantesParaExibir.length > 0; else semResultadosComFiltroInoculante">
+        <div *ngFor="let inoc of inoculantesParaExibir" class="inoculante-card" (click)="toggleExpandir(inoc)">
+          <div class="card-header-custom">
+            <div>
+              <h3>{{ inoc.nomePrincipal }}</h3> <p class="empresa-tipo">
+                <span *ngIf="inoc.razaoSocial"><strong>Empresa:</strong> {{ inoc.razaoSocial }}</span>
+                <br *ngIf="inoc.razaoSocial && inoc.tipoProduto">
+                <span *ngIf="inoc.tipoProduto"><strong>Tipo:</strong> {{ inoc.tipoProduto }}</span>
+              </p>
+              <p class="registro" *ngIf="inoc.registro"><strong>Registro:</strong> {{ inoc.registro }}</p>
+            </div>
+          </div> <div *ngIf="inoc.expandido" class="card-details">
+            <p *ngIf="inoc.culturas && inoc.culturas !== 'Não especificada'"><strong>Cultura(s) Indicada(s):</strong> {{ inoc.culturas }}</p>
+            
+            <hr *ngIf="inoc.originalData">
+            <ng-container *ngIf="inoc.originalData as original">
+              <p *ngIf="original.uf"><small><strong>UF:</strong> {{ original.uf }}</small></p>
+              <p *ngIf="original.razao_social && original.razao_social !== inoc.razaoSocial"><small><strong>Razão Social (Original):</strong> {{ original.razao_social }}</small></p>
+              <p *ngIf="original.atividade"><small><strong>Atividade:</strong> {{ original.atividade }}</small></p>
+              <p *ngIf="original.data_registro"><small><strong>Data de Registro:</strong> {{ original.data_registro | date:'dd/MM/yyyy' }}</small></p>
+              <p *ngIf="original.garantia"><small><strong>Garantia:</strong> {{ original.garantia }}</small></p>
+              <p *ngIf="original.natureza_fisica"><small><strong>Natureza Física:</strong> {{ original.natureza_fisica }}</small></p>
+              <p *ngIf="original.cultura_nome_cientifico"><small><strong>Nome Científico da Cultura:</strong> {{ original.cultura_nome_cientifico }}</small></p>
+              
+              <div *ngIf="inoc.especiesCompletas && inoc.especiesCompletas.length > 0 && inoc.especiesCompletas[0] !== 'Espécie não informada' && inoc.especiesCompletas.join(' + ') !== inoc.nomePrincipal" class="sub-details">
+                <small><strong>Espécie(s) Detalhada(s) (do JSON original):</strong></small>
+                <ul>
+                  <li *ngFor="let esp of inoc.especiesCompletas"><small>{{ esp }}</small></li>
+                </ul>
+              </div> </ng-container> </div> </div> </div> <ng-template #semResultadosComFiltroInoculante>
+        <p *ngIf="algumFiltroAtivo || primeiraBuscaRealizada" class="alert alert-warning">Nenhum inoculante encontrado com os critérios atuais.</p>
+      </ng-template>
+
+      <div *ngIf="inoculantesFiltradosPrincipal.length > itensPorPagina && totalPaginasCalculado > 1" class="paginacao">
+        <button class="btn btn-outline-secondary btn-sm" (click)="mudarPagina(paginaAtual - 1)" [disabled]="paginaAtual === 1">Anterior</button>
+        <span>Página {{ paginaAtual }} de {{ totalPaginasCalculado }} (Total filtrado: {{inoculantesFiltradosPrincipal.length}} registros)</span>
+        <button class="btn btn-outline-secondary btn-sm" (click)="mudarPagina(paginaAtual + 1)" [disabled]="paginaAtual === totalPaginasCalculado">Próxima</button>
+      </div> </div> <div *ngIf="!algumFiltroAtivo && !primeiraBuscaRealizada && !isLoading && !erroCarregamento" class="alert alert-light">
+      <p>Utilize os filtros acima para pesquisar no catálogo de inoculantes.</p>
+    </div>
+  </section>
+</div>

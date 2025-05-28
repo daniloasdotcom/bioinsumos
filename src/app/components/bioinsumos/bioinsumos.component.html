@@ -2,15 +2,11 @@
   <header class="page-header">
     <h1>Catálogo de Produtos Biológicos</h1>
     <p>Encontre informações detalhadas sobre diversos produtos biológicos disponíveis e suas aplicações.</p>
-    
-    <div class="info-adicional" style="font-size: 0.85em; color: #555; margin-top: 10px; margin-bottom: 20px; text-align: center;">
-      <p style="margin-bottom: 5px;">
+    <div class="info-adicional">
+      <p>
         Fonte de dados: Api Bioinsumos - v2 (16/05/2025) - Embrapa Agricultura Digital
       </p>
-      <p style="margin-bottom: 0; font-style: italic;">
-        Em breve atualizações com catálogo de inoculantes.
-      </p>
-    </div>
+      </div>
   </header>
 
   <section class="search-section">
@@ -41,6 +37,44 @@
             </option>
           </select>
         </div>
+        <div class="filtro-item">
+          <label for="filtroPragaCientifica">Praga (Nome Científico):</label>
+          <select
+            id="filtroPragaCientifica"
+            class="form-control"
+            [(ngModel)]="filtroPragaCientifica"
+            (ngModelChange)="onFiltroChange()">
+            <option value="">Todos os Nomes Científicos</option>
+            <option *ngFor="let praga of pragasCientificasUnicas" [value]="praga">
+              {{ praga }}
+            </option>
+          </select>
+        </div>
+        <div class="filtro-item">
+          <label for="filtroPragaComum">Praga (Nome Comum):</label>
+          <select
+            id="filtroPragaComum"
+            class="form-control"
+            [(ngModel)]="filtroPragaComum"
+            (ngModelChange)="onFiltroChange()">
+            <option value="">Todos os Nomes Comuns</option>
+            <option *ngFor="let praga of pragasComunsUnicas" [value]="praga">
+              {{ praga }}
+            </option>
+          </select>
+        </div>
+        <div class="filtro-item filtro-checkbox">
+          <label for="filtroApenasOrganicos">
+            <input
+              type="checkbox"
+              id="filtroApenasOrganicos"
+              class="form-check-input"
+              [(ngModel)]="filtroApenasOrganicos"
+              (ngModelChange)="onFiltroChange()"
+            />
+            Apenas produtos para agricultura orgânica
+          </label>
+        </div>
         <div class="filtro-item filtro-botao-limpar">
           <button
             type="button"
@@ -50,9 +84,7 @@
             Limpar Filtros
           </button>
         </div>
-      </div>
-    </div>
-  </section>
+      </div> </div> </section>
 
   <div *ngIf="isLoading" class="alert alert-info">
     <p>Carregando dados iniciais dos bioinsumos...</p>
@@ -65,11 +97,11 @@
   </div>
 
   <section class="bioinsumos-list-section" *ngIf="!isLoading && !erroApi">
-    <div *ngIf="primeiraBuscaRealizada">
+    <div *ngIf="algumFiltroAtivo || bioinsumosFiltradosPrincipal.length > 0 || primeiraBuscaRealizada">
       
       <h2>Resultados ({{ bioinsumosFiltradosPrincipal.length }})</h2>
 
-      <div class="area-download" *ngIf="bioinsumosFiltradosPrincipal.length > 0">
+      <div class="area-botoes-download" *ngIf="bioinsumosFiltradosPrincipal.length > 0">
         <button
           type="button"
           class="btn-download-texto" 
@@ -79,7 +111,7 @@
         </button>
         <button
           type="button"
-          class="btn-download-texto" style="margin-left: 10px;"
+          class="btn-download-texto"
           (click)="baixarResultadosFiltradosTXT()"
           title="Baixar resultados filtrados em formato TXT">
           Baixar TXT
@@ -93,25 +125,24 @@
               <h3>{{ bio.nome }}</h3>
               <p class="categoria"><strong>Categoria(s):</strong> {{ bio.categorias.join(', ') }}</p>
             </div>
-          </div>
-          <div *ngIf="bio.expandido" class="card-details">
+          </div> <div *ngIf="bio.expandido" class="card-details">
             <p *ngIf="bio.cultura"><strong>Culturas Indicadas:</strong> {{ bio.cultura }}</p>
             <p *ngIf="bio.alvo"><strong>Alvo(s) Biológico(s):</strong> {{ bio.alvo }}</p>
             <p *ngIf="bio.descricao"><strong>Descrição/Formulação:</strong> {{ bio.descricao }}</p>
             <hr *ngIf="bio.originalData">
-            <ng-container *ngIf="bio.originalData">
-              <p *ngIf="bio.originalData.numero_registro"><small><strong>Registro MAPA:</strong> {{ bio.originalData.numero_registro }}</small></p>
-              <p *ngIf="bio.originalData.titular_registro"><small><strong>Titular do Registro:</strong> {{ bio.originalData.titular_registro }}</small></p>
-              <p *ngIf="bio.originalData.produto_biologico !== undefined"><small><strong>Produto Biológico:</strong> {{ bio.originalData.produto_biologico ? 'Sim' : 'Não' }}</small></p>
+            <ng-container *ngIf="bio.originalData as original">
+              <p *ngIf="original.numero_registro"><small><strong>Registro MAPA:</strong> {{ original.numero_registro }}</small></p>
+              <p *ngIf="original.titular_registro"><small><strong>Titular do Registro:</strong> {{ original.titular_registro }}</small></p>
+              <p *ngIf="original.produto_biologico !== undefined"><small><strong>Produto Biológico:</strong> {{ original.produto_biologico ? 'Sim' : 'Não' }}</small></p>
               
-              <p *ngIf="bio.originalData.ingrediente_ativo?.length">
-                <small><strong>Ingrediente(s) Ativo(s) Principal(is):</strong> {{ bio.originalData.ingrediente_ativo.join('; ') }}</small>
+              <p *ngIf="original.ingrediente_ativo?.length">
+                <small><strong>Ingrediente(s) Ativo(s) Principal(is):</strong> {{ original.ingrediente_ativo?.join('; ') }}</small>
               </p>
 
-              <div *ngIf="bio.originalData.ingrediente_ativo_detalhado?.length" class="sub-details">
+              <div *ngIf="original.ingrediente_ativo_detalhado?.length" class="sub-details">
                 <small><strong>Detalhes Específicos do(s) Ingrediente(s) Ativo(s):</strong></small>
                 <ul>
-                  <li *ngFor="let detalhe of bio.originalData.ingrediente_ativo_detalhado">
+                  <li *ngFor="let detalhe of original.ingrediente_ativo_detalhado">
                     <small>
                       {{ detalhe.ingrediente_ativo }}
                       <span *ngIf="detalhe.concentracao && detalhe.unidade_medida"> ({{ detalhe.concentracao }} {{ detalhe.unidade_medida }})</span>
@@ -120,47 +151,39 @@
                     </small>
                   </li>
                 </ul>
-              </div>
-
-              <p *ngIf="bio.originalData.modo_acao?.length">
-                <small><strong>Modo de Ação:</strong> {{ bio.originalData.modo_acao.join(', ') }}</small>
+              </div> <p *ngIf="original.modo_acao?.length">
+                <small><strong>Modo de Ação:</strong> {{ original.modo_acao?.join(', ') }}</small>
               </p>
-              <p *ngIf="bio.originalData.tecnica_aplicacao?.length">
-                <small><strong>Téc. de Aplicação:</strong> {{ bio.originalData.tecnica_aplicacao.join(', ') }}</small>
+              <p *ngIf="original.tecnica_aplicacao && original.tecnica_aplicacao.length > 0">
+                <small><strong>Téc. de Aplicação:</strong> {{ original.tecnica_aplicacao.join(', ') }}</small>
               </p>
     
-              <div *ngIf="bio.originalData.indicacao_uso?.length" class="indicacoes-uso mt-2">
+              <div *ngIf="original.indicacao_uso?.length" class="indicacoes-uso mt-2">
                 <small><strong>Indicações de Uso:</strong></small>
                 <ul class="sub-lista">
-                  <li *ngFor="let indicacao of bio.originalData.indicacao_uso">
-                    <small>Cultura: {{ indicacao.cultura }} | Praga: {{ indicacao.praga_nome_comum?.length ? indicacao.praga_nome_comum.join(', ') : indicacao.praga_nome_cientifico }}</small>
+                  <li *ngFor="let indicacao of original.indicacao_uso">
+                    <small>Cultura: {{ indicacao.cultura }} | Praga: {{ (indicacao.praga_nome_comum && indicacao.praga_nome_comum.length > 0) ? indicacao.praga_nome_comum.join(', ') : indicacao.praga_nome_cientifico }}</small>
                   </li>
                 </ul>
-              </div>
-
-              <p *ngIf="bio.originalData.classificacao_toxicologica"><small><strong>Class. Toxicológica:</strong> {{ bio.originalData.classificacao_toxicologica }}</small></p>
-              <p *ngIf="bio.originalData.classificacao_ambiental"><small><strong>Class. Ambiental:</strong> {{ bio.originalData.classificacao_ambiental }}</small></p>
-              <p *ngIf="bio.originalData.inflamavel !== null"><small><strong>Inflamável:</strong> {{ bio.originalData.inflamavel ? 'Sim' : 'Não' }}</small></p>
-              <p *ngIf="bio.originalData.corrosivo !== null"><small><strong>Corrosivo:</strong> {{ bio.originalData.corrosivo ? 'Sim' : 'Não' }}</small></p>
-              <p *ngIf="bio.originalData.produto_agricultura_organica !== undefined">
-                <small><strong>Agricultura Orgânica:</strong> {{ bio.originalData.produto_agricultura_organica ? 'Sim' : 'Não' }}</small>
+              </div> <p *ngIf="original.classificacao_toxicologica"><small><strong>Class. Toxicológica:</strong> {{ original.classificacao_toxicologica }}</small></p>
+              <p *ngIf="original.classificacao_ambiental"><small><strong>Class. Ambiental:</strong> {{ original.classificacao_ambiental }}</small></p>
+              <p *ngIf="original.inflamavel !== null"><small><strong>Inflamável:</strong> {{ original.inflamavel ? 'Sim' : 'Não' }}</small></p>
+              <p *ngIf="original.corrosivo !== null"><small><strong>Corrosivo:</strong> {{ original.corrosivo ? 'Sim' : 'Não' }}</small></p>
+              <p *ngIf="original.produto_agricultura_organica !== undefined">
+                <small><strong>Agricultura Orgânica:</strong> {{ original.produto_agricultura_organica ? 'Sim' : 'Não' }}</small>
               </p>
-              <p *ngIf="bio.originalData.url_agrofit" class="agrofit-link">
-                <a [href]="bio.originalData.url_agrofit" target="_blank" (click)="$event.stopPropagation()">Ver no Agrofit</a>
+              <p *ngIf="original.url_agrofit" class="agrofit-link">
+                <a [href]="original.url_agrofit" target="_blank" (click)="$event.stopPropagation()">Ver no Agrofit</a>
               </p>
-            </ng-container>
-          </div> </div> </div> <ng-template #semResultadosComFiltro>
-        <p class="alert alert-warning">Nenhum bioinsumo encontrado com os critérios atuais.</p>
+            </ng-container> </div> </div> </div> <ng-template #semResultadosComFiltro>
+        <p *ngIf="algumFiltroAtivo || primeiraBuscaRealizada" class="alert alert-warning">Nenhum bioinsumo encontrado com os critérios atuais.</p>
       </ng-template>
 
       <div *ngIf="bioinsumosFiltradosPrincipal.length > itensPorPagina && totalPaginasCalculado > 1" class="paginacao">
         <button class="btn btn-outline-secondary btn-sm" (click)="mudarPagina(paginaAtual - 1)" [disabled]="paginaAtual === 1">Anterior</button>
         <span>Página {{ paginaAtual }} de {{ totalPaginasCalculado }} (Total filtrado: {{bioinsumosFiltradosPrincipal.length}} registros)</span>
         <button class="btn btn-outline-secondary btn-sm" (click)="mudarPagina(paginaAtual + 1)" [disabled]="paginaAtual === totalPaginasCalculado">Próxima</button>
-      </div>
-
-    </div>
-    <div *ngIf="!primeiraBuscaRealizada && !isLoading && !erroApi" class="alert alert-light">
+      </div> </div> <div *ngIf="!algumFiltroAtivo && !primeiraBuscaRealizada && !isLoading && !erroApi" class="alert alert-light">
       <p>Utilize os filtros acima para pesquisar no catálogo de bioinsumos.</p>
     </div>
   </section>

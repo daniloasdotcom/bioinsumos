@@ -1,0 +1,96 @@
+:host {
+   --primary-color: #0056b3; // Sua cor primária
+   --text-color-light: #f8f9fa; // Para texto sobre fundo escuro
+   --card-hover-shadow-color: rgba(0, 0, 0, 0.1);
+   --card-active-shadow-color: rgba(0, 0, 0, 0.15);
+ }
+
+.catalogos-container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  .page-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #212529; // Cor de texto escura padrão
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      color: #6c757d; // Cinza suave
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .opcoes-catalogo {
+    display: grid;
+    // Cria colunas responsivas:
+    // - Mínimo de 300px de largura por card.
+    // - Se couber mais de um, eles se ajustam para preencher o espaço (1fr).
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; // Espaço entre os cards
+
+    .opcao-card-link {
+      display: block; // Faz o link <a> se comportar como um bloco
+      text-decoration: none;
+      color: inherit; // Herda a cor do texto do pai, não azul padrão de link
+      border-radius: 0.5rem; // Aplica o arredondamento ao link, que é o elemento externo
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      background-color: #fff; // Cor de fundo para o link/card
+      border: 1px solid #dee2e6; // Borda sutil para o card
+      box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); // Sombra inicial
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: inherit;
+        transform: translateY(-5px); // Efeito de elevação no hover
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); // Sombra mais pronunciada no hover
+        outline: none; // Remove o outline padrão do foco para links, já que temos o shadow
+      }
+
+      .opcao-card {
+        // Como o <a> agora tem fundo, borda e sombra, o .opcao-card interno
+        // pode ser mais simples, focando no padding e layout do conteúdo.
+        padding: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; // Alinha o botão no final
+        height: 100%; // Faz o card ocupar toda a altura do link <a>
+
+        h2 {
+          font-size: 1.75rem;
+          // Se --primary-color não estiver global, defina uma cor aqui:
+          // color: #0056b3;
+          color: var(--primary-color, #0056b3); // Usa variável com fallback
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #495057;
+          margin-bottom: 1.5rem;
+          flex-grow: 1; // Permite que o parágrafo cresça, empurrando o botão para baixo
+          line-height: 1.6; // Melhora a legibilidade
+        }
+
+        .btn { // Estilo para o elemento que se parece com botão dentro do card
+          // Se você estiver usando Bootstrap, as classes .btn, .btn-primary, .btn-lg já farão o trabalho.
+          // Se não, você pode adicionar estilos base de botão aqui.
+          // Exemplo de como garantir que ele ocupe a largura e tenha margem:
+          width: 100%;
+          padding: 0.65rem 1.5rem; // Padding para o botão interno
+          font-size: 1.1rem;    // Tamanho da fonte do botão interno
+          // margin-top: auto; // Já está sendo empurrado para baixo pelo flex-grow do <p>
+        }
+      }
+    }
+  }
+}
