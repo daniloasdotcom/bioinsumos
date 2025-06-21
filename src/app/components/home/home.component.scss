@@ -1,8 +1,6 @@
 /* src/app/components/home/home.component.css */
 
-/* Adiciona a classe .container ao elemento raiz no home.component.html */
 .home-container {
-  /* Esta classe já existe no styles.css, mas aqui aplicamos o padding vertical */
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
@@ -18,7 +16,7 @@
 
 .hero h1 {
   color: var(--primary-color);
-  font-size: 2.5rem; /* Maior na home */
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -26,7 +24,7 @@
   font-size: 1.125rem;
   color: var(--text-light-color);
   margin-bottom: 2rem;
-  max-width: 700px; /* Limita largura do texto */
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,18 +32,18 @@
 .cta-button {
   display: inline-block;
   background-color: var(--accent-color);
-  color: var(--text-color); /* Texto escuro no botão amarelo */
+  color: var(--text-color);
   padding: 0.8rem 1.8rem;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 50px; /* Botão arredondado */
+  border-radius: 50px;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 .cta-button:hover {
-  background-color: #ffb300; /* Um tom mais escuro do accent no hover */
+  background-color: #ffb300;
   color: var(--text-color);
   text-decoration: none;
   transform: translateY(-2px);
@@ -62,8 +60,8 @@
 }
 
 .feature-list {
-  display: grid; /* Usando Grid para layout responsivo */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colunas flexíveis */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   text-align: left;
 }
@@ -74,17 +72,15 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   display: flex;
-  flex-direction: column; /* Para alinhar o conteúdo verticalmente */
-  align-items: center; /* Centralizar conteúdo do item */
+  flex-direction: column; 
+  align-items: center;
   text-align: center;
 }
 
 .feature-item img {
-  width: 60px; /* Ajuste o tamanho dos seus ícones */
+  width: 60px;
   height: 60px;
   margin-bottom: 1rem;
-  /* Se seus SVGs não pegarem a cor, você pode precisar estilizá-los via CSS */
-  /* fill: var(--primary-color); (para SVGs) */
 }
 
 .feature-item h3 {
@@ -96,7 +92,7 @@
 .feature-item p {
   font-size: 0.95rem;
   color: var(--text-light-color);
-  flex-grow: 1; /* Faz o parágrafo ocupar espaço se os cards tiverem alturas diferentes */
+  flex-grow: 1;
 }
 
 .call-to-action {

@@ -1,6 +1,5 @@
 /* src/app/components/legislacao/legislacao.component.css */
 
-/* Adiciona a classe .container ao elemento raiz no legislacao.component.html */
 .legislacao-container {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -32,12 +31,12 @@
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--secondary-color); /* Linha de destaque sutil */
-  display: inline-block; /* Para a borda não ocupar a largura toda */
+  border-bottom: 2px solid var(--secondary-color);
+  display: inline-block; 
 }
 
 .document-list {
-  list-style: none; /* Remove marcadores padrão */
+  list-style: none;
   padding-left: 0;
 }
 
@@ -57,7 +56,7 @@
 .document-list li a {
   font-size: 1.1rem;
   font-weight: 600;
-  display: block; /* Para o link ocupar a linha toda */
+  display: block;
   margin-bottom: 0.5rem;
 }
 
@@ -68,8 +67,8 @@
 }
 
 .disclaimer {
-  background-color: #fff3cd; /* Amarelo claro para aviso */
-  color: #664d03; /* Texto escuro para contraste */
+  background-color: #fff3cd;
+  color: #664d03;
   padding: 1rem 1.5rem;
   border-radius: 6px;
   border: 1px solid #ffecb5;
