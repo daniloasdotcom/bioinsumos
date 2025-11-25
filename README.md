@@ -18,8 +18,7 @@ Oferecer um ambiente acessível e educativo para agricultores, pesquisadores, es
 
 ## 🛠️ Tecnologias utilizadas
 
-- **Angular 17**
-- HTML / CSS
+- Angular 17
 - GitHub Pages para deploy
 
 ## 🚧 Status do projeto
@@ -29,6 +28,7 @@ Oferecer um ambiente acessível e educativo para agricultores, pesquisadores, es
 ## 🌐 Acesse o site
 
 👉 [https://daniloasdotcom.github.io/bioinsumos/](https://daniloasdotcom.github.io/bioinsumos/)
+👉 [https://portalbioinsumos.online/](https://portalbioinsumos.online/)
 
 ## 👨‍💻 Autor
 
