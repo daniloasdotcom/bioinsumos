@@ -1,319 +1,488 @@
 :host {
-  --primary-color: #1886fc;
-  --surface-color: #ffffff;
-  --primary-color-hover: #014185; 
-  --primary-color-active: #003d80;
-  --text-color: #343a40;
-  --background-color: #f8f9fa;
-  --accent-color: #ffc107;
-}
+  /* --- PALETA DE CORES & VARIÁVEIS --- */
+  --primary-brand: #091C2B; 
+  
+  // TEMA DA PÁGINA (Azul para Biodefensivos)
+  --theme-color: #0d6efd; 
+  --theme-color-light: rgba(13, 110, 253, 0.1);
+  --theme-color-hover: #0b5ed7;
 
-@mixin base-button-style-general {
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease;
+  // Cores Funcionais
+  --color-organic: #198754; // Verde escuro
+  --color-organic-bg: #d1e7dd;
+  
+  // Cores de Risco (Acessíveis)
+  --color-toxic-text: #842029;
+  --color-toxic-bg: #f8d7da;
+  --color-toxic-border: #f5c2c7;
+  
+  --color-env-text: #0f5132;
+  --color-env-bg: #d1e7dd;
+  --color-env-border: #badbcc;
+
+  --text-main: #343a40;
+  --text-muted: #6c757d;
+  --bg-page: #f4f6f9;
+  --card-bg: #ffffff;
+  
+  --border-radius-lg: 12px;
+  --border-radius-sm: 6px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-hover: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .bioinsumos-container {
-  padding: 40px 20px;
-  background-color: var(--background-color);
+  padding: 3rem 1rem;
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
+  /* --- HEADER --- */
   .page-header {
-    margin-bottom: 2rem;
     text-align: center;
+    margin-bottom: 3rem;
 
     h1 {
-      font-size: 2.75rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary-brand);
       margin-bottom: 0.5rem;
-      color: #212529;
     }
-
-    p {
-      font-size: 1.15rem;
-      color: #495057;
-      max-width: 600px;
-      margin: 0 auto 1rem auto;
+    .lead {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
     }
-
-    .info-adicional {
-      font-size: 0.85em;
-      color: #555;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      text-align: center;
-
-      p {
-        font-size: inherit;
-        max-width: none;
-        margin-bottom: 5px;
-        &:last-child {
-          margin-bottom: 0;
-          font-style: italic;
-        }
-      }
+    .badge-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      background-color: #e9ecef;
+      color: var(--text-muted);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 500;
     }
   }
 
+  /* --- FILTROS --- */
   .search-section {
-    margin-bottom: 2rem;
+    max-width: 1100px;
+    margin: 0 auto 3rem auto;
 
     .filtros-container {
-      background-color: #ffffff;
-      padding: 20px;
-      border: 1px solid #dee2e6;
-      border-radius: 0.375rem;
-      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.06);
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: var(--border-radius-lg);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.03);
 
-      h3 {
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        font-size: 1.5rem;
-        color: var(--text-color);
+      .filtros-header h3 {
+        font-size: 1.1rem;
+        color: var(--primary-brand);
+        margin: 0 0 1rem 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
 
       .filtros-controles {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        align-items: end; // Alinha os itens (incluindo o botão e o checkbox) pela base
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.2rem;
+        align-items: end;
+
+        .full-width-mobile {
+           @media(max-width: 768px) { grid-column: 1 / -1; }
+        }
 
         .filtro-item {
           label {
             display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            font-size: 0.875rem;
-            color: #495057;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
           }
 
-          .form-control { // Estilo para input e select
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border-radius: 0.5rem;
-            border: 1px solid #ced4da;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #495057;
-            background-color: #fff;
-            background-clip: padding-box;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+          .input-wrapper {
+            position: relative;
+            .input-icon {
+              position: absolute;
+              left: 12px;
+              top: 50%;
+              transform: translateY(-50%);
+              color: #adb5bd;
+            }
+          }
 
+          .form-control {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            border: 1px solid #ced4da;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            background-color: #fff;
+            color: var(--text-main);
+            
+            &.with-icon { padding-left: 2.5rem; }
             &:focus {
-              border-color: #66afe9;
-              box-shadow: 0 0 0 0.2rem rgba(102, 175, 233, 0.25);
+              border-color: var(--theme-color);
+              box-shadow: 0 0 0 3px var(--theme-color-light);
               outline: none;
             }
           }
-          
-          // Estilo específico para o container do checkbox
-          &.filtro-checkbox {
-            display: flex; // Para alinhar o label do checkbox corretamente
-            align-items: center; // Alinha o checkbox e o texto do label verticalmente
-            // padding-top: 1.5rem; // Se precisar de ajuste vertical para alinhar com outros labels que estão acima de inputs mais altos
-            
-            label { // O label que envolve o input checkbox e o texto
-              margin-bottom: 0; // Remove margem padrão do label aqui, pois ele é o container flex
-              display: flex;
-              align-items: center;
-              cursor: pointer;
-              font-weight: normal; // Texto do label do checkbox não precisa ser bold como os outros
-              width: 100%; // Para ocupar o espaço no grid
-            }
 
-            input[type="checkbox"].form-check-input { // Se estiver usando a classe do Bootstrap
-              margin-right: 0.5rem; // Espaço entre o checkbox e o texto
-              // Se não estiver usando .form-check-input, pode precisar de mais estilos:
-              // width: auto; 
-              // height: auto;
-              // vertical-align: middle; // ou similar
-            }
+          // CHECKBOX CUSTOMIZADO (TOGGLE)
+          &.checkbox-wrapper { padding-bottom: 0.6rem; }
+          .toggle-label {
+             display: flex;
+             align-items: center;
+             cursor: pointer;
+             gap: 10px;
+             
+             input { display: none; }
+             
+             .custom-checkbox {
+                width: 20px; height: 20px;
+                border: 2px solid #adb5bd;
+                border-radius: 4px;
+                position: relative;
+                transition: all 0.2s;
+             }
+             
+             input:checked + .custom-checkbox {
+                background-color: var(--color-organic);
+                border-color: var(--color-organic);
+                &::after {
+                   content: '✓';
+                   color: white;
+                   position: absolute;
+                   top: 50%; left: 50%;
+                   transform: translate(-50%, -50%);
+                   font-size: 12px;
+                }
+             }
+             
+             .label-text { font-size: 0.9rem; color: var(--text-main); font-weight: 500; }
           }
 
-
-          &.filtro-botao-limpar button {
+          // BOTÃO LIMPAR
+          .btn-limpar {
             width: 100%;
-            padding: 0.75rem 1rem;
-            font-size: 0.9rem;
-            border-radius: 0.5rem;
-            // Estilos do Bootstrap .btn .btn-outline-secondary são aplicados via classe no HTML
-          }
-        }
-      }
-    }
-  }
-
-  .bioinsumos-list-section {
-    h2 {
-      margin-bottom: 0.5rem;
-      font-size: 1.8rem;
-      color: var(--text-color);
-    }
-
-    .area-botoes-download { // Ou a classe que você usou para envolver os botões
-      margin-top: 0.5rem;
-      margin-bottom: 1.5rem;
-      display: flex;
-      gap: 10px;
-
-      .btn-download-texto {
-        @include base-button-style-general;
-        color: var(--surface-color);
-        background-color: var(--primary-color);
-        border: 1px solid var(--primary-color);
-
-        &:hover:not(:disabled) {
-          background-color: var(--primary-color-hover);
-          border-color: var(--primary-color-hover);
-        }
-        &:active:not(:disabled) {
-          background-color: var(--primary-color-active);
-          border-color: var(--primary-color-active);
-        }
-         &:disabled {
-           opacity: 0.65;
-           cursor: not-allowed;
-         }
-      }
-    }
-  }
-
-  .bioinsumo-card {
-    border: none;
-    border-radius: 1rem;
-    background: white;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.06);
-
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-    }
-
-    .card-header-custom {
-      margin-bottom: 1rem;
-      h3 {
-        margin: 0 0 0.25rem 0;
-        font-size: 1.6rem;
-        color: var(--primary-color);
-        line-height: 1.3;
-      }
-      p.categoria {
-        margin: 0;
-        font-size: 0.95rem;
-        color: #6c757d;
-      }
-    }
-
-    .card-details {
-      margin-top: 1rem;
-      border-top: 1px solid #e9ecef;
-      padding-top: 1rem;
-
-      p, div:not(.sub-details) {
-        margin-bottom: 0.6rem;
-        font-size: 0.95rem;
-        color: #343a40;
-        small {
-          line-height: 1.5;
-          strong {
-            color: #495057;
+            padding: 0.6rem;
+            background: #f1f3f5; 
+            border: 1px solid #ced4da;
+            color: var(--text-main);
+            border-radius: var(--border-radius-sm);
+            transition: all 0.2s;
             font-weight: 600;
+            cursor: pointer;
+            i { margin-right: 5px; color: var(--text-muted); }
+            
+            &:hover:not(:disabled) {
+              background-color: #e9ecef;
+              border-color: #adb5bd;
+              i { color: var(--text-main); }
+            }
+            &:disabled { opacity: 0.6; cursor: not-allowed; }
           }
         }
       }
-
-      .sub-details ul {
-        padding-left: 1.5rem;
-        list-style-type: disc;
-        margin-top: 0.25rem;
-        font-size: 0.9rem;
-        color: #495057;
-        li {
-          margin-bottom: 0.2rem;
-        }
-      }
-
-      hr {
-        margin: 1rem 0;
-      }
-
-      .agrofit-link a {
-        font-weight: bold;
-        color: #17a2b8;
-        text-decoration: underline;
-        &:hover {
-          color: #117a8b;
-        }
-      }
     }
   }
 
-  .paginacao {
-    margin-top: 2rem;
-    text-align: center;
+  /* --- LISTA --- */
+  .bioinsumos-list-section {
+    max-width: 900px;
+    margin: 0 auto;
 
-    button {
-      margin: 0 0.5rem;
-      border-radius: 0.5rem;
-      padding: 0.5rem 1rem;
-      font-weight: 500;
-      color: #6c757d;
-      background-color: transparent;
-      border: 1px solid #6c757d;
-      transition: background-color 0.2s ease, color 0.2s ease;
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
 
-      &:hover:not(:disabled) {
-        background-color: #6c757d;
+      h2 { font-size: 1.2rem; color: var(--text-muted); font-weight: 500; margin: 0; }
+
+      .btn-download-primary {
+        background-color: var(--theme-color);
+        border: none;
         color: white;
-      }
-      &:disabled {
-        opacity: 0.65;
-        cursor: not-allowed;
+        padding: 0.6rem 1.2rem;
+        border-radius: var(--border-radius-sm);
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        &:hover { background-color: var(--theme-color-hover); transform: translateY(-1px); }
+        &:active { transform: translateY(0); }
       }
     }
 
-    span {
-      display: inline-block;
-      margin: 0 1rem;
-      font-size: 1rem;
-      color: #6c757d;
-      vertical-align: middle;
+    /* --- CARD --- */
+    .bioinsumo-card {
+      background: var(--card-bg);
+      border-radius: var(--border-radius-lg);
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-left: 5px solid transparent; 
+      overflow: hidden;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-hover);
+        border-left-color: var(--theme-color);
+      }
+
+      &.expanded {
+        border-left-color: var(--theme-color);
+        box-shadow: var(--shadow-hover);
+      }
+
+      // Header do Card
+      .card-summary {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-main-info {
+          .badges-topo {
+            margin-bottom: 0.5rem;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+
+            .badge {
+              font-size: 0.7rem;
+              padding: 4px 8px;
+              border-radius: 4px;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+            .badge-categoria {
+              background-color: var(--theme-color-light);
+              color: var(--theme-color-hover);
+            }
+            .badge-organico {
+                background-color: var(--color-organic-bg);
+                color: var(--color-organic);
+            }
+          }
+
+          h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-brand);
+            margin: 0 0 0.25rem 0;
+            line-height: 1.2;
+          }
+          .titular {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
+            i { margin-right: 5px; opacity: 0.7; }
+          }
+        }
+
+        .card-action-icon {
+          color: #dee2e6;
+          font-size: 1.2rem;
+          margin-left: 1rem;
+          transition: color 0.2s;
+          .bioinsumo-card:hover &, .bioinsumo-card.expanded & { color: var(--theme-color); }
+        }
+      }
+
+      /* --- DETALHES INTERNOS --- */
+      .card-details {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        border-top: 1px solid #f1f3f5;
+        background-color: #fafbfc;
+        animation: slideDown 0.3s ease-out;
+
+        .detail-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+          padding-top: 1.5rem;
+
+          .detail-item {
+            &.full-width { grid-column: 1 / -1; }
+
+            .label {
+              display: block;
+              font-size: 0.75rem;
+              text-transform: uppercase;
+              color: #adb5bd;
+              font-weight: 700;
+              margin-bottom: 6px;
+            }
+
+            // Box de destaque para Alvos/Culturas
+            .destaque-box {
+                background: #fff;
+                border: 1px solid #e9ecef;
+                padding: 12px;
+                border-radius: 8px;
+                p { margin: 0; font-size: 0.95rem; color: var(--text-main); line-height: 1.5; }
+                .mt-1 { margin-top: 8px; }
+            }
+
+            // Grid de Ingredientes
+            .ingredientes-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                
+                .ingrediente-row {
+                    background: #fff;
+                    border: 1px solid #dee2e6;
+                    padding: 6px 12px;
+                    border-radius: 20px;
+                    font-size: 0.85rem;
+                    color: var(--primary-brand);
+                    .concentracao { color: var(--text-muted); margin-left: 5px; font-size: 0.85em; }
+                }
+            }
+
+            // Badges de Risco (Toxicologia) - ATUALIZADO
+            .risk-badges {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                
+                .risk-tag {
+                    font-size: 0.85rem;
+                    padding: 6px 12px;
+                    border-radius: 6px;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    line-height: 1.4;
+                    
+                    strong { font-weight: 700; margin-right: 3px; opacity: 0.9; }
+
+                    &.toxic { 
+                        background: var(--color-toxic-bg); 
+                        color: var(--color-toxic-text); 
+                        border: 1px solid var(--color-toxic-border);
+                    }
+                    &.env { 
+                        background: var(--color-env-bg); 
+                        color: var(--color-env-text);
+                        border: 1px solid var(--color-env-border);
+                    }
+                }
+            }
+
+            .lista-tecnica {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li { font-size: 0.9rem; margin-bottom: 4px; color: var(--text-main); }
+            }
+
+            // Botão Agrofit
+            .btn-agrofit {
+                display: block;
+                width: 100%;
+                text-align: center;
+                background: var(--theme-color);
+                color: white;
+                padding: 10px;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.9rem;
+                transition: background 0.2s;
+                &:hover { background: var(--theme-color-hover); }
+            }
+          }
+        }
+      }
+    }
+
+    // PAGINAÇÃO
+    .paginacao-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5rem;
+        gap: 1.5rem;
+        padding-bottom: 2rem;
+        
+        .info-paginacao { font-size: 0.95rem; color: var(--text-muted); strong { color: var(--primary-brand); } }
+        
+        .btn-paginacao {
+            background: white;
+            border: 1px solid #dee2e6;
+            padding: 0.5rem 1.2rem;
+            border-radius: var(--border-radius-sm);
+            color: var(--text-main);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &:hover:not(:disabled) { 
+                border-color: var(--theme-color); 
+                color: var(--theme-color); 
+                background-color: var(--theme-color-light);
+            }
+            &:disabled { background-color: #f8f9fa; color: #adb5bd; cursor: not-allowed; }
+        }
+    }
+
+    // EMPTY STATE
+    .empty-state {
+      text-align: center;
+      padding: 4rem 1rem;
+      color: var(--text-muted);
+      i { font-size: 3rem; margin-bottom: 1rem; opacity: 0.3; }
+      p { font-size: 1.1rem; margin-bottom: 1.5rem; }
+      .btn-link {
+        color: var(--theme-color);
+        font-weight: 600;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
 
-  .alert {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
+  /* --- HELPERS --- */
+  .state-container { text-align: center; padding: 3rem; color: var(--text-muted); }
+  .spinner {
+      border: 4px solid #f3f3f3; 
+      border-top: 4px solid var(--theme-color); 
+      border-radius: 50%;
+      width: 40px; height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem auto;
   }
-  .alert-warning {
-    border-left: 5px solid var(--accent-color);
-    background-color: #fff3cd;
-    color: #856404;
-  }
-  .alert.alert-light {
-    background-color: #fdfdfe;
-    border-color: #e2e3e5;
-    color: #54585c;
-  }
-  .alert.alert-info {
-      color: #0c5460;
-      background-color: #d1ecf1;
-      border-color: #bee5eb;
-  }
-  .alert.alert-danger {
-      color: #721c24;
-      background-color: #f8d7da;
-      border-color: #f5c6cb;
+  .alert { padding: 1rem; border-radius: var(--border-radius-sm); margin-bottom: 2rem; }
+  .alert-danger { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+  @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  
+  @media (max-width: 600px) {
+    .bioinsumos-list-section .bioinsumo-card .card-details .detail-grid { grid-template-columns: 1fr; }
   }
 }

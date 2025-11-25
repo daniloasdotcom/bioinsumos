@@ -1,0 +1,91 @@
+.graficos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+}
+
+.grafico-card {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+
+  // MUDANÇA CRUCIAL: Altura automática para acomodar filtros + gráfico sem vazar
+  height: auto !important; 
+  min-height: 450px; // Um tamanho mínimo visual
+  
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  h3 {
+    font-weight: bold !important;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  // Estiliza os campos de formulário do Material para ficarem alinhados
+  mat-form-field {
+    font-size: 14px;
+  }
+}
+
+// ---------------------------------------------
+// --- WRAPPER DO GRÁFICO (NOVO) ---
+// ---------------------------------------------
+// O wrapper define a área de desenho. O Chart.js precisa disso para
+// calcular o responsivo corretamente sem estourar a tela.
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: auto; // Empurra o gráfico para o fim se sobrar espaço
+  
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+// ---------------------------------------------
+// --- CONTROLE DE ALTURA DOS GRÁFICOS ---
+// ---------------------------------------------
+// Agora a classe no pai (card) controla a altura do filho (.chart-wrapper)
+
+// Gráficos Padrão (Bioinsumos, Inoculantes Tipo, Ingrediente)
+.h-default .chart-wrapper, 
+.h-auto .chart-wrapper {
+  height: 400px; // Altura segura para visualização desktop/mobile
+}
+
+// Gráfico de Espécies (precisa ser mais alto por causa dos nomes longos no eixo X)
+.h-long-labels .chart-wrapper {
+  height: 600px; // Aumentado para dar espaço aos rótulos verticais
+}
+
+// Ajustes para Mobile
+@media (max-width: 768px) {
+  .graficos-container {
+    padding: 0.5rem;
+  }
+
+  .grafico-card {
+    padding: 1rem;
+  }
+  
+  // No mobile, podemos permitir alturas diferentes se necessário
+  .h-long-labels .chart-wrapper {
+    height: 500px;
+  }
+}

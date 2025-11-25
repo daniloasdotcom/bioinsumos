@@ -1,24 +1,31 @@
 <div class="catalogos-container container">
   <header class="page-header text-center">
-    <h1>Nossos Catálogos</h1>
-    <p class="lead">Escolha abaixo o catálogo de bioinsumos que deseja consultar.</p>
+    <h1>Catálogo de Insumos</h1> <p class="lead">Selecione a categoria de tecnologia agrícola para consultar produtos registrados.</p>
   </header>
 
   <div class="opcoes-catalogo">
-    <a routerLink="/bioinsumos" class="opcao-card-link">
+    
+    <a routerLink="/biodefensivos" class="opcao-card-link card-biodefensivo">
       <div class="opcao-card">
-        <h2>Catálogo de Produtos Biológicos</h2>
-        <p>Consulte informações sobre fungicidas, inseticidas, nematicidas e outros produtos biológicos registrados.</p>
-        <span class="btn btn-primary btn-lg mt-auto">Acessar Produtos Biológicos</span>
+        <div class="icon-wrapper">
+          <i class="fas fa-shield-alt"></i> 
+        </div>
+        <h2>Biodefensivos e Controle</h2>
+        <p>Soluções para proteção de cultivos. Inclui fungicidas, inseticidas, semioquímicos e agentes de controle biológico.</p>
+        <span class="fake-btn">Acessar Biodefensivos</span>
       </div>
     </a>
 
-    <a routerLink="/inoculantes" class="opcao-card-link">
+    <a routerLink="/bioestimulantes" class="opcao-card-link card-bioestimulante">
       <div class="opcao-card">
-        <h2>Catálogo de Inoculantes</h2>
-        <p>Encontre detalhes sobre inoculantes registrados para diversas culturas e suas aplicações.</p>
-        <span class="btn btn-primary btn-lg mt-auto">Acessar Inoculantes</span>
+        <div class="icon-wrapper">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <h2>Bioestimulantes e Inoculantes</h2>
+        <p>Tecnologias para nutrição e fisiologia. Inclui fixadores de nitrogênio, promotores de crescimento e solubilizadores.</p>
+        <span class="fake-btn">Acessar Inoculantes</span>
       </div>
     </a>
+
   </div>
 </div>

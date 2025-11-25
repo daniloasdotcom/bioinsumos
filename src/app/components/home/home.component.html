@@ -1,29 +1,110 @@
-<div class="home-container container">
-  <section class="hero">
-    <h1>Bem-vindo ao Portal de Bioinsumos</h1>
-    <p>Informação confiável e atualizada sobre o uso sustentável de bioinsumos na agricultura brasileira.</p>
-    <a routerLink="/catalogos" class="cta-button">Explorar Catálogo</a>
-  </section>
+<div class="home-container">
 
-  <section class="features">
-    <h2>O que você encontra aqui:</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <i class="fas fa-leaf"></i>
-        <h3>Catálogo de Bioinsumos</h3>
-        <p>Explore nosso catálogo para encontrar informações detalhadas sobre diversos bioinsumos, suas categorias, culturas e alvos de aplicação.</p>
-      </div>
-      <div class="feature-item">
-        <i class="fa-solid fa-gavel"></i>
-        <h3>Legislação Pertinente</h3>
-        <p>Acesso fácil às leis, decretos e instruções normativas que regulamentam o setor de bioinsumos no Brasil.</p>
+  <section class="hero-wrapper">
+    <div class="hero-content">
+      <h1>Portal de Bioinsumos</h1>
+      <p class="subtitle">Tecnologia e sustentabilidade para o agro brasileiro.</p>
+      <p class="description">
+        Acesse dados confiáveis, legislação atualizada e
+        visualize as estatísticas através de nossos gráficos interativos.
+      </p>
+      <div class="hero-actions">
+        <a routerLink="/catalogos" class="btn-primary">Explorar Catálogo</a>
+        <a routerLink="/graficos" class="btn-outline">Ver Gráficos</a>
       </div>
     </div>
   </section>
 
-  <section class="call-to-action">
-    <h2>Mantenha-se Atualizado</h2>
-    <p>Consulte a legislação e as normativas que regem o uso de bioinsumos no Brasil.</p>
-    <a routerLink="/legislacao" class="cta-button">Ver Legislação</a>
-  </section>
+  <div class="main-content">
+    
+    <section class="stats" *ngIf="stats">
+      
+      <div class="stat-card">
+        <div class="icon-box green">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div class="stat-info">
+          <h3>{{ stats.totalBioinsumos }}</h3>
+          <p>Biodefensivos e Controle</p>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="icon-box blue">
+          <i class="fas fa-flask"></i>
+        </div>
+        <div class="stat-info">
+          <h3>{{ stats.totalInoculantes }}</h3>
+          <p>Bioestimulantes e Inoculantes</p>
+        </div>
+      </div>
+
+      <!--
+      <div class="stat-card">
+        <div class="icon-box purple">
+          <i class="fas fa-dna"></i>
+        </div>
+        <div class="stat-info">
+          <h3>{{ stats.totalEspecies }}</h3>
+          <p>Espécies</p>
+        </div>
+      </div>-->
+      
+      <!--
+      <div class="stat-card">
+        <div class="icon-box orange">
+          <i class="fas fa-tags"></i>
+        </div>
+        <div class="stat-info">
+          <h3>{{ stats.totalCategoriasUnificadas }}</h3>
+          <p>Categorias</p>
+        </div>
+      </div>-->
+
+    </section>
+
+    <section class="features">
+      <div class="section-header">
+        <h2>Explore o Portal</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="feature-grid">
+
+        <a routerLink="/catalogos" class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="feature-content">
+            <h3>Catálogo Completo</h3>
+            <p>Busque por produtos, pragas-alvo e culturas.</p>
+            <span class="link-text">Acessar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a routerLink="/graficos" class="feature-card highlight">
+          <div class="feature-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <div class="feature-content">
+            <h3>Dashboards & Gráficos</h3>
+            <p>Visualize a distribuição de produtos por categoria, ingrediente ativo e espécie.</p>
+            <span class="link-text">Visualizar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a routerLink="/legislacao" class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-gavel"></i>
+          </div>
+          <div class="feature-content">
+            <h3>Legislação</h3>
+            <p>Leis, decretos e instruções normativas que regulamentam o setor no Brasil.</p>
+            <span class="link-text">Consultar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </div>
 </div>

@@ -1,94 +1,129 @@
 :host {
-   --primary-color: #091C2B; // Sua cor primária
-   --text-color-light: #f8f9fa; // Para texto sobre fundo escuro
-   --card-hover-shadow-color: rgba(0, 0, 0, 0.1);
-   --card-active-shadow-color: rgba(0, 0, 0, 0.15);
- }
+  --primary-color: #091C2B; 
+  --defense-color: #D9534F; // Um tom avermelhado ou laranja para "Defesa/Alerta"
+  // OU se preferir algo mais sóbrio para defesa: --defense-color: #4A90E2; (Azul)
+  
+  --growth-color: #28A745; // Verde para "Vida/Planta"
+  
+  --text-color-muted: #6c757d;
+  --card-bg: #ffffff;
+}
 
 .catalogos-container {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 
   .page-header {
-    margin-bottom: 2.5rem;
-    text-align: center;
-
+    margin-bottom: 3rem;
+    
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #212529; // Cor de texto escura padrão
-    }
-
-    .lead {
-      font-size: 1.15rem;
-      color: #6c757d; // Cinza suave
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      font-weight: 700;
+      color: var(--primary-color);
     }
   }
 
   .opcoes-catalogo {
     display: grid;
-    // Cria colunas responsivas:
-    // - Mínimo de 300px de largura por card.
-    // - Se couber mais de um, eles se ajustam para preencher o espaço (1fr).
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; // Espaço entre os cards
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
 
     .opcao-card-link {
-      display: block; // Faz o link <a> se comportar como um bloco
+      display: block;
       text-decoration: none;
-      color: inherit; // Herda a cor do texto do pai, não azul padrão de link
-      border-radius: 0.5rem; // Aplica o arredondamento ao link, que é o elemento externo
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      background-color: #fff; // Cor de fundo para o link/card
-      border: 1px solid #dee2e6; // Borda sutil para o card
-      box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); // Sombra inicial
+      color: inherit;
+      background-color: var(--card-bg);
+      border-radius: 12px; // Um pouco mais arredondado, mais moderno
+      border: 1px solid #e9ecef;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative;
+      overflow: hidden; // Para conter a borda colorida superior
 
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        color: inherit;
-        transform: translateY(-5px); // Efeito de elevação no hover
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); // Sombra mais pronunciada no hover
-        outline: none; // Remove o outline padrão do foco para links, já que temos o shadow
+      // Borda superior colorida para identificação rápida
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6px; // Espessura da barra colorida
+        transition: height 0.2s ease;
+      }
+
+      // Cores Específicas por Categoria
+      &.card-biodefensivo {
+        &::before { background-color: var(--primary-color); } // Usando seu azul escuro ou uma cor de defesa
+        .icon-wrapper { color: var(--primary-color); background: rgba(9, 28, 43, 0.1); }
+        .fake-btn { background-color: var(--primary-color); color: #fff; }
+      }
+
+      &.card-bioestimulante {
+        &::before { background-color: var(--growth-color); }
+        .icon-wrapper { color: var(--growth-color); background: rgba(40, 167, 69, 0.1); }
+        .fake-btn { background-color: var(--growth-color); color: #fff; }
+      }
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+
+        // Efeito sutil: a barra superior fica um pouco mais grossa ou brilha
+        &::before {
+          height: 8px;
+        }
       }
 
       .opcao-card {
-        // Como o <a> agora tem fundo, borda e sombra, o .opcao-card interno
-        // pode ser mais simples, focando no padding e layout do conteúdo.
-        padding: 2rem;
+        padding: 2.5rem 2rem;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; // Alinha o botão no final
-        height: 100%; // Faz o card ocupar toda a altura do link <a>
+        align-items: center; // Centraliza tudo horizontalmente
+        height: 100%;
+
+        .icon-wrapper {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          transition: transform 0.3s ease;
+        }
 
         h2 {
-          font-size: 1.75rem;
-          // Se --primary-color não estiver global, defina uma cor aqui:
-          // color: #0056b3;
-          color: var(--primary-color, #0056b3); // Usa variável com fallback
+          font-size: 1.5rem;
+          font-weight: 600;
           margin-bottom: 1rem;
+          color: #343a40;
         }
 
         p {
           font-size: 1rem;
-          color: #495057;
-          margin-bottom: 1.5rem;
-          flex-grow: 1; // Permite que o parágrafo cresça, empurrando o botão para baixo
-          line-height: 1.6; // Melhora a legibilidade
+          color: var(--text-color-muted);
+          margin-bottom: 2rem;
+          line-height: 1.6;
+          flex-grow: 1;
         }
 
-        .btn { // Estilo para o elemento que se parece com botão dentro do card
-          // Se você estiver usando Bootstrap, as classes .btn, .btn-primary, .btn-lg já farão o trabalho.
-          // Se não, você pode adicionar estilos base de botão aqui.
-          // Exemplo de como garantir que ele ocupe a largura e tenha margem:
+        // "Botão Falso" - Visualmente um botão, mas parte do card clicável
+        .fake-btn {
+          display: inline-block;
+          padding: 0.75rem 2rem;
+          border-radius: 50px; // Pill shape
+          font-weight: 600;
+          font-size: 0.95rem;
+          transition: opacity 0.2s;
           width: 100%;
-          padding: 0.65rem 1.5rem; // Padding para o botão interno
-          font-size: 1.1rem;    // Tamanho da fonte do botão interno
-          // margin-top: auto; // Já está sendo empurrado para baixo pelo flex-grow do <p>
+          max-width: 240px;
+          
+          // No hover do card pai, o botão pode dar um feedback visual
+          .opcao-card-link:hover & {
+             opacity: 0.9;
+             transform: scale(1.02);
+          }
         }
       }
     }

@@ -100,7 +100,26 @@ export class BioinsumosComponent implements OnInit {
     );
   }
 
-  private mapearParaDisplay(apiItem: ApiBioinsumo): BioinsumoDisplay {
+  // NO ARQUIVO bioinsumos.component.ts
+
+private mapearParaDisplay(apiItem: ApiBioinsumo): BioinsumoDisplay {
+    // 🔹 Normalizar praga_nome_comum
+    if (apiItem.indicacao_uso) {
+      apiItem.indicacao_uso = apiItem.indicacao_uso.map(ind => {
+        let nomesComuns: string[] = [];
+
+        if (Array.isArray(ind.praga_nome_comum)) {
+          nomesComuns = ind.praga_nome_comum;
+        } else if (typeof ind.praga_nome_comum === 'string') {
+          nomesComuns = [ind.praga_nome_comum];
+        }
+
+        return {
+          ...ind,
+          praga_nome_comum: nomesComuns
+        };
+      });
+    }
     const nome = apiItem.marca_comercial?.[0] || 'Nome Indisponível';
     const categorias = (apiItem.classe_categoria_agronomica && apiItem.classe_categoria_agronomica.length > 0) ?
                        [...apiItem.classe_categoria_agronomica] : ['Categoria Indisponível'];
@@ -115,9 +134,23 @@ export class BioinsumosComponent implements OnInit {
     if (apiItem.indicacao_uso && apiItem.indicacao_uso.length > 0) {
       const alvosUnicos = new Set<string>();
       apiItem.indicacao_uso.forEach(iu => {
-        if (iu.praga_nome_comum && iu.praga_nome_comum.length > 0) {
-          iu.praga_nome_comum.forEach(pnc => { if (pnc) alvosUnicos.add(pnc); });
-        } else if (iu.praga_nome_cientifico) {
+        
+        // INÍCIO DA CORREÇÃO: Tratar o campo praga_nome_comum se não for um array
+        let nomesComuns: string[] = [];
+        if (iu.praga_nome_comum) {
+          if (Array.isArray(iu.praga_nome_comum)) {
+            nomesComuns = iu.praga_nome_comum as string[];
+          } else if (typeof iu.praga_nome_comum === 'string') {
+            nomesComuns = [iu.praga_nome_comum]; // Converte string para array de um elemento
+          }
+        }
+        
+        if (nomesComuns.length > 0) {
+          nomesComuns.forEach(pnc => { if (pnc) alvosUnicos.add(pnc); });
+        } 
+        // FIM DA CORREÇÃO
+
+        else if (iu.praga_nome_cientifico) {
           if (iu.praga_nome_cientifico) alvosUnicos.add(iu.praga_nome_cientifico);
         }
       });
@@ -137,7 +170,9 @@ export class BioinsumosComponent implements OnInit {
     };
   }
 
-  private extrairFiltrosUnicos(): void {
+  // NO ARQUIVO bioinsumos.component.ts
+
+private extrairFiltrosUnicos(): void {
     const todasAsCategoriasSet = new Set<string>();
     const todasAsPragasCientificasSet = new Set<string>();
     const todasAsPragasComunsSet = new Set<string>();
@@ -154,11 +189,24 @@ export class BioinsumosComponent implements OnInit {
           if (indicacao.praga_nome_cientifico) {
             todasAsPragasCientificasSet.add(indicacao.praga_nome_cientifico);
           }
-          if (indicacao.praga_nome_comum && indicacao.praga_nome_comum.length > 0) {
-            indicacao.praga_nome_comum.forEach(pnc => {
+          
+          // INÍCIO DA CORREÇÃO: Tratar o campo praga_nome_comum
+          let nomesComuns: string[] = [];
+          if (indicacao.praga_nome_comum) {
+             if (Array.isArray(indicacao.praga_nome_comum)) {
+               nomesComuns = indicacao.praga_nome_comum as string[];
+             } else if (typeof indicacao.praga_nome_comum === 'string') {
+               nomesComuns = [indicacao.praga_nome_comum]; // Converte string para array
+             }
+          }
+          
+          if (nomesComuns.length > 0) {
+            nomesComuns.forEach(pnc => { // Iteração segura sobre array
               if (pnc) todasAsPragasComunsSet.add(pnc);
             });
           }
+          // FIM DA CORREÇÃO
+          
         });
       }
     });

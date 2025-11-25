@@ -1,0 +1,81 @@
+<ng-container *ngIf="isBrowser">
+
+  <bio-categorias-chart [dados]="dadosBioinsumos"></bio-categorias-chart>
+
+
+  <div class="grafico-card h-auto">
+    <h3><strong>Por Ingrediente Ativo - Biodefensivos e Controle</strong></h3>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+      
+      <mat-form-field appearance="outline" style="flex: 1; min-width: 200px;">
+        <mat-label>Ingrediente (Gênero/Espécie)</mat-label>
+        <mat-select [(ngModel)]="ingredienteSelecionado" (selectionChange)="aoSelecionarIngrediente()">
+          <mat-option *ngFor="let ing of ingredientesDisponiveis" [value]="ing">
+            {{ ing }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" style="flex: 1; min-width: 200px;" *ngIf="subtiposDisponiveis.length > 0">
+        <mat-label>Filtrar por Cepa/Isolado</mat-label>
+        <mat-select [(ngModel)]="subtipoSelecionado" (selectionChange)="aoSelecionarSubtipo()">
+          <mat-option value="">Todas as Cepas/Isolados</mat-option>
+          <mat-option *ngFor="let sub of subtiposDisponiveis" [value]="sub">
+            {{ sub }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </div>
+
+    <ng-container *ngIf="ingredienteSelecionado; else semSelecao">
+      <div class="chart-wrapper">
+        <canvas baseChart
+          [data]="ingredienteChartData"
+          [options]="ingredienteChartOptions"
+          chartType="bar">
+        </canvas>
+      </div>
+    </ng-container>
+
+    <ng-template #semSelecao>
+      <div style="display: flex; align-items: center; justify-content: center; color: #666; text-align: center; padding: 0 20px;">
+        <p>Selecione um ingrediente acima para visualizar a distribuição.</p>
+      </div>
+    </ng-template>
+  </div>
+
+  <div class="grafico-card h-default">
+    <h3><strong>Distribuição por Tipo - Bioestimulantes e Inoculantes</strong></h3>
+    
+    <div class="chart-wrapper">
+      <canvas baseChart
+        [data]="inocChartData"
+        [options]="inocChartOptions"
+        chartType="bar">
+      </canvas>
+    </div>
+  </div>
+
+  <div class="grafico-card h-long-labels">
+    <h3><strong>Distribuição por Espécie - Bioestimulantes e Inoculantes</strong></h3>
+
+    <mat-form-field appearance="outline" style="width: 250px; margin-bottom: 16px;">
+      <mat-label>Filtrar por Tipo</mat-label>
+      <mat-select [(ngModel)]="tipoSelecionado" (selectionChange)="atualizarEspecieChart()">
+        <mat-option value="">Todos</mat-option>
+        <mat-option *ngFor="let t of tiposDisponiveis" [value]="t">{{ t }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="chart-wrapper">
+      <canvas baseChart
+        [data]="especieChartData"
+        [options]="especieChartOptions"
+        chartType="bar">
+      </canvas>
+    </div>
+  </div>
+
+</ng-container>
