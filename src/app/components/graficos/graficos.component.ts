@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { BioCategoriasChartComponent } from '../bio-categorias-chart/bio-categorias-chart.component';
+import { BioCatIngredChartComponent } from '../bio-cat-ingred-chart/bio-cat-ingred-chart.component';
 
 Chart.register(ChartDataLabels);
 
@@ -22,7 +23,7 @@ interface InfoIngrediente {
 @Component({
   selector: 'app-graficos',
   standalone: true,
-  imports: [CommonModule, NgChartsModule, FormsModule, MatFormFieldModule, MatSelectModule, MatOptionModule, BioCategoriasChartComponent],
+  imports: [CommonModule, NgChartsModule, FormsModule, MatFormFieldModule, MatSelectModule, MatOptionModule, BioCategoriasChartComponent, BioCatIngredChartComponent],
   templateUrl: './graficos.component.html',
   styleUrl: './graficos.component.scss'
 })

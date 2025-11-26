@@ -1,0 +1,36 @@
+<div class="grafico-card h-default">
+  <div class="header-action">
+    <h3>Ingredientes</h3>
+    
+    <div class="controls">
+      <div class="select-wrapper category-select">
+        <select (change)="onCategoriaChange($event)" class="custom-select">
+          <option value="" disabled [selected]="!categoriaSelecionada">Selecione uma categoria...</option>
+          <option 
+            *ngFor="let cat of categoriasDisponiveis" 
+            [value]="cat"
+            [selected]="cat === categoriaSelecionada">
+            {{ cat }}
+          </option>
+        </select>
+      </div>
+
+      <div class="select-wrapper sort-select">
+        <select (change)="onOrdenacaoChange($event)" class="custom-select">
+          <option value="quantidade" [selected]="ordenacaoAtual === 'quantidade'">Por Quantidade</option>
+          <option value="alfabetica" [selected]="ordenacaoAtual === 'alfabetica'">De A a Z</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-wrapper" *ngIf="hasData; else emptyState">
+    <canvas baseChart [data]="chartData" [options]="chartOptions" chartType="bar"></canvas>
+  </div>
+
+  <ng-template #emptyState>
+    <div class="empty-msg">
+      <p>Nenhum ingrediente encontrado.</p>
+    </div>
+  </ng-template>
+</div>

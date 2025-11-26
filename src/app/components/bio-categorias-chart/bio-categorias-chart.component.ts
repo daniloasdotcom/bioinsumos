@@ -1,7 +1,7 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { NgChartsModule } from 'ng2-charts';
-import { ChartData, ChartOptions, Chart } from 'chart.js';
+import { NgChartsModule, BaseChartDirective } from 'ng2-charts';
+import { ChartData, ChartOptions, Chart, ScriptableContext } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 Chart.register(ChartDataLabels);
@@ -14,22 +14,14 @@ Chart.register(ChartDataLabels);
   styleUrls: ['./bio-categorias-chart.component.scss']
 })
 export class BioCategoriasChartComponent implements OnInit, OnChanges {
-
-  @Input() dados: any[] = []; // Recebe os dados do componente pai
+  @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
+  @Input() dados: any[] = [];
 
   public chartData: ChartData<'bar'> = { labels: [], datasets: [] };
   public chartOptions!: ChartOptions<'bar'>;
 
   public isMobile = false;
   private isBrowser: boolean;
-
-  private readonly chartColor = '#78C655';
-  private readonly borderRadiusConfig = {
-    topLeft: 8,
-    topRight: 8,
-    bottomLeft: 0,
-    bottomRight: 0
-  };
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {
     this.isBrowser = isPlatformBrowser(this.platformId);
@@ -53,88 +45,92 @@ export class BioCategoriasChartComponent implements OnInit, OnChanges {
     this.dados.forEach(item => {
       if (item.classe_categoria_agronomica?.length) {
         item.classe_categoria_agronomica.forEach((cat: string) => {
-          contagem[cat] = (contagem[cat] || 0) + 1;
+          // Remove espaços extras e padroniza
+          const cleanCat = cat.trim(); 
+          contagem[cleanCat] = (contagem[cleanCat] || 0) + 1;
         });
       }
     });
 
-    const valores = Object.values(contagem);
-    const maxY = Math.ceil(Math.max(...valores) * 1.2);
+    // 1. ORDENAÇÃO: Transforma em array e ordena do maior para o menor
+    const sortedEntries = Object.entries(contagem).sort((a, b) => b[1] - a[1]);
+    
+    const labels = sortedEntries.map(e => e[0]);
+    const valores = sortedEntries.map(e => e[1]);
+
+    // Configuração para Gradiente (Opcional, mas bonito)
+    const getGradient = (context: ScriptableContext<'bar'>) => {
+      const ctx = context.chart.ctx;
+      const gradient = ctx.createLinearGradient(0, 0, context.chart.width, 0);
+      gradient.addColorStop(0, '#78C655'); // Cor original
+      gradient.addColorStop(1, '#5da63e'); // Um tom um pouco mais escuro
+      return gradient;
+    };
 
     this.chartData = {
-      labels: Object.keys(contagem),
+      labels: labels,
       datasets: [{
         data: valores,
-        backgroundColor: this.chartColor,
-        borderRadius: this.borderRadiusConfig,
-        borderSkipped: false
+        backgroundColor: getGradient, // Usa gradiente ou volte para '#78C655'
+        hoverBackgroundColor: '#4a8f30',
+        // Ajusta borda para barras horizontais (arredonda a ponta direita)
+        borderRadius: { topLeft: 0, bottomLeft: 0, topRight: 6, bottomRight: 6 },
+        borderSkipped: false,
+        barPercentage: 0.7, // Barras um pouco mais finas e elegantes
+        categoryPercentage: 0.9
       }]
     };
 
     this.chartOptions = {
+      // 2. MUDANÇA ESTRUTURAL: Eixo Y vira o índice (Barra Horizontal)
+      indexAxis: 'y', 
       responsive: true,
       maintainAspectRatio: false,
-      animation: {
-        duration: 600,
-        easing: 'easeOutQuart'
-      },
       layout: {
-        padding: { top: 40, bottom: this.isMobile ? 90 : 40 }
+        padding: { right: 30, left: 0 } // Espaço para o label do valor
       },
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: 'rgba(0,0,0,0.8)',
-          bodyFont: { size: 13 },
-          titleFont: { size: 14, weight: 'bold' },
-          padding: 10,
-          displayColors: false
+          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+          titleColor: '#333',
+          bodyColor: '#666',
+          borderColor: '#ddd',
+          borderWidth: 1,
+          padding: 12,
+          displayColors: false,
+          callbacks: {
+            title: (items) => items[0].label, // Mostra o nome completo
+          }
         },
         datalabels: {
           anchor: 'end',
-          align: 'top',
-          backgroundColor: 'rgba(0,0,0,0.65)',
-          borderRadius: 6,
-          padding: 4,
-          color: '#fff',
-          font: { size: 12, weight: 'bold' }
+          align: 'end', // Coloca o número DEPOIS da barra
+          offset: 4,
+          backgroundColor: '#ebf5e6', // Fundo claro para contraste
+          borderRadius: 4,
+          padding: { top: 2, bottom: 2, left: 6, right: 6 },
+          color: '#000000',
+          font: { size: 11, weight: 'bold' },
+          formatter: (value) => value // Apenas o número
         }
       },
       scales: {
         x: {
-          grid: { display: false },
-          ticks: {
-            font: { size: 11, family: 'Roboto' },
-            padding: 6,
-            autoSkip: false,
-            maxRotation: this.isMobile ? 90 : 90,
-            minRotation: this.isMobile ? 90 : 90,
-            callback: function (value) {
-              const label = String(this.getLabelForValue(Number(value)));
-              const maxLen = 18;
-              const words = label.split(" ");
-              let lines = [];
-              let line = "";
-              for (const w of words) {
-                const test = line ? line + " " + w : w;
-                if (test.length <= maxLen) line = test;
-                else { if (line) lines.push(line); line = w; }
-              }
-              if (line) lines.push(line);
-              return lines;
-            }
-          }
+          position: 'top', // Opcional: coloca a régua numérica em cima ou tira
+          display: false, // Oculta o eixo X numérico (limpa o visual)
+          grid: { display: false }
         },
         y: {
-          beginAtZero: true,
-          grid: { color: 'rgba(0,0,0,0.08)' },
-          ticks: {
-            font: { size: 12 }
+          grid: { 
+            display: false // Remove linhas de grade horizontais
           },
-          title: {
-            display: true,
-            text: 'Quantidade',
-            font: { size: 14, weight: 'bold' }
+          ticks: {
+            font: { size: 12, family: 'Roboto', weight: 500 },
+            color: '#000000',
+            autoSkip: false,
+            // Não precisa mais daquela função complexa de quebra de linha!
+            mirror: false 
           }
         }
       }
