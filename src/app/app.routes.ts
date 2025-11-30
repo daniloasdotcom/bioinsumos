@@ -7,6 +7,7 @@ import { BioinsumosComponent } from './components/bioinsumos/bioinsumos.componen
 import { InoculantesComponent } from './components/inoculantes/inoculantes.component'; // <--- IMPORTE AQUI
 import { BioinsumosDisplayComponent } from './components/bioinsumos-display/bioinsumos-display.component';
 import { GraficosComponent } from './components/graficos/graficos.component';
+import { BuscaGuiadaComponent } from './components/busca-guiada/busca-guiada.component';
 
 
 export const routes: Routes = [
@@ -28,6 +29,11 @@ export const routes: Routes = [
     path: 'lista-bioinsumos-api',
     component: BioinsumosDisplayComponent,
     title: 'Bioinsumos da API | Portal Bioinsumos'
+  },
+  {
+    path: 'busca-guiada',
+    component: BuscaGuiadaComponent,
+    title: 'Busca Guiada | Portal Bioinsumos'
   },
   {
     path: 'graficos',

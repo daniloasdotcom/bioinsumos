@@ -1,0 +1,81 @@
+// O Card Principal (Master)
+.master-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+// Cabeçalho: Título na esquerda, Select na direita (em desktop)
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+
+  h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+
+  .select-cultura {
+    min-width: 250px;
+    // Ajuste fino para alinhar a altura do input com o título
+    font-size: 0.9rem; 
+    
+    @media (max-width: 768px) {
+      width: 100%; // Mobile: Ocupa tudo
+    }
+  }
+}
+
+// Linhas divisórias
+.divider-main {
+  border: 0;
+  border-top: 2px solid #f0f0f0;
+  margin: 0 0 1.5rem 0;
+}
+
+.divider-section {
+  border: 0;
+  border-top: 1px dashed #e0e0e0;
+  margin: 2rem 0;
+}
+
+// Estilo de cada Seção de Gráfico
+.chart-section {
+  width: 100%;
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    border-left: 4px solid #78C655; // Um detalhe visual verde ao lado do título
+    text-transform: uppercase;
+  }
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  // A altura vem inline do HTML ([style.height])
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+  font-style: italic;
+  background: #fafafa;
+  border-radius: 8px;
+}

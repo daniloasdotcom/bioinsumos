@@ -1,0 +1,43 @@
+<div class="grafico-card master-card">
+  
+  <div class="card-header-row">
+    <h3><strong>Total de Bioestimulantes e Inoculantes por Cultura</strong></h3>
+    
+    <mat-form-field appearance="outline" class="select-cultura">
+      <mat-label>Selecione a Cultura</mat-label>
+      <mat-select [(ngModel)]="culturaSelecionada" (selectionChange)="onCulturaChange()">
+        <mat-option *ngFor="let cultura of culturasDisponiveis" [value]="cultura">
+          {{ cultura }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <hr class="divider-main">
+
+  <div class="card-body" *ngIf="listaGraficos.length > 0; else semDados">
+    
+    <div class="chart-section" *ngFor="let item of listaGraficos; let last = last">
+      
+      <h4>{{ item.titulo }}</h4>
+      
+      <div class="chart-wrapper" [style.height]="item.altura">
+        <canvas baseChart
+          [data]="item.dados"
+          [options]="item.opcoes"
+          [type]="'bar'">
+        </canvas>
+      </div>
+
+      <hr *ngIf="!last" class="divider-section">
+    </div>
+
+  </div>
+
+  <ng-template #semDados>
+    <div class="empty-msg">
+      Nenhum dado disponível para a cultura selecionada.
+    </div>
+  </ng-template>
+
+</div>

@@ -1,0 +1,282 @@
+<div class="guiada-container container">
+  
+  <header class="wizard-header">
+    <h1><i class="fas fa-compass"></i> Assistente de Bioinsumos</h1>
+    <p>Identifique o problema para encontrar a solução biológica ideal.</p>
+    
+    <div class="stepper">
+      <div class="step" [class.active]="passoAtual >= 1" [class.completed]="passoAtual > 1">
+        <div class="step-circle">1</div>
+        <span>Cultura</span>
+      </div>
+      <div class="line" [class.filled]="passoAtual > 1"></div>
+      <div class="step" [class.active]="passoAtual >= 2" [class.completed]="passoAtual > 2">
+        <div class="step-circle">2</div>
+        <span>Praga/Doença</span>
+      </div>
+      <div class="line" [class.filled]="passoAtual > 2"></div>
+      <div class="step" [class.active]="passoAtual === 3">
+        <div class="step-circle">3</div>
+        <span>Soluções</span>
+      </div>
+    </div>
+  </header>
+
+  <div *ngIf="isLoading" class="loading-state">
+    <div class="spinner"></div>
+    <p>Carregando catálogo completo...</p>
+  </div>
+
+  <div class="wizard-content" *ngIf="!isLoading">
+
+    <div class="nav-controls" *ngIf="passoAtual > 1">
+      <button class="btn-voltar" (click)="voltar()">
+        <i class="fas fa-arrow-left"></i> Voltar
+      </button>
+      
+      <div class="resumo-selecao" *ngIf="passoAtual === 3">
+        <span class="badge-resumo">{{ culturaSelecionada }}</span>
+        <i class="fas fa-chevron-right"></i>
+        <span class="badge-resumo">{{ pragaSelecionada }}</span>
+      </div>
+    </div>
+
+    <section *ngIf="passoAtual === 1" class="step-section fade-in">
+      <div class="header-step">
+        <h2>O que você vai cultivar?</h2>
+        <div class="search-input-wrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" [(ngModel)]="filtroTextoBotao" placeholder="Ex: Soja, Milho, Tomate...">
+        </div>
+      </div>
+
+      <div class="grid-botoes">
+        <button 
+          *ngFor="let cultura of culturasFiltradasDisplay" 
+          (click)="escolherCultura(cultura)"
+          class="btn-card cultura">
+          <i class="fas fa-seedling"></i>
+          <span>{{ cultura }}</span>
+        </button>
+      </div>
+      
+      <p *ngIf="culturasFiltradasDisplay.length === 0" class="no-results">
+        Nenhuma cultura encontrada com este nome.
+      </p>
+    </section>
+
+    <section *ngIf="passoAtual === 2" class="step-section fade-in">
+      
+      <div class="header-step compact">
+        <h2>Qual é o alvo ou problema?</h2>
+        <div class="search-input-wrapper compact">
+            <i class="fas fa-search"></i>
+            <input type="text" 
+                   [(ngModel)]="filtroTextoBotao" 
+                   (input)="aoDigitarFiltro()"
+                   placeholder="Filtrar praga...">
+        </div>
+      </div>
+      
+      <div *ngIf="pragasEspecificasFiltradas.length > 0" class="accordion-wrapper zone-especifica">
+        
+        <div class="accordion-header interactive-header variant-purple" 
+             (click)="toggleEspecificos()"
+             [class.active]="exibirPragasEspecificas">
+            
+            <div class="header-content">
+                <span class="icon-box"><i class="fas fa-bullseye"></i></span>
+                <div class="text-group">
+                    <span class="pre-title">Específicos para</span>
+                    <strong>{{ culturaSelecionada }}</strong>
+                    <small>Pragas cadastradas diretamente para esta cultura</small>
+                </div>
+            </div>
+
+            <div class="action-indicator">
+                <span class="label-click">Ver pragas</span>
+                <i class="fas fa-chevron-down chevron"></i>
+            </div>
+        </div>
+        
+        <div class="accordion-content" *ngIf="exibirPragasEspecificas">
+            <div class="grid-botoes">
+                <button *ngFor="let praga of pragasEspecificasFiltradas" 
+                        (click)="escolherPraga(praga.nome)" 
+                        class="btn-card praga variant-purple">
+                    <div class="content">
+                        <span class="nome-comum">{{ praga.nome }}</span>
+                        <span class="nome-cientifico" *ngIf="praga.cientifico"><i>{{ praga.cientifico }}</i></span>
+                    </div>
+                    <i class="fas fa-bullseye icon-bg"></i>
+                </button>
+            </div>
+        </div>
+      </div>
+
+      <div *ngIf="pragasGeraisFiltradas.length > 0" class="accordion-wrapper zone-multicultura">
+        
+        <div class="accordion-header interactive-header variant-green" 
+             (click)="toggleGerais()"
+             [class.active]="exibirPragasGerais">
+            
+            <div class="header-content">
+                <span class="icon-box"><i class="fas fa-globe-americas"></i></span>
+                <div class="text-group">
+                    <span class="pre-title">Outros Alvos</span>
+                    <strong>Multiculturas</strong>
+                    <small>Pragas listadas em produtos que atendem "Todas as Culturas"</small>
+                </div>
+            </div>
+
+            <div class="action-indicator">
+                <span class="label-click">Ver pragas</span>
+                <i class="fas fa-chevron-down chevron"></i>
+            </div>
+        </div>
+
+        <div class="accordion-content" *ngIf="exibirPragasGerais">
+            <div class="grid-botoes">
+                <button *ngFor="let praga of pragasGeraisFiltradas" 
+                        (click)="escolherPraga(praga.nome)" 
+                        class="btn-card praga variant-green">
+                    <div class="content">
+                        <span class="nome-comum">{{ praga.nome }}</span>
+                        <span class="nome-cientifico" *ngIf="praga.cientifico"><i>{{ praga.cientifico }}</i></span>
+                    </div>
+                    <i class="fas fa-globe-americas icon-bg"></i>
+                </button>
+            </div>
+        </div>
+      </div>
+
+      <p *ngIf="pragasEspecificasFiltradas.length === 0 && pragasGeraisFiltradas.length === 0" class="no-results">
+          Nenhuma praga encontrada com este nome.
+      </p>
+    </section>
+
+    <section *ngIf="passoAtual === 3" class="step-section fade-in">
+      
+      <div class="results-header">
+        <h2>{{ produtosEspecificos.length + produtosGerais.length }} Soluções Encontradas</h2>
+        <button class="btn-reiniciar" (click)="reiniciar()">Nova Busca</button>
+      </div>
+
+      <div class="lista-resultados">
+        
+        <div *ngIf="produtosEspecificos.length > 0" class="secao-resultados">
+            <h3 class="titulo-secao especifico">
+                <span class="icon-box small"><i class="fas fa-bullseye"></i></span>
+                <div>Específicos para {{ culturaSelecionada }}</div>
+                <span class="count">{{ produtosEspecificos.length }}</span>
+            </h3>
+            
+            <ng-container *ngFor="let bio of produtosEspecificos">
+                <ng-container *ngTemplateOutlet="cardProduto; context: { $implicit: bio }"></ng-container>
+            </ng-container>
+        </div>
+
+        <hr *ngIf="produtosEspecificos.length > 0 && produtosGerais.length > 0" class="divisor-secoes">
+
+        <div *ngIf="produtosGerais.length > 0" class="secao-resultados">
+            <h3 class="titulo-secao geral">
+                <span class="icon-box small"><i class="fas fa-globe-americas"></i></span>
+                <div>Multiculturas (Todas as Culturas)</div>
+                <span class="count">{{ produtosGerais.length }}</span>
+            </h3>
+            <p class="desc-secao">Produtos registrados para este alvo em qualquer cultura.</p>
+            <ng-container *ngFor="let bio of produtosGerais">
+                <ng-container *ngTemplateOutlet="cardProduto; context: { $implicit: bio }"></ng-container>
+            </ng-container>
+        </div>
+
+      </div>
+      
+      <div *ngIf="produtosEspecificos.length === 0 && produtosGerais.length === 0" class="empty-final">
+        <i class="fas fa-search-minus"></i>
+        <p>Não encontramos produtos para esta combinação.</p>
+        <button (click)="voltar()" class="btn-link">Escolher outra praga</button>
+      </div>
+
+    </section>
+
+  </div>
+</div>
+
+<ng-template #cardProduto let-bio>
+    <div class="result-card" [class.expanded]="bio.expandido" (click)="toggleExpandir(bio)">
+          
+        <div class="card-summary">
+          <div class="card-main-info">
+            <div class="badges-topo">
+              <span class="badge-cat" *ngFor="let cat of bio.categorias">{{ cat }}</span>
+              <span class="badge-org" *ngIf="bio.originalData['produto_agricultura_organica']">
+                <i class="fas fa-leaf"></i> Orgânico
+              </span>
+            </div>
+            
+            <h3>{{ bio.nome }}</h3>
+            
+            <p class="titular" *ngIf="bio.originalData['titular_registro']">
+              {{ bio.originalData['titular_registro'] }}
+            </p>
+          </div>
+          
+          <div class="card-action-icon">
+            <i class="fas" [ngClass]="bio.expandido ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+          </div>
+        </div>
+
+        <div *ngIf="bio.expandido" class="card-details">
+          <div class="detail-grid">
+            
+            <div class="detail-item full-width" *ngIf="bio.cultura || bio.alvo">
+              <span class="label">Indicações Principais</span>
+              <div class="destaque-box">
+                  <p *ngIf="bio.cultura"><strong>Culturas:</strong> {{ bio.cultura }}</p>
+                  <p *ngIf="bio.alvo" class="mt-1"><strong>Alvo Biológico:</strong> {{ bio.alvo }}</p>
+              </div>
+            </div>
+
+            <div class="detail-item full-width" *ngIf="bio.originalData['ingrediente_ativo_detalhado']?.length">
+               <span class="label">Ingredientes Ativos & Composição</span>
+               <div class="ingredientes-grid">
+                  <div class="ingrediente-row" *ngFor="let detalhe of bio.originalData['ingrediente_ativo_detalhado']">
+                     <strong>{{ detalhe.ingrediente_ativo }}</strong>
+                     <span class="concentracao" *ngIf="detalhe.concentracao">
+                        {{ detalhe.concentracao }} {{ detalhe.unidade_medida }}
+                     </span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="detail-item">
+               <span class="label">Classificação de Risco</span>
+               <div class="risk-badges">
+                  <span class="risk-tag toxic" *ngIf="bio.originalData['classificacao_toxicologica']">
+                      <span><strong>Toxicidade:</strong> {{ bio.originalData['classificacao_toxicologica'] }}</span>
+                  </span>
+                  <span class="risk-tag env" *ngIf="bio.originalData['classificacao_ambiental']">
+                      <span><strong>Ambiental:</strong> {{ bio.originalData['classificacao_ambiental'] }}</span>
+                  </span>
+               </div>
+            </div>
+
+            <div class="detail-item">
+                <span class="label">Dados de Registro</span>
+                <ul class="lista-tecnica">
+                    <li><strong>Reg. MAPA:</strong> {{ bio.originalData['numero_registro'] }}</li>
+                    <li *ngIf="bio.originalData['modo_acao']"><strong>Modo de Ação:</strong> {{ bio.originalData['modo_acao'] }}</li>
+                </ul>
+            </div>
+
+            <div class="detail-item full-width footer-actions" *ngIf="bio.originalData['url_agrofit']">
+                <a [href]="bio.originalData['url_agrofit']" target="_blank" (click)="$event.stopPropagation()" class="btn-agrofit">
+                    Consultar Ficha Completa no Agrofit
+                </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+</ng-template>

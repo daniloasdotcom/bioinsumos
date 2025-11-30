@@ -7,37 +7,35 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 2rem;
-  height: auto !important;
-  min-height: auto;
+  
+  // Flex layout para altura dinâmica (igual ao gráfico bom)
   display: flex;
   flex-direction: column;
+  min-height: 550px; 
 
   h3 {
-    font-weight: bold !important;
+    font-weight: bold;
     font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 12px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 1.5rem; // Espaço um pouco maior já que não tem filtros
+    text-align: center; // Centralizado fica melhor quando é só título
+    
+    @media (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
   }
 }
 
 .chart-wrapper {
   position: relative;
   width: 100%;
-  height: 800px;
-
-  canvas {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  
+  // Ocupa o espaço restante e garante altura mínima
+  flex-grow: 1;
+  min-height: 400px;
 }
 
-@media (max-width: 768px) {
-  .chart-wrapper {
-    height: 500px;
-  }
-}
-
+// Classe auxiliar caso você queira alinhar com o HTML
 .h-default .chart-wrapper {
-  height: 400px;
+  // Se quiser forçar uma altura específica em algum contexto
 }

@@ -1,29 +1,44 @@
 <div class="catalogos-container container">
   <header class="page-header text-center">
-    <h1>Catálogo de Insumos</h1> <p class="lead">Selecione a categoria de tecnologia agrícola para consultar produtos registrados.</p>
+    <h1>Catálogo de Insumos</h1>
+    <p class="lead">Selecione a categoria ou utilize nossa ferramenta de diagnóstico.</p>
   </header>
 
   <div class="opcoes-catalogo">
     
+    <!-- OPÇÃO 1: BIODEFENSIVOS -->
     <a routerLink="/biodefensivos" class="opcao-card-link card-biodefensivo">
       <div class="opcao-card">
         <div class="icon-wrapper">
           <i class="fas fa-shield-alt"></i> 
         </div>
-        <h2>Biodefensivos e Controle</h2>
-        <p>Soluções para proteção de cultivos. Inclui fungicidas, inseticidas, semioquímicos e agentes de controle biológico.</p>
-        <span class="fake-btn">Acessar Biodefensivos</span>
+        <h2>Biodefensivos</h2>
+        <p>Soluções para proteção de cultivos. Inclui fungicidas, inseticidas e agentes de controle biológico.</p>
+        <span class="fake-btn">Listar Biodefensivos</span>
       </div>
     </a>
 
+    <!-- OPÇÃO 2: BIOESTIMULANTES -->
     <a routerLink="/bioestimulantes" class="opcao-card-link card-bioestimulante">
       <div class="opcao-card">
         <div class="icon-wrapper">
           <i class="fas fa-seedling"></i>
         </div>
-        <h2>Bioestimulantes e Inoculantes</h2>
-        <p>Tecnologias para nutrição e fisiologia. Inclui fixadores de nitrogênio, promotores de crescimento e solubilizadores.</p>
-        <span class="fake-btn">Acessar Inoculantes</span>
+        <h2>Bioestimulantes</h2>
+        <p>Tecnologias para nutrição e fisiologia. Inclui fixadores de nitrogênio e promotores de crescimento.</p>
+        <span class="fake-btn">Listar Bioestimulantes</span>
+      </div>
+    </a>
+
+    <!-- NOVA OPÇÃO 3: BUSCA GUIADA -->
+    <a routerLink="/busca-guiada" class="opcao-card-link card-busca-guiada">
+      <div class="opcao-card">
+        <div class="icon-wrapper">
+          <i class="fas fa-compass"></i>
+        </div>
+        <h2>Busca Guiada</h2>
+        <p>Não sabe qual produto usar? Filtre passo a passo por cultura e praga para encontrar a solução ideal.</p>
+        <span class="fake-btn">Iniciar Diagnóstico</span>
       </div>
     </a>
 

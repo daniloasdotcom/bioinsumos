@@ -10,6 +10,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { BioCategoriasChartComponent } from '../bio-categorias-chart/bio-categorias-chart.component';
 import { BioCatIngredChartComponent } from '../bio-cat-ingred-chart/bio-cat-ingred-chart.component';
+import { BioInsumoTreemapChartComponent } from '../bio-insumo-treemap-chart/bio-insumo-treemap-chart.component';
 
 Chart.register(ChartDataLabels);
 
@@ -23,7 +24,7 @@ interface InfoIngrediente {
 @Component({
   selector: 'app-graficos',
   standalone: true,
-  imports: [CommonModule, NgChartsModule, FormsModule, MatFormFieldModule, MatSelectModule, MatOptionModule, BioCategoriasChartComponent, BioCatIngredChartComponent],
+  imports: [CommonModule, NgChartsModule, FormsModule, MatFormFieldModule, MatSelectModule, MatOptionModule, BioCategoriasChartComponent, BioCatIngredChartComponent, BioInsumoTreemapChartComponent],
   templateUrl: './graficos.component.html',
   styleUrl: './graficos.component.scss'
 })
