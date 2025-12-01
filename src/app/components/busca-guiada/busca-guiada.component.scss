@@ -54,6 +54,9 @@
   }
 
   // NOVO ESTILO DO HEADER CLICÁVEL
+  // ... (Mantenha o código anterior)
+
+  // NOVO ESTILO DO HEADER CLICÁVEL (FINAL)
   .interactive-header {
       background: #fff;
       border: 1px solid #e9ecef;
@@ -73,7 +76,6 @@
           transform: translateY(-2px);
           box-shadow: 0 8px 15px rgba(0,0,0,0.08);
           border-color: #dee2e6;
-          
           // Seta se mexe
           .action-indicator .chevron { transform: translateY(3px); }
       }
@@ -85,13 +87,10 @@
           border-bottom-color: transparent;
           background-color: #ffffff;
           
+          // Gira a seta
           .action-indicator .chevron { transform: rotate(180deg); }
           
-          // Oculta o texto quando aberto
-          .action-indicator .label-click { 
-              opacity: 0; 
-              transform: translateX(10px); 
-          }
+          // REMOVIDO: O texto agora fica visível!
       }
 
       // Conteúdo Esquerda
@@ -114,23 +113,23 @@
           }
       }
 
-      // --- INDICADOR DIREITA (TEXTO PRETO) ---
+      // Indicador Direita
       .action-indicator {
           display: flex; align-items: center; gap: 10px; color: #adb5bd;
           
           .label-click {
               font-size: 0.85rem; 
-              font-weight: 800; // Mais negrito
+              font-weight: 800; 
               text-transform: uppercase;
-              color: #000000; // PRETO PURO AGORA
+              color: #000000; // Preto
+              // Sempre visível e sem deslocamento
               opacity: 1; 
-              transform: translateX(0); 
-              transition: all 0.3s;
+              transform: none; 
           }
           .chevron { font-size: 1.2rem; transition: transform 0.3s ease; }
       }
 
-      // --- VARIAÇÕES DE COR ---
+      // --- VARIAÇÕES DE COR (Lógica de acender) ---
       
       // ROXO
       &.variant-purple {
@@ -138,8 +137,13 @@
           .icon-box { background: var(--guide-color-light); color: var(--guide-color); }
           .text-group .pre-title { color: var(--guide-color); }
           
-          &:hover {
-              .icon-box { background-color: var(--guide-color); color: white; box-shadow: 0 4px 10px rgba(102, 16, 242, 0.3); }
+          // MUDANÇA: Acende no Hover OU quando está Ativo (Aberto)
+          &:hover, &.active {
+              .icon-box { 
+                  background-color: var(--guide-color); 
+                  color: white; 
+                  box-shadow: 0 4px 10px rgba(102, 16, 242, 0.3); 
+              }
           }
       }
 
@@ -149,8 +153,13 @@
           .icon-box { background: #e9ecef; color: #495057; }
           .text-group .pre-title { color: #198754; }
           
-          &:hover {
-              .icon-box { background-color: #198754; color: white; box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3); }
+          // MUDANÇA: Acende no Hover OU quando está Ativo (Aberto)
+          &:hover, &.active {
+              .icon-box { 
+                  background-color: #198754; 
+                  color: white; 
+                  box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3); 
+              }
           }
       }
   }
