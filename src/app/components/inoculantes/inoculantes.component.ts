@@ -32,6 +32,12 @@ interface InoculanteDisplay {
   expandido?: boolean;
 }
 
+// NOVA INTERFACE: Para o resumo de contagem por tipo
+interface ResumoTipo {
+  tipo: string;
+  quantidade: number;
+}
+
 @Component({
   selector: 'app-inoculantes',
   standalone: true,
@@ -44,18 +50,27 @@ export class InoculantesComponent implements OnInit {
   inoculantesFiltradosPrincipal: InoculanteDisplay[] = [];
   inoculantesParaExibir: InoculanteDisplay[] = [];
 
+  // Variáveis de Filtro
   termoBusca: string = '';
-  filtroTipo: string = ''; // string vazia significa "Todos os Tipos"
+  filtroTipo: string = ''; 
+  filtroCultura: string = '';
 
+  // Listas para os Selects
   tiposUnicos: string[] = [];
+  culturasUnicas: string[] = [];
 
+  // NOVA VARIÁVEL: Armazena o resumo (Ex: [{tipo: 'Inoculante', quantidade: 10}, ...])
+  resumoTipos: ResumoTipo[] = [];
+
+  // Paginação
   paginaAtual: number = 1;
   itensPorPagina: number = 50;
   totalPaginasCalculado: number = 0;
 
+  // Estado
   isLoading: boolean = true;
   erroCarregamento: string | null = null;
-  primeiraBuscaRealizada: boolean = false; // Ainda útil para a mensagem "Nenhum inoculante encontrado..."
+  primeiraBuscaRealizada: boolean = false;
 
   constructor(private http: HttpClient) {}
 
@@ -68,14 +83,15 @@ export class InoculantesComponent implements OnInit {
     this.http.get<ApiInoculante[]>('assets/todos_inoculantes.json').subscribe(
       (dataFromApi) => {
         this.inoculantesTodos = dataFromApi.map(apiItem => this.mapearParaDisplay(apiItem));
+        
+        // Extrai as opções para os filtros
         this.extrairTiposUnicos();
+        this.extrairCulturasUnicas();
+
         this.isLoading = false;
-        // Chama para exibir todos os itens inicialmente e calcular paginação
+        
+        // Exibe todos os itens inicialmente e calcula paginação
         this.aplicarFiltrosEPopularPagina();
-        // Como agora mostramos resultados no início, podemos considerar que a "primeira busca" já aconteceu
-        // ou que não é mais necessário para controlar a visibilidade inicial da lista.
-        // A flag ainda pode ser útil para a mensagem "Nenhum inoculante encontrado..."
-        // this.primeiraBuscaRealizada = true; // Descomente se quiser que a seção de resultados apareça imediatamente
       },
       (error) => {
         console.error('Erro ao carregar o arquivo JSON de inoculantes:', error);
@@ -115,20 +131,33 @@ export class InoculantesComponent implements OnInit {
     this.tiposUnicos = [...todosOsTiposSet].sort((a, b) => a.localeCompare(b));
   }
 
+  private extrairCulturasUnicas(): void {
+    const todasCulturasSet = new Set<string>();
+    this.inoculantesTodos.forEach(inoc => {
+      if (inoc.culturas && inoc.culturas !== 'Não especificada') {
+        const culturasSeparadas = inoc.culturas.split(',').map(c => c.trim());
+        culturasSeparadas.forEach(c => {
+          if (c) todasCulturasSet.add(c);
+        });
+      }
+    });
+    this.culturasUnicas = [...todasCulturasSet].sort((a, b) => a.localeCompare(b));
+  }
+
   onFiltroChange(): void {
-    this.primeiraBuscaRealizada = true; // Qualquer interação com filtros marca que uma busca foi tentada
-    this.paginaAtual = 1;
+    this.primeiraBuscaRealizada = true; 
+    this.paginaAtual = 1; 
     this.aplicarFiltrosEPopularPagina();
   }
 
   aplicarFiltrosEPopularPagina(): void {
     const termoBuscaLower = this.termoBusca.toLowerCase().trim();
-    const tipoSelecionado = this.filtroTipo; // string vazia para "Todos"
+    const tipoSelecionado = this.filtroTipo;
+    const culturaSelecionada = this.filtroCultura;
 
-    // Começa com todos os inoculantes e vai aplicando os filtros
     let itensFiltrados = [...this.inoculantesTodos];
 
-    // Aplica filtro de termo de busca geral
+    // 1. Filtro por Termo de Busca
     if (termoBuscaLower) {
       itensFiltrados = itensFiltrados.filter(inoc =>
         (inoc.nomePrincipal.toLowerCase().includes(termoBuscaLower) ||
@@ -140,14 +169,41 @@ export class InoculantesComponent implements OnInit {
       );
     }
 
-    // Aplica filtro de tipo
-    if (tipoSelecionado) { // Só filtra se um tipo específico for selecionado
+    // 2. Filtro por Tipo de Produto
+    if (tipoSelecionado) {
       itensFiltrados = itensFiltrados.filter(inoc => inoc.tipoProduto === tipoSelecionado);
     }
 
+    // 3. Filtro por Cultura
+    if (culturaSelecionada) {
+      itensFiltrados = itensFiltrados.filter(inoc => 
+        inoc.culturas.toLowerCase().includes(culturaSelecionada.toLowerCase())
+      );
+    }
+
     this.inoculantesFiltradosPrincipal = itensFiltrados;
+
+    // --- NOVO: Calcula o resumo (quantos de cada tipo) baseado na lista filtrada ---
+    this.calcularResumoTipos();
+
     this.totalPaginasCalculado = Math.ceil(this.inoculantesFiltradosPrincipal.length / this.itensPorPagina);
     this.atualizarPaginaParaExibicao();
+  }
+
+  // --- NOVO MÉTODO: Lógica de contagem por tipo ---
+  calcularResumoTipos(): void {
+    const contagem: { [key: string]: number } = {};
+
+    this.inoculantesFiltradosPrincipal.forEach(item => {
+      const tipo = item.tipoProduto || 'Outros';
+      contagem[tipo] = (contagem[tipo] || 0) + 1;
+    });
+
+    // Converte objeto em array e ordena pela quantidade (maior para menor)
+    this.resumoTipos = Object.keys(contagem).map(key => ({
+      tipo: key,
+      quantidade: contagem[key]
+    })).sort((a, b) => b.quantidade - a.quantidade);
   }
 
   atualizarPaginaParaExibicao(): void {
@@ -170,19 +226,19 @@ export class InoculantesComponent implements OnInit {
   limparTodosOsFiltros(): void {
     this.termoBusca = '';
     this.filtroTipo = '';
-    this.primeiraBuscaRealizada = false; // Para que a mensagem "Nenhum resultado" não apareça indevidamente
-                                       // e a mensagem "Utilize os filtros..." possa reaparecer se a lista ficar vazia.
-                                       // No entanto, como queremos mostrar todos, vamos re-filtrar.
+    this.filtroCultura = ''; 
+    
+    this.primeiraBuscaRealizada = false;
     this.paginaAtual = 1;
-    this.aplicarFiltrosEPopularPagina(); // Com os filtros limpos, mostrará todos os inoculantes
+    this.aplicarFiltrosEPopularPagina(); 
   }
 
   get algumFiltroAtivo(): boolean {
-    return !!this.termoBusca.trim() || !!this.filtroTipo;
+    return !!this.termoBusca.trim() || !!this.filtroTipo || !!this.filtroCultura;
   }
 
-  // Métodos de download (baixarResultadosFiltradosJSON e baixarResultadosFiltradosTXT)
-  // Adaptados para inoculantes.
+  // --- Métodos de Download ---
+
   baixarResultadosFiltradosJSON(): void {
     if (this.inoculantesFiltradosPrincipal.length === 0) {
       alert('Não há inoculantes filtrados para baixar.');
@@ -211,9 +267,16 @@ export class InoculantesComponent implements OnInit {
 
     let conteudoTXT = `Relatório de Inoculantes Filtrados\n`;
     conteudoTXT += `Total de Inoculantes Encontrados: ${this.inoculantesFiltradosPrincipal.length}\n`;
+    
+    // Adiciona o resumo ao TXT também
+    if (this.resumoTipos.length > 0) {
+       conteudoTXT += `Resumo por Tipo: ${this.resumoTipos.map(r => `${r.quantidade} ${r.tipo}`).join(', ')}\n`;
+    }
+
     conteudoTXT += `Filtros Aplicados:\n`;
     conteudoTXT += `  Busca Geral: "${this.termoBusca || 'N/A'}"\n`;
     conteudoTXT += `  Tipo: "${this.filtroTipo || 'Todos'}"\n`;
+    conteudoTXT += `  Cultura: "${this.filtroCultura || 'Todas'}"\n`;
     conteudoTXT += `Data da Geração: ${new Date().toLocaleString('pt-BR')}\n`;
     conteudoTXT += "==================================================\n\n";
 

@@ -5,7 +5,6 @@
   --primary-brand: #091C2B; 
   
   // TEMA DA PÁGINA (Verde para Bioestimulantes/Inoculantes)
-  // DICA: Para a página de Biodefensivos, mude apenas estas 3 linhas abaixo para Laranja/Azul.
   --theme-color: #28A745; 
   --theme-color-light: rgba(40, 167, 69, 0.1);
   --theme-color-hover: #218838;
@@ -66,6 +65,10 @@
     max-width: 900px;
     margin: 0 auto 3rem auto;
 
+    /* Borda verde grossa solicitada anteriormente */
+    border: 3px solid #96ce72; 
+    border-radius: var(--border-radius-lg);
+
     .filtros-container {
       background-color: var(--card-bg);
       padding: 1.5rem;
@@ -84,7 +87,7 @@
 
       .filtros-controles {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
         align-items: end;
 
@@ -99,7 +102,6 @@
             letter-spacing: 0.5px;
           }
 
-          // Wrapper para ícone dentro do input
           .input-wrapper {
             position: relative;
             .input-icon {
@@ -112,7 +114,6 @@
             }
           }
 
-          // Estilo dos Inputs e Selects
           .form-control {
             width: 100%;
             padding: 0.7rem 1rem;
@@ -132,7 +133,6 @@
             }
           }
 
-          // BOTÃO LIMPAR (Estilo "Físico")
           .btn-limpar {
             width: 100%;
             padding: 0.7rem;
@@ -173,23 +173,47 @@
     max-width: 900px;
     margin: 0 auto;
 
-    // Cabeçalho da Lista (Contador + Botão Download)
+    /* --- CABEÇALHO DA LISTA (Atualizado para o Resumo) --- */
     .results-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start; /* Alinhamento ao topo para melhor suporte a multilinhas */
       margin-bottom: 1.5rem;
       flex-wrap: wrap;
       gap: 1rem;
 
-      h2 {
-        font-size: 1.2rem;
-        color: var(--text-muted);
-        font-weight: 500;
-        margin: 0;
+      // Wrapper para agrupar o Título e o Resumo à esquerda
+      .header-info {
+        h2 {
+          font-size: 1.2rem;
+          color: var(--text-muted);
+          font-weight: 500;
+          margin: 0 0 0.4rem 0; /* Espaço entre o título e o resumo */
+        }
+
+        /* Estilo do Resumo (Ex: 30 Inoculantes | 20 Bioestimulantes) */
+        .resumo-tipos {
+          font-size: 0.85rem;
+          color: #868e96;
+          line-height: 1.4;
+
+          span {
+            display: inline-block;
+          }
+
+          strong {
+            color: var(--theme-color); /* Número em verde */
+            font-weight: 700;
+          }
+
+          .separator {
+            margin: 0 8px;
+            color: #dee2e6; /* Pipe cinza claro */
+          }
+        }
       }
 
-      // BOTÃO DOWNLOAD TXT (Destaque Sólido)
+      // BOTÃO DOWNLOAD TXT
       .btn-download-primary {
         background-color: var(--theme-color);
         border: none;
@@ -223,8 +247,11 @@
       box-shadow: var(--shadow-sm);
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
-      border-left: 5px solid transparent; // Borda oculta por padrão
       overflow: hidden;
+
+      /* Borda fina geral + Borda destaque esquerda */
+      border: 1px solid #dee2e6; 
+      border-left: 5px solid transparent; 
 
       // Hover no Card
       &:hover {
@@ -261,15 +288,13 @@
               text-transform: uppercase;
               letter-spacing: 0.5px;
             }
-            // Badge Verde para o Tipo
             .badge-tipo {
               background-color: var(--theme-color-light);
               color: var(--theme-color-hover);
             }
-            // Badge Cinza para Registro
             .badge-registro {
               background-color: #f8f9fa;
-              color: #adb5bd;
+              color: #44474b;
               border: 1px solid #dee2e6;
             }
           }
@@ -290,14 +315,12 @@
           }
         }
 
-        // Ícone da Seta (Chevron)
         .card-action-icon {
           color: #dee2e6;
           font-size: 1.2rem;
           margin-left: 1rem;
           transition: color 0.2s;
           
-          // Se card hover ou expanded, seta fica colorida
           .inoculante-card:hover &, 
           .inoculante-card.expanded & { 
              color: var(--theme-color); 
@@ -305,7 +328,7 @@
         }
       }
 
-      // Detalhes do Card (Grid Interno)
+      // Detalhes do Card
       .card-details {
         padding: 0 1.5rem 1.5rem 1.5rem;
         border-top: 1px solid #f1f3f5;
@@ -314,19 +337,18 @@
 
         .detail-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr; // Duas colunas
+          grid-template-columns: 1fr 1fr;
           gap: 1.5rem;
           padding-top: 1.5rem;
 
           .detail-item {
-            // Itens que ocupam largura total
             &.full-width { grid-column: 1 / -1; }
 
             .label {
               display: block;
               font-size: 0.75rem;
               text-transform: uppercase;
-              color: #adb5bd;
+              color: #44474b;
               font-weight: 700;
               margin-bottom: 4px;
             }
@@ -335,7 +357,6 @@
               color: var(--text-main);
               line-height: 1.5;
               
-              // Estilo "Code" para a garantia/concentração
               &.destaque-garantia {
                 font-family: 'Consolas', 'Monaco', monospace;
                 font-size: 0.85rem;
@@ -411,7 +432,7 @@
         }
     }
 
-    // Estado Vazio (Sem resultados)
+    // Estado Vazio
     .empty-state {
       text-align: center;
       padding: 4rem 1rem;
@@ -439,7 +460,6 @@
     color: var(--text-muted);
     
     &.loading .spinner {
-      // Spinner simples CSS
       border: 4px solid #f3f3f3; 
       border-top: 4px solid var(--theme-color); 
       border-radius: 50%;
@@ -477,11 +497,11 @@
 @media (max-width: 600px) {
   .inoculantes-container {
     .inoculante-card .card-details .detail-grid {
-      grid-template-columns: 1fr; // 1 coluna no mobile
+      grid-template-columns: 1fr; 
     }
     
     .inoculante-card .card-summary {
-      flex-direction: column; // Stack vertical no mobile
+      flex-direction: column; 
       align-items: flex-start;
       
       .card-action-icon {

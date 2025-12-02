@@ -15,6 +15,7 @@
       </div>
       
       <div class="filtros-controles">
+        
         <div class="filtro-item">
           <label for="termoBuscaInoculante">Busca Rápida</label>
           <div class="input-wrapper">
@@ -40,6 +41,20 @@
             <option value="">Todos os Tipos</option>
             <option *ngFor="let tipo of tiposUnicos" [value]="tipo">
               {{ tipo }}
+            </option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label for="filtroCulturaInoculante">Cultura</label>
+          <select
+            id="filtroCulturaInoculante"
+            class="form-control"
+            [(ngModel)]="filtroCultura"
+            (ngModelChange)="onFiltroChange()">
+            <option value="">Todas as Culturas</option>
+            <option *ngFor="let cultura of culturasUnicas" [value]="cultura">
+              {{ cultura }}
             </option>
           </select>
         </div>
@@ -70,7 +85,16 @@
     <div *ngIf="primeiraBuscaRealizada || inoculantesFiltradosPrincipal.length > 0">
       
       <div class="results-header">
-        <h2>{{ inoculantesFiltradosPrincipal.length }} produtos encontrados</h2>
+        
+        <div class="header-info">
+          <h2>{{ inoculantesFiltradosPrincipal.length }} produtos encontrados</h2>
+          
+          <div class="resumo-tipos" *ngIf="resumoTipos.length > 0">
+            <span *ngFor="let item of resumoTipos; let isLast = last">
+              <strong>{{ item.quantidade }}</strong> {{ item.tipo }}<span *ngIf="!isLast" class="separator">|</span>
+            </span>
+          </div>
+        </div>
         
         <div class="botoes-download" *ngIf="inoculantesFiltradosPrincipal.length > 0">
           <button class="btn-download-primary" (click)="baixarResultadosFiltradosTXT()" title="Baixar lista em TXT">
@@ -81,6 +105,7 @@
 
       <div *ngIf="inoculantesParaExibir.length > 0; else semResultados">
         <div *ngFor="let inoc of inoculantesParaExibir" class="inoculante-card" [class.expanded]="inoc.expandido" (click)="toggleExpandir(inoc)">
+            
             <div class="card-summary">
                 <div class="card-main-info">
                   <div class="badges-topo" *ngIf="inoc.tipoProduto">
