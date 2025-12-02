@@ -5,7 +5,7 @@
   min-height: 80vh;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   
-  // Variáveis de Cor
+  // --- VARIÁVEIS DE COR ---
   --guide-color: #6610f2;
   --guide-color-light: rgba(102, 16, 242, 0.1);
   --text-main: #343a40;
@@ -20,17 +20,20 @@
 
   .stepper {
     display: flex; justify-content: center; align-items: center; margin-top: 2.5rem; gap: 10px;
+    
     .step {
       display: flex; flex-direction: column; align-items: center; gap: 6px; color: #adb5bd; font-weight: 600; font-size: 0.85rem; text-transform: uppercase;
       .step-circle { width: 35px; height: 35px; border-radius: 50%; background: #e9ecef; display: flex; align-items: center; justify-content: center; font-weight: 700; transition: all 0.3s; }
+      
       &.active { color: var(--guide-color); .step-circle { background: var(--guide-color); color: white; box-shadow: 0 4px 10px rgba(102, 16, 242, 0.3); } }
       &.completed { color: #198754; .step-circle { background: #198754; color: white; } }
     }
+    
     .line { width: 60px; height: 3px; background: #e9ecef; border-radius: 2px; &.filled { background: #198754; } }
     @media(max-width: 500px) { .line { width: 30px; } }
   }
 
-  // --- HEADERS E INPUTS ---
+  // --- HEADERS DE ETAPA E INPUTS ---
   .header-step {
       text-align: center; margin-bottom: 2rem;
       &.compact { margin-bottom: 1.5rem; }
@@ -41,10 +44,17 @@
     position: relative; max-width: 500px; margin: 0 auto 2rem auto;
     i { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: #adb5bd; }
     input { width: 100%; padding: 14px 20px 14px 50px; border: 1px solid #ced4da; border-radius: 50px; font-size: 1rem; transition: all 0.2s; &:focus { outline: none; border-color: var(--guide-color); box-shadow: 0 0 0 4px var(--guide-color-light); } }
-    &.compact { max-width: 400px; margin-bottom: 1rem; input { padding: 10px 20px 10px 45px; font-size: 0.95rem; } i { left: 18px; font-size: 0.9rem; } }
+    
+    &.compact { 
+        max-width: 400px; margin-bottom: 1rem; 
+        input { padding: 10px 20px 10px 45px; font-size: 0.95rem; } 
+        i { left: 18px; font-size: 0.9rem; } 
+    }
   }
 
-  // --- ACORDEÕES INTERATIVOS (STEP 2) ---
+  // ===============================================
+  // ESTILOS DOS ACORDEÕES (PASSO 2)
+  // ===============================================
   .accordion-wrapper {
       margin-bottom: 1.5rem;
   }
@@ -53,10 +63,7 @@
       margin-top: 2rem;
   }
 
-  // NOVO ESTILO DO HEADER CLICÁVEL
-  // ... (Mantenha o código anterior)
-
-  // NOVO ESTILO DO HEADER CLICÁVEL (FINAL)
+  // O CARD CLICÁVEL (HEADER)
   .interactive-header {
       background: #fff;
       border: 1px solid #e9ecef;
@@ -71,7 +78,7 @@
       position: relative;
       overflow: hidden;
       
-      // Efeito de Hover
+      // Efeito de Hover (Levanta o card)
       &:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 15px rgba(0,0,0,0.08);
@@ -90,19 +97,23 @@
           // Gira a seta
           .action-indicator .chevron { transform: rotate(180deg); }
           
-          // REMOVIDO: O texto agora fica visível!
+          // Oculta o texto "Ver pragas" deslizando para a direita
+          .action-indicator .label-click { 
+              opacity: 0; 
+              transform: translateX(10px); 
+          }
       }
 
-      // Conteúdo Esquerda
+      // Conteúdo Esquerda (Icon + Text)
       .header-content {
           display: flex; align-items: center; gap: 15px;
 
-          // O RETÂNGULO
+          // O Retângulo do Ícone
           .icon-box {
               width: 50px; height: 50px; border-radius: 12px;
               display: flex; align-items: center; justify-content: center;
               font-size: 1.4rem; flex-shrink: 0; 
-              transition: all 0.3s ease;
+              transition: all 0.3s ease; // Transição suave de cor
           }
 
           .text-group {
@@ -119,25 +130,25 @@
           
           .label-click {
               font-size: 0.85rem; 
-              font-weight: 800; 
+              font-weight: 800; // Negrito evidente
               text-transform: uppercase;
               color: #000000; // Preto
-              // Sempre visível e sem deslocamento
-              opacity: 1; 
-              transform: none; 
+              opacity: 1; // Visível por padrão
+              transform: translateX(0); 
+              transition: all 0.3s;
           }
           .chevron { font-size: 1.2rem; transition: transform 0.3s ease; }
       }
 
-      // --- VARIAÇÕES DE COR (Lógica de acender) ---
+      // --- VARIAÇÕES DE COR (ROXO E VERDE) ---
       
       // ROXO
       &.variant-purple {
-          border-left: 5px solid var(--guide-color);
+          border-left: 5px solid var(--guide-color); // Borda Fixa
           .icon-box { background: var(--guide-color-light); color: var(--guide-color); }
           .text-group .pre-title { color: var(--guide-color); }
           
-          // MUDANÇA: Acende no Hover OU quando está Ativo (Aberto)
+          // No Hover ou Ativo: Retângulo acende Roxo
           &:hover, &.active {
               .icon-box { 
                   background-color: var(--guide-color); 
@@ -149,11 +160,11 @@
 
       // VERDE
       &.variant-green {
-          border-left: 5px solid #198754;
+          border-left: 5px solid #198754; // Borda Fixa
           .icon-box { background: #e9ecef; color: #495057; }
           .text-group .pre-title { color: #198754; }
           
-          // MUDANÇA: Acende no Hover OU quando está Ativo (Aberto)
+          // No Hover ou Ativo: Retângulo acende Verde
           &:hover, &.active {
               .icon-box { 
                   background-color: #198754; 
@@ -164,7 +175,7 @@
       }
   }
 
-  // Conteúdo do Acordeão
+  // Conteúdo do Acordeão (Lista de botões)
   .accordion-content {
       background: #ffffff;
       border: 1px solid #e9ecef;
@@ -178,8 +189,9 @@
       @media(max-width: 600px) { padding: 1rem; }
   }
 
-  // --- GRID DE BOTÕES ---
-  // --- GRID DE BOTÕES ---
+  // ===============================================
+  // GRID DE BOTÕES (PASSO 1 e DENTRO DO ACORDEÃO)
+  // ===============================================
   .grid-botoes {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.2rem;
     
@@ -189,42 +201,34 @@
       display: flex; flex-direction: column; align-items: center; text-align: center;
       gap: 12px; position: relative; overflow: hidden; min-height: 120px; justify-content: center;
 
-      // Card Cultura (Mantém igual)
+      // Card Cultura
       &.cultura {
         i { font-size: 2.2rem; color: #198754; } span { font-weight: 600; color: #343a40; font-size: 1.05rem; }
         &:hover { transform: translateY(-4px); border-color: #198754; box-shadow: 0 8px 15px rgba(25, 135, 84, 0.1); }
       }
 
-      // Card Praga (ATUALIZADO)
+      // Card Praga (Botões Internos)
       &.praga {
         align-items: flex-start; text-align: left; padding: 1.2rem; 
-        border-left: 5px solid transparent; // Base (será sobrescrita abaixo)
-
+        border-left: 5px solid transparent; // Reset para os botões internos
         .content { z-index: 2; display: flex; flex-direction: column; width: 100%; }
         .nome-comum { font-weight: 600; color: #343a40; margin-bottom: 5px; line-height: 1.3; }
         .nome-cientifico { font-size: 0.8rem; color: #6c757d; font-style: italic; }
         .icon-bg { position: absolute; right: -10px; bottom: -10px; font-size: 4rem; opacity: 0.03; z-index: 1; transition: all 0.3s; }
 
-        // --- BORDA SEMPRE VISÍVEL ---
-        
         &.variant-purple {
-            border-left-color: var(--guide-color); // ROXO FIXO
-            
+            border-left-color: var(--guide-color); // Roxo Fixo
             &:hover {
-                border-color: #dee2e6; 
-                // border-left-color: var(--guide-color); // Já é fixo
+                border-color: #dee2e6;
                 transform: translateY(-3px); box-shadow: 0 4px 12px rgba(102, 16, 242, 0.15);
                 i.icon-bg { color: var(--guide-color); opacity: 0.08; }
             }
         }
-
         &.variant-green {
-            background-color: #ffffff;
-            border-left-color: #198754; // VERDE FIXO
-            
+            background-color: #f8f9fa;
+            border-left-color: #198754; // Verde Fixo
             &:hover {
                 border-color: #dee2e6;
-                // border-left-color: #198754; // Já é fixo
                 transform: translateY(-3px); box-shadow: 0 4px 12px rgba(25, 135, 84, 0.15);
                 i.icon-bg { color: #198754; opacity: 0.08; }
             }
@@ -233,7 +237,9 @@
     }
   }
 
-  // --- RESULTADOS (STEP 3) ---
+  // ===============================================
+  // RESULTADOS (PASSO 3)
+  // ===============================================
   .titulo-secao {
     display: flex; align-items: center; gap: 15px; margin-bottom: 1.5rem; font-size: 1.2rem; color: #343a40;
     
@@ -251,7 +257,7 @@
   .desc-secao { font-size: 0.9rem; color: #6c757d; margin-bottom: 1rem; margin-top: -10px; padding-left: 50px; }
   .divisor-secoes { border: 0; border-top: 1px dashed #dee2e6; margin: 2rem 0; }
 
-  // --- RESULTADOS (CARD PRODUTO) ---
+  // LISTA DE CARDS DE PRODUTO
   .lista-resultados {
     display: flex; flex-direction: column; gap: 1rem; max-width: 800px; margin: 0 auto;
     
@@ -298,9 +304,19 @@
     }
   }
 
-  // --- HELPERS E ANIMAÇÕES ---
+  // --- NAV CONTROLS & HELPERS ---
   .nav-controls { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; .btn-voltar { background: white; border: 1px solid #dee2e6; padding: 8px 16px; border-radius: 8px; color: #6c757d; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; &:hover { color: #091C2B; } } .resumo-selecao { display: flex; align-items: center; gap: 10px; .badge-resumo { background: #e9ecef; color: #495057; padding: 5px 12px; border-radius: 20px; font-weight: 600; } } }
-  .results-header { display: flex; justify-content: space-between; align-items: center; max-width: 800px; margin: 0 auto 1.5rem auto; h2 { font-size: 1.3rem; margin: 0; color: #495057; } .btn-reiniciar { background: none; border: none; color: var(--guide-color); font-weight: 600; cursor: pointer; text-decoration: underline; } }
+  
+  .results-header { 
+      display: flex; justify-content: space-between; align-items: center; max-width: 800px; margin: 0 auto 1.5rem auto; flex-wrap: wrap; gap: 1rem;
+      h2 { font-size: 1.3rem; margin: 0; color: #495057; } 
+      .acoes-header {
+          display: flex; align-items: center; gap: 15px;
+          .btn-download { background-color: white; border: 1px solid var(--guide-color); color: var(--guide-color); padding: 6px 12px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s; &:hover { background-color: var(--guide-color); color: white; box-shadow: 0 4px 10px rgba(102, 16, 242, 0.2); } }
+          .btn-reiniciar { background: none; border: none; color: #6c757d; font-weight: 600; cursor: pointer; text-decoration: underline; &:hover { color: #343a40; } }
+      }
+  }
+
   .loading-state, .empty-final, .no-results { text-align: center; color: #6c757d; margin-top: 2rem; }
   .spinner { border: 4px solid #f3f3f3; border-top: 4px solid var(--guide-color); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 1rem; }
   @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -310,6 +326,8 @@
   @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
   
   @media(max-width: 600px) {
+    .zone-multicultura { padding: 1.5rem 1rem; }
     .titulo-secao { font-size: 1rem; .icon-box { width: 35px; height: 35px; font-size: 1rem; } }
+    .results-header { flex-direction: column; align-items: flex-start; .acoes-header { width: 100%; justify-content: space-between; } }
   }
 }

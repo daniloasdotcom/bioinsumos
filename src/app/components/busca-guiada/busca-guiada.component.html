@@ -162,8 +162,16 @@
     <section *ngIf="passoAtual === 3" class="step-section fade-in">
       
       <div class="results-header">
-        <h2>{{ produtosEspecificos.length + produtosGerais.length }} Soluções Encontradas</h2>
-        <button class="btn-reiniciar" (click)="reiniciar()">Nova Busca</button>
+        <div class="texto-header">
+            <h2>{{ produtosEspecificos.length + produtosGerais.length }} Soluções Encontradas</h2>
+        </div>
+        
+        <div class="acoes-header">
+            <button class="btn-download" (click)="baixarRelatorioTXT()" title="Baixar lista em TXT">
+                <i class="fas fa-file-alt"></i> Baixar Relatório
+            </button>
+            <button class="btn-reiniciar" (click)="reiniciar()">Nova Busca</button>
+        </div>
       </div>
 
       <div class="lista-resultados">
