@@ -43,7 +43,7 @@
   .search-input-wrapper {
     position: relative; max-width: 500px; margin: 0 auto 2rem auto;
     i { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: #adb5bd; }
-    input { width: 100%; padding: 14px 20px 14px 50px; border: 1px solid #ced4da; border-radius: 50px; font-size: 1rem; transition: all 0.2s; &:focus { outline: none; border-color: var(--guide-color); box-shadow: 0 0 0 4px var(--guide-color-light); } }
+    input { width: 100%; padding: 14px 20px 14px 50px; border: 3px solid #1f2020; border-radius: 50px; font-size: 1rem; transition: all 0.2s; &:focus { outline: none; border-color: var(--guide-color); box-shadow: 0 0 0 4px var(--guide-color-light); } }
     
     &.compact { 
         max-width: 400px; margin-bottom: 1rem; 
