@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ChatInsumoComponent } from '../chat-insumo/chat-insumo.component';
 
 // Interface para a estrutura de dados do JSON de bioinsumos (produtos biológicos)
 interface ApiBioinsumo {
@@ -45,7 +46,7 @@ interface BioinsumoDisplay {
 @Component({
   selector: 'app-bioinsumos',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ChatInsumoComponent],
   templateUrl: './bioinsumos.component.html',
   styleUrls: ['./bioinsumos.component.scss']
 })
@@ -53,6 +54,9 @@ export class BioinsumosComponent implements OnInit {
   private bioinsumosTodos: BioinsumoDisplay[] = [];
   bioinsumosFiltradosPrincipal: BioinsumoDisplay[] = [];
   bioinsumosParaExibir: BioinsumoDisplay[] = [];
+  insumoParaChat: BioinsumoDisplay | null = null;
+  isChatOpen: boolean = false;
+  exibirFeatureChat: boolean = true;
 
   // Filtros
   termoBusca: string = '';
@@ -385,5 +389,15 @@ private extrairFiltrosUnicos(): void {
     linkDownload.click();
     document.body.removeChild(linkDownload);
     URL.revokeObjectURL(url);
+  }
+
+  abrirChat(bioinsumo: BioinsumoDisplay): void {
+    this.insumoParaChat = bioinsumo;
+    this.isChatOpen = true;
+  }
+
+  fecharChat(): void {
+    this.isChatOpen = false;
+    this.insumoParaChat = null;
   }
 }

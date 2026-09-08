@@ -486,3 +486,40 @@
     .bioinsumos-list-section .bioinsumo-card .card-details .detail-grid { grid-template-columns: 1fr; }
   }
 }
+
+.footer-actions {
+  display: flex;
+  flex-direction: column; /* Empilha os botões um sobre o outro */
+  gap: 12px; /* Cria um espaço de respiro entre eles */
+  margin-top: 20px;
+}
+
+/* Aplica o mesmo tamanho base para ambos os botões */
+.btn-chat-ia, .btn-agrofit {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px; /* Bordas um pouco mais arredondadas e modernas */
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Distância entre o ícone e o texto */
+  cursor: pointer;
+  text-decoration: none; 
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+/* Estilo específico do botão da IA */
+.btn-chat-ia {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-chat-ia:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  transform: translateY(-2px); /* Dá um leve "pulo" ao passar o mouse */
+}

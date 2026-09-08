@@ -15,8 +15,8 @@ interface ApiInoculante {
   data_registro?: string;
   garantia?: string;
   natureza_fisica?: string;
-  cultura?: string;
-  cultura_nome_cientifico?: string;
+  cultura?: string | string[]; // CORREÇÃO: Agora aceita string ou Array de strings
+  cultura_nome_cientifico?: string | string[]; // CORREÇÃO: Agora aceita string ou Array de strings
   [key: string]: any;
 }
 
@@ -107,7 +107,20 @@ export class InoculantesComponent implements OnInit {
     const nomePrincipal = especiesArray.join(' + ');
     const razaoSocial = apiItem.razao_social || 'Empresa não informada';
     const tipoProduto = apiItem.tipo || 'Tipo Indisponível';
-    const cultura = apiItem.cultura || 'Não especificada';
+
+    // --- CORREÇÃO: Verifica se a cultura é um Array e converte para String ---
+    let culturaFormatada = 'Não especificada';
+    if (Array.isArray(apiItem.cultura)) {
+        culturaFormatada = apiItem.cultura.join(', ');
+    } else if (apiItem.cultura) {
+        culturaFormatada = apiItem.cultura;
+    }
+
+    // Tratando também o nome científico da mesma forma para segurança na exportação
+    if (Array.isArray(apiItem.cultura_nome_cientifico)) {
+        apiItem.cultura_nome_cientifico = apiItem.cultura_nome_cientifico.join(', ');
+    }
+    // ------------------------------------------------------------------------
 
     return {
       nomePrincipal,
@@ -115,7 +128,7 @@ export class InoculantesComponent implements OnInit {
       tipoProduto,
       especiesCompletas: especiesArray,
       registro: apiItem.registro_produto || 'N/A',
-      culturas: cultura,
+      culturas: culturaFormatada,
       originalData: apiItem,
       expandido: false
     };

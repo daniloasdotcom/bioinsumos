@@ -1,5 +1,5 @@
 <div class="bioinsumos-container container">
-  
+
   <header class="page-header">
     <h1>Catálogo de Biodefensivos</h1>
     <p class="lead">Soluções biológicas para controle de pragas e doenças.</p>
@@ -13,26 +13,21 @@
       <div class="filtros-header">
         <h3><i class="fas fa-filter"></i> Filtrar Produtos</h3>
       </div>
-      
+
       <div class="filtros-controles">
         <div class="filtro-item full-width-mobile">
           <label for="termoBusca">Busca Geral</label>
           <div class="input-wrapper">
             <i class="fas fa-search input-icon"></i>
-            <input
-              type="text"
-              id="termoBusca"
-              class="form-control with-icon"
-              [(ngModel)]="termoBusca"
-              (ngModelChange)="onFiltroChange()"
-              placeholder="Nome, alvo, cultura ou ingrediente..."
-            />
+            <input type="text" id="termoBusca" class="form-control with-icon" [(ngModel)]="termoBusca"
+              (ngModelChange)="onFiltroChange()" placeholder="Nome, alvo, cultura ou ingrediente..." />
           </div>
         </div>
 
         <div class="filtro-item">
           <label for="filtroCategoria">Categoria</label>
-          <select id="filtroCategoria" class="form-control" [(ngModel)]="filtroCategoria" (ngModelChange)="onFiltroChange()">
+          <select id="filtroCategoria" class="form-control" [(ngModel)]="filtroCategoria"
+            (ngModelChange)="onFiltroChange()">
             <option value="">Todas as Categorias</option>
             <option *ngFor="let cat of categoriasUnicas" [value]="cat">{{ cat }}</option>
           </select>
@@ -40,7 +35,8 @@
 
         <div class="filtro-item">
           <label for="filtroPragaCientifica">Praga (Científico)</label>
-          <select id="filtroPragaCientifica" class="form-control" [(ngModel)]="filtroPragaCientifica" (ngModelChange)="onFiltroChange()">
+          <select id="filtroPragaCientifica" class="form-control" [(ngModel)]="filtroPragaCientifica"
+            (ngModelChange)="onFiltroChange()">
             <option value="">Todas os Nomes Científicos</option>
             <option *ngFor="let praga of pragasCientificasUnicas" [value]="praga">{{ praga }}</option>
           </select>
@@ -48,18 +44,20 @@
 
         <div class="filtro-item">
           <label for="filtroPragaComum">Praga (Nome Comum)</label>
-          <select id="filtroPragaComum" class="form-control" [(ngModel)]="filtroPragaComum" (ngModelChange)="onFiltroChange()">
+          <select id="filtroPragaComum" class="form-control" [(ngModel)]="filtroPragaComum"
+            (ngModelChange)="onFiltroChange()">
             <option value="">Todas os Nomes Comuns</option>
             <option *ngFor="let praga of pragasComunsUnicas" [value]="praga">{{ praga }}</option>
           </select>
         </div>
 
         <div class="filtro-item checkbox-wrapper">
-            <label class="toggle-label" for="filtroApenasOrganicos">
-                <input type="checkbox" id="filtroApenasOrganicos" [(ngModel)]="filtroApenasOrganicos" (ngModelChange)="onFiltroChange()"/>
-                <span class="custom-checkbox"></span>
-                <span class="label-text"><i class="fas fa-leaf text-success"></i> Apenas Orgânicos</span>
-            </label>
+          <label class="toggle-label" for="filtroApenasOrganicos">
+            <input type="checkbox" id="filtroApenasOrganicos" [(ngModel)]="filtroApenasOrganicos"
+              (ngModelChange)="onFiltroChange()" />
+            <span class="custom-checkbox"></span>
+            <span class="label-text"><i class="fas fa-leaf text-success"></i> Apenas Orgânicos</span>
+          </label>
         </div>
 
         <div class="filtro-item filtro-botao-limpar">
@@ -81,12 +79,12 @@
   </div>
 
   <section class="bioinsumos-list-section" *ngIf="!isLoading && !erroApi">
-    
+
     <div *ngIf="algumFiltroAtivo || bioinsumosFiltradosPrincipal.length > 0 || primeiraBuscaRealizada">
-      
+
       <div class="results-header">
         <h2>{{ bioinsumosFiltradosPrincipal.length }} produtos encontrados</h2>
-        
+
         <div class="botoes-download" *ngIf="bioinsumosFiltradosPrincipal.length > 0">
           <button class="btn-download-primary" (click)="baixarResultadosFiltradosTXT()" title="Baixar Relatório em TXT">
             <i class="fas fa-file-alt"></i> Baixar Lista (TXT)
@@ -95,26 +93,27 @@
       </div>
 
       <div *ngIf="bioinsumosParaExibir.length > 0; else semResultados">
-        
-        <div *ngFor="let bio of bioinsumosParaExibir" class="bioinsumo-card" [class.expanded]="bio.expandido" (click)="toggleExpandir(bio)">
-          
+
+        <div *ngFor="let bio of bioinsumosParaExibir" class="bioinsumo-card" [class.expanded]="bio.expandido"
+          (click)="toggleExpandir(bio)">
+
           <div class="card-summary">
             <div class="card-main-info">
               <div class="badges-topo">
                 <span class="badge badge-categoria" *ngFor="let cat of bio.categorias">{{ cat }}</span>
-                
+
                 <span class="badge badge-organico" *ngIf="bio.originalData?.produto_agricultura_organica">
-                    <i class="fas fa-leaf"></i> Orgânico
+                  <i class="fas fa-leaf"></i> Orgânico
                 </span>
               </div>
-              
+
               <h3>{{ bio.nome }}</h3>
-              
+
               <p class="titular" *ngIf="bio.originalData?.titular_registro">
                 <i class="fas fa-building"></i> {{ bio.originalData.titular_registro }}
               </p>
             </div>
-            
+
             <div class="card-action-icon">
               <i class="fas" [ngClass]="bio.expandido ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
             </div>
@@ -122,59 +121,72 @@
 
           <div *ngIf="bio.expandido" class="card-details">
             <div class="detail-grid">
-              
+
               <div class="detail-item full-width" *ngIf="bio.cultura || bio.alvo">
                 <span class="label">Indicações Principais</span>
                 <div class="destaque-box">
-                    <p *ngIf="bio.cultura"><strong>Culturas:</strong> {{ bio.cultura }}</p>
-                    <p *ngIf="bio.alvo" class="mt-1"><strong>Alvo Biológico:</strong> {{ bio.alvo }}</p>
+                  <p *ngIf="bio.cultura"><strong>Culturas:</strong> {{ bio.cultura }}</p>
+                  <p *ngIf="bio.alvo" class="mt-1"><strong>Alvo Biológico:</strong> {{ bio.alvo }}</p>
                 </div>
               </div>
 
               <ng-container *ngIf="bio.originalData as original">
-                
+
                 <div class="detail-item full-width" *ngIf="original.ingrediente_ativo_detalhado?.length">
                   <span class="label">Ingredientes Ativos & Composição</span>
                   <div class="ingredientes-grid">
-                     <div class="ingrediente-row" *ngFor="let detalhe of original.ingrediente_ativo_detalhado">
-                        <strong>{{ detalhe.ingrediente_ativo }}</strong>
-                        <span class="concentracao" *ngIf="detalhe.concentracao">
-                           {{ detalhe.concentracao }} {{ detalhe.unidade_medida }}
-                        </span>
-                     </div>
+                    <div class="ingrediente-row" *ngFor="let detalhe of original.ingrediente_ativo_detalhado">
+                      <strong>{{ detalhe.ingrediente_ativo }}</strong>
+                      <span class="concentracao" *ngIf="detalhe.concentracao">
+                        {{ detalhe.concentracao }} {{ detalhe.unidade_medida }}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
                 <div class="detail-item">
-                    <span class="label">Classificação de Risco</span>
-                    <div class="risk-badges">
-                        
-                        <span class="risk-tag toxic" *ngIf="original.classificacao_toxicologica" title="Classificação Toxicológica (Anvisa)">
-                            <i class="fas fa-skull-crossbones"></i> 
-                            <span><strong>Toxicidade:</strong> {{ original.classificacao_toxicologica }}</span>
-                        </span>
+                  <span class="label">Classificação de Risco</span>
+                  <div class="risk-badges">
 
-                        <span class="risk-tag env" *ngIf="original.classificacao_ambiental" title="Potencial de Periculosidade Ambiental (IBAMA)">
-                            <i class="fas fa-leaf"></i> 
-                            <span><strong>Ambiental:</strong> {{ original.classificacao_ambiental }}</span>
-                        </span>
+                    <span class="risk-tag toxic" *ngIf="original.classificacao_toxicologica"
+                      title="Classificação Toxicológica (Anvisa)">
+                      <i class="fas fa-skull-crossbones"></i>
+                      <span><strong>Toxicidade:</strong> {{ original.classificacao_toxicologica }}</span>
+                    </span>
 
-                    </div>
+                    <span class="risk-tag env" *ngIf="original.classificacao_ambiental"
+                      title="Potencial de Periculosidade Ambiental (IBAMA)">
+                      <i class="fas fa-leaf"></i>
+                      <span><strong>Ambiental:</strong> {{ original.classificacao_ambiental }}</span>
+                    </span>
+
+                  </div>
                 </div>
 
                 <div class="detail-item">
-                    <span class="label">Dados de Registro</span>
-                    <ul class="lista-tecnica">
-                        <li><strong>Reg. MAPA:</strong> {{ original.numero_registro }}</li>
-                        <li *ngIf="original.modo_acao"><strong>Modo de Ação:</strong> {{ original.modo_acao.join(', ') }}</li>
-                        <li *ngIf="original.inflamavel"><strong>Inflamável:</strong> Sim</li>
-                    </ul>
+                  <span class="label">Dados de Registro</span>
+                  <ul class="lista-tecnica">
+                    <li><strong>Reg. MAPA:</strong> {{ original.numero_registro }}</li>
+                    <li *ngIf="original.modo_acao"><strong>Modo de Ação:</strong> {{ original.modo_acao.join(', ') }}
+                    </li>
+                    <li *ngIf="original.inflamavel"><strong>Inflamável:</strong> Sim</li>
+                  </ul>
                 </div>
 
-                <div class="detail-item full-width footer-actions" *ngIf="original.url_agrofit">
-                    <a [href]="original.url_agrofit" target="_blank" (click)="$event.stopPropagation()" class="btn-agrofit">
-                        <i class="fas fa-external-link-alt"></i> Consultar Ficha Completa no Agrofit
-                    </a>
+                <div class="detail-item full-width footer-actions">
+
+                  <!-- Botão da IA primeiro, ganhando destaque -->
+                  <button *ngIf="exibirFeatureChat" (click)="$event.stopPropagation(); abrirChat(bio)"
+                    class="btn-chat-ia">
+                    <i class="fas fa-robot"></i> Falar com IA sobre este produto
+                  </button>
+
+                  <!-- Botão do Agrofit logo abaixo -->
+                  <a *ngIf="original.url_agrofit" [href]="original.url_agrofit" target="_blank"
+                    (click)="$event.stopPropagation()" class="btn-agrofit">
+                    <i class="fas fa-external-link-alt"></i> Consultar Ficha no Agrofit
+                  </a>
+
                 </div>
 
               </ng-container>
@@ -183,13 +195,16 @@
         </div>
       </div>
 
-      <div *ngIf="bioinsumosFiltradosPrincipal.length > itensPorPagina && totalPaginasCalculado > 1" class="paginacao-container">
+      <div *ngIf="bioinsumosFiltradosPrincipal.length > itensPorPagina && totalPaginasCalculado > 1"
+        class="paginacao-container">
         <button class="btn-paginacao" (click)="mudarPagina(paginaAtual - 1)" [disabled]="paginaAtual === 1">
-            <i class="fas fa-chevron-left"></i> Anterior
+          <i class="fas fa-chevron-left"></i> Anterior
         </button>
-        <span class="info-paginacao">Página <strong>{{ paginaAtual }}</strong> de <strong>{{ totalPaginasCalculado }}</strong></span>
-        <button class="btn-paginacao" (click)="mudarPagina(paginaAtual + 1)" [disabled]="paginaAtual === totalPaginasCalculado">
-            Próxima <i class="fas fa-chevron-right"></i>
+        <span class="info-paginacao">Página <strong>{{ paginaAtual }}</strong> de <strong>{{ totalPaginasCalculado
+            }}</strong></span>
+        <button class="btn-paginacao" (click)="mudarPagina(paginaAtual + 1)"
+          [disabled]="paginaAtual === totalPaginasCalculado">
+          Próxima <i class="fas fa-chevron-right"></i>
         </button>
       </div>
 
@@ -205,3 +220,6 @@
 
   </section>
 </div>
+
+<app-chat-insumo *ngIf="isChatOpen" [insumo]="insumoParaChat" (close)="fecharChat()">
+</app-chat-insumo>

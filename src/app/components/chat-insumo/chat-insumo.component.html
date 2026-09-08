@@ -1,0 +1,28 @@
+<!-- src/app/components/chat-insumo/chat-insumo.component.html -->
+<div class="chat-overlay">
+  <div class="chat-modal">
+    <div class="chat-header">
+      <h4>Chat: {{ insumo.nome }}</h4>
+      <button (click)="fecharChat()">X</button>
+    </div>
+
+    <div class="chat-body">
+      <div *ngFor="let msg of mensagens" [ngClass]="{'msg-user': msg.role === 'user', 'msg-ai': msg.role === 'assistant'}">
+        <p><strong>{{ msg.role === 'user' ? 'Você' : 'IA' }}:</strong> {{ msg.content }}</p>
+      </div>
+      <div *ngIf="isLoading" class="msg-ai">
+        <p><em>Digitando...</em></p>
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <input 
+        type="text" 
+        [(ngModel)]="mensagemAtual" 
+        (keyup.enter)="enviarMensagem()" 
+        placeholder="Pergunte algo sobre este produto..." 
+      />
+      <button (click)="enviarMensagem()" [disabled]="isLoading">Enviar</button>
+    </div>
+  </div>
+</div>

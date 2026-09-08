@@ -5,9 +5,24 @@
   <title>Bioinsumos</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMVCPF81B5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // Substitua pelo seu ID do GA4
+    gtag('config', 'G-CMVCPF81B5', {
+      page_path: window.location.pathname
+    });
+  </script>
+
 </head>
 <body class="mat-typography">
   <app-root></app-root>
