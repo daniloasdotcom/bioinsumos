@@ -1,5 +1,3119 @@
 [
     {
+        "numero_registro": "07026",
+        "marca_comercial": [
+            "BOVEBIOL"
+        ],
+        "titular_registro": "Agribiol – Biológicos Agrícolas LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida",
+            "Acaricida microbiológico de Contato"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana",
+                "grupo_quimico": "",
+                "concentracao": "200",
+                "unidade_medida": "g/kg",
+                "percentual": "20%"
+            }
+        ],
+        "modo_acao": [
+            "Contato"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização de plantas e solos"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Bemisia tabaci raça B",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Cosmopolites sordidus",
+                "praga_nome_comum": [
+                    "Moleque-da-bananeira"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "Ácaro rajado"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Dalbulus maidis",
+                "praga_nome_comum": [
+                    "Cigarrinha-do-milho"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Sphenophorus levis",
+                "praga_nome_comum": [
+                    "Bicudo da cana-de-açúcar"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Hypothenemus hampei",
+                "praga_nome_comum": [
+                    "Broca-do-café"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 - Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_07026",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=547188&p_nm_file=F315428106/BULA 02032026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "15026",
+        "marca_comercial": [
+            "SUPRESS -H"
+        ],
+        "titular_registro": "TOPBIO – INSUMOS BIOLÓGICOS, INDÚSTRIA E COMÉRCIO LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Trichoderma harzianum"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Trichoderma harzianum",
+                "grupo_quimico": "",
+                "concentracao": "150",
+                "unidade_medida": "g/kg",
+                "percentual": "15% m/m"
+            }
+        ],
+        "modo_acao": [
+            "Contato"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação Terrestre",
+            "Aplicação Aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Sclerotinia sclerotiorum",
+                "praga_nome_comum": [
+                    "mofo-branco"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_15026",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=553567&p_nm_file=F1842253078/BULA_SUPRESS-H-TOPBIO_05052026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "15226",
+        "marca_comercial": [
+            "TrichoCare G",
+            "Trichofort G",
+            "Ecotricho G"
+        ],
+        "titular_registro": "BC Ecocare Biotecnologia LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Agente Biológico de Controle",
+            "Inseticida Biológico"
+        ],
+        "formulacao": "insetos vivos (endoparasitóide de ovo, em fase de pupa)",
+        "ingrediente_ativo": [
+            "Trichogramma galloi"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Trichogramma galloi",
+                "grupo_quimico": "",
+                "concentracao": "25.000",
+                "unidade_medida": "pupas/mL",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            "Controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Diatraea saccharalis",
+                "praga_nome_comum": [
+                    "broca-da-cana"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Não Classificado – Produto Não Classificado",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_15226",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=555109&p_nm_file=F714322838/Bula_TrichoCareG_06052026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "23226",
+        "marca_comercial": [
+            "PROVILAR® PLUS"
+        ],
+        "titular_registro": "FMC QUÍMICA DO BRASIL LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida microbiológico"
+        ],
+        "formulacao": "Dispersão de óleo (OD)",
+        "ingrediente_ativo": [
+            "Bacillus velezensis cepa RTI301",
+            "Bacillus subtilis cepa RTI477"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus velezensis cepa RTI301",
+                "grupo_quimico": "Biofungicida",
+                "concentracao": "240",
+                "unidade_medida": "g/L",
+                "percentual": "24,0% m/v"
+            },
+            {
+                "ingrediente_ativo": "Bacillus subtilis cepa RTI477",
+                "grupo_quimico": "Biofungicida",
+                "concentracao": "80",
+                "unidade_medida": "g/L",
+                "percentual": "8,0% m/v"
+            }
+        ],
+        "modo_acao": [
+            "Contato, com múltiplos mecanismos de ação oriundos da ação entre as bactérias Bacillus subtilis e Bacillus velezensis"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização foliar por via terrestre e aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Qualquer cultura com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Sclerotinia sclerotiorum",
+                "praga_nome_comum": [
+                    "Mofo-branco"
+                ]
+            },
+            {
+                "cultura": "Qualquer cultura com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Corynespora cassiicola",
+                "praga_nome_comum": [
+                    "Mancha-alvo"
+                ]
+            },
+            {
+                "cultura": "Qualquer cultura com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Septoria glycines",
+                "praga_nome_comum": [
+                    "Mancha-parda"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "CATEGORIA 5 - PRODUTO IMPROVÁVEL DE CAUSAR DANO AGUDO",
+        "classificacao_ambiental": "CLASSE IV - POUCO PERIGOSO AO MEIO AMBIENTE",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_23226",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=560874&p_nm_file=F398099879/BL Provilar Plus_Reg-Inicial_01-07-2026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "07626",
+        "marca_comercial": [
+            "NOBIC"
+        ],
+        "titular_registro": "TOPBIO – INSUMOS BIOLÓGICOS, INDÚSTRIA E COMÉRCIO LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida Biológico"
+        ],
+        "formulacao": "fêmeas fertilizadas do parasitoide",
+        "ingrediente_ativo": [
+            "Catolaccus grandis (=Jaliscoa grandis)"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Catolaccus grandis (=Jaliscoa grandis)",
+                "grupo_quimico": "",
+                "concentracao": "80 fêmeas fertilizadas",
+                "unidade_medida": "",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            "Controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "Liberação de fêmeas fertilizadas",
+            "Aplicação aérea com drones ou aviões"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Anthonomus grandis",
+                "praga_nome_comum": [
+                    "bicudo-do-algodoeiro"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Produto Não Classificado",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_07626",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=562611&p_nm_file=F1451406416/Bula_NOBIC-Topbio_28072026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "07426",
+        "marca_comercial": [
+            "CERA TRAP®"
+        ],
+        "titular_registro": "Bio Controle - Métodos de Controle de Pragas Ltda.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Semioquímico"
+        ],
+        "formulacao": "Concentrado solúvel (SL)",
+        "ingrediente_ativo": [
+            "Proteína hidrolisada de mucosa intestinal de suíno",
+            "Disodium tetraborate decahydrate (BÓRAX)"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Proteína hidrolisada de mucosa intestinal de suíno",
+                "grupo_quimico": "Aminoácidos",
+                "concentracao": "55",
+                "unidade_medida": "g/kg",
+                "percentual": "5,5 g/100g"
+            },
+            {
+                "ingrediente_ativo": "Disodium tetraborate decahydrate (BÓRAX)",
+                "grupo_quimico": "",
+                "concentracao": "13",
+                "unidade_medida": "g/kg",
+                "percentual": "1,3 g/100g"
+            }
+        ],
+        "modo_acao": [
+            "Monitoramento populacional",
+            "Captura massal"
+        ],
+        "tecnica_aplicacao": [
+            "Armadilhas do tipo Mc Phail ou garrafa PET com furos"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Qualquer cultura em que ocorra o alvo biológico indicado",
+                "praga_nome_cientifico": "Anastrepha fraterculus",
+                "praga_nome_comum": [
+                    "mosca-das-frutas"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "CATEGORIA 5: PRODUTO IMPROVÁVEL DE CAUSAR DANO AGUDO",
+        "classificacao_ambiental": "IV – PRODUTO POUCO PERIGOSO AO MEIO AMBIENTE",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_07426",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=556275&p_nm_file=F2099640416/Cera Trap - Bula28052026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "07326",
+        "marca_comercial": [
+            "ACCURATE PLUS"
+        ],
+        "titular_registro": "Agribiol – Biológicos Agrícolas LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico de contato"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Bacillus thuringiensis var. kurstaki, isolado HD-1 (S1450)"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus thuringiensis var. kurstaki, isolado HD-1 (S1450)",
+                "grupo_quimico": "",
+                "concentracao": "700",
+                "unidade_medida": "mL/L",
+                "percentual": "70% v/v"
+            }
+        ],
+        "modo_acao": [
+            "Inseticida microbiológico de contato"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação Terrestre",
+            "Aplicação Aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Algodão",
+                "praga_nome_cientifico": "Alabama argillacea",
+                "praga_nome_comum": [
+                    "curuquerê",
+                    "curuquerê-do-algodoeiro"
+                ]
+            },
+            {
+                "cultura": "Milho",
+                "praga_nome_cientifico": "Spodoptera frugiperda",
+                "praga_nome_comum": [
+                    "lagarta-militar",
+                    "lagarta-do-cartucho"
+                ]
+            },
+            {
+                "cultura": "Soja",
+                "praga_nome_cientifico": "Anticarsia gemmatalis",
+                "praga_nome_comum": [
+                    "lagarta-da-soja"
+                ]
+            },
+            {
+                "cultura": "Soja",
+                "praga_nome_cientifico": "Chrysodeixis includens",
+                "praga_nome_comum": [
+                    "lagarta-falsa-medideira"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_07326",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=547198&p_nm_file=F2102944988/BULA -  Accurate Plus 02032026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "15326",
+        "marca_comercial": [
+            "BARKCONTROL"
+        ],
+        "titular_registro": "VSF Agricultura Sustentável e Comércio LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Acaricida biológico"
+        ],
+        "formulacao": "Ácaros vivos na fase adulta e/ou juvenil",
+        "ingrediente_ativo": [
+            "Neoseiulus(=Amblyseius) barkeri"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Neoseiulus(=Amblyseius) barkeri",
+                "grupo_quimico": "",
+                "concentracao": "mínimo de 10.000 ácaros",
+                "unidade_medida": "0.08g",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            "Controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "Uso agrícola"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Raioella indica",
+                "praga_nome_comum": [
+                    "ácaro vermelho das palmeiras"
+                ]
+            },
+            {
+                "cultura": "todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Polyphagotarsonemus latus",
+                "praga_nome_comum": [
+                    "ácaro branco"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Não determinada devido a natureza do produto (inimigos naturais)",
+        "classificacao_ambiental": "Pouco Perigoso ao Meio Ambiente (Classe IV)",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_15326",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=555547&p_nm_file=F1495202012/Neoseiulus barkeri - Rotulo.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "25226",
+        "marca_comercial": [
+            "HARZIGEN",
+            "HARZI PROTECT NEO"
+        ],
+        "titular_registro": "GENOMA BIOTECNOLOGIA LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Trichoderma harzianum Cepa IB 19/17"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Trichoderma harzianum Cepa IB 19/17",
+                "grupo_quimico": "",
+                "concentracao": "5",
+                "unidade_medida": "%",
+                "percentual": "5%"
+            }
+        ],
+        "modo_acao": [
+            "Controle microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre via pulverizador",
+            "Aplicação manual via bomba costal"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Qualquer cultura com a ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Sclerotinia sclerotiorum",
+                "praga_nome_comum": [
+                    "Mofo-branco"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV – Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "14826",
+        "marca_comercial": [
+            "BioRADIVANCE"
+        ],
+        "titular_registro": "Vital Brasil Chemical Ind. e Com. Prod. Químicos SA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Nematicida microbiológico"
+        ],
+        "formulacao": "Suspensão concentrada (SC)",
+        "ingrediente_ativo": [
+            "Bacillus subtilis",
+            "Bacillus amyloliquefaciens",
+            "Bacillus licheniformis"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus subtilis cepa CCT 0480",
+                "grupo_quimico": "",
+                "concentracao": "4,50 x 10^9",
+                "unidade_medida": "UFC/mL",
+                "percentual": "23%"
+            },
+            {
+                "ingrediente_ativo": "Bacillus amyloliquefaciens cepa CCT 7690",
+                "grupo_quimico": "",
+                "concentracao": "3,25 x 10^9",
+                "unidade_medida": "UFC/mL",
+                "percentual": "23%"
+            },
+            {
+                "ingrediente_ativo": "Bacillus licheniformis cepa CCT 0535",
+                "grupo_quimico": "",
+                "concentracao": "2,25 x 10^9",
+                "unidade_medida": "UFC/mL",
+                "percentual": "23%"
+            }
+        ],
+        "modo_acao": [
+            "Contato",
+            "Múltiplos mecanismos de ação"
+        ],
+        "tecnica_aplicacao": [
+            "Tratamento de sementes"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Qualquer cultura com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Pratylenchus brachyurus",
+                "praga_nome_comum": [
+                    "Nematóide-das-Lesões-Radiculares"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_14826",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=568163&p_nm_file=F39334210/Bula_Agrofit_BioRADIVANCE_07.10.26.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "09526",
+        "marca_comercial": [
+            "ISFU",
+            "BPT-06",
+            "K-KRATOS"
+        ],
+        "titular_registro": "B PLANT LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "INSETICIDA MICROBIOLÓGICO"
+        ],
+        "formulacao": "Suspensão concentrada (SC)",
+        "ingrediente_ativo": [
+            "Cordyceps javanica"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Cordyceps javanica",
+                "grupo_quimico": "",
+                "concentracao": "14",
+                "unidade_medida": "g/L",
+                "percentual": "1,4% m/v"
+            }
+        ],
+        "modo_acao": [
+            "Controle de pragas"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização terrestre",
+            "Pulverização aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Qualquer cultura de ocorrência da praga",
+                "praga_nome_cientifico": "Bemisia tabaci",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Qualquer cultura de ocorrência da praga",
+                "praga_nome_cientifico": "Dalbulus maidis",
+                "praga_nome_comum": [
+                    "Cigarrinha-do-milho"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Não classificado",
+        "classificacao_ambiental": "CLASSE IV – Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_09526",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=551924&p_nm_file=F1750874742/Bula_BPT-06_ISFU_K-KRATOS_V02-26.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "25026",
+        "marca_comercial": [
+            "HARZIGEN",
+            "HARZI PROTECT NEO"
+        ],
+        "titular_registro": "GENOMA BIOTECNOLOGIA LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Trichoderma harzianum Cepa IB 19/17"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Trichoderma harzianum Cepa IB 19/17",
+                "grupo_quimico": "",
+                "concentracao": "50",
+                "unidade_medida": "g/kg",
+                "percentual": "5%"
+            }
+        ],
+        "modo_acao": [
+            "Controle microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre via pulverizador",
+            "Aplicação manual (via bomba costal)"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em qualquer cultura com a ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Sclerotinia sclerotiorum",
+                "praga_nome_comum": [
+                    "Mofo-branco"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV – Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_25026",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=565798&p_nm_file=F1450798869/BULA - produto Harzigen.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "15526",
+        "marca_comercial": [
+            "IN-24-29"
+        ],
+        "titular_registro": "INFLORA BIOCIÊNCIA LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Bacillus thuringiensis subsp. kurstaki"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus thuringiensis subsp. kurstaki",
+                "grupo_quimico": "",
+                "concentracao": "2,5x10^9 endósporos viáveis/mL",
+                "unidade_medida": "g/L",
+                "percentual": "97,03%"
+            }
+        ],
+        "modo_acao": [
+            "Inseticida microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Alabama argillacea",
+                "praga_nome_comum": [
+                    "Curuquerê",
+                    "Curuquerê-do-algodoeiro"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Spodoptera frugiperda",
+                "praga_nome_comum": [
+                    "Lagarta-militar",
+                    "Lagarta-do-cartucho"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Anticarsia gemmatalis",
+                "praga_nome_comum": [
+                    "Lagarta-da-soja"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Chrysodeixis includens",
+                "praga_nome_comum": [
+                    "Lagarta-falsa-medideira"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV - Pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_15526",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=555319&p_nm_file=F1697270265/BULA_IN-24-29_REGISTRO_REV.01_21.05.2026..pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "04826",
+        "marca_comercial": [
+            "DoubleCombat"
+        ],
+        "titular_registro": "Viva Soluções Biológicas Ltda.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida Microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana",
+            "Metarhizium anisopliae"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana",
+                "grupo_quimico": "",
+                "concentracao": "200",
+                "unidade_medida": "g/kg",
+                "percentual": "20%"
+            },
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae",
+                "grupo_quimico": "",
+                "concentracao": "200",
+                "unidade_medida": "g/kg",
+                "percentual": "20%"
+            }
+        ],
+        "modo_acao": [
+            "Controle de pragas"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação foliar",
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "cigarrinha-das-pastagens"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Euschistus hero",
+                "praga_nome_comum": [
+                    "percevejo-marrom"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV - Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_04826",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=556261&p_nm_file=F48995939/DOUBLECOMBAT - BULA 2026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "15726",
+        "marca_comercial": [
+            "TEC WHITE OF"
+        ],
+        "titular_registro": "SOLUBIO TECNOLOGIAS AGRÍCOLAS S.A.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida",
+            "Acaricida microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana, isolado IBCB 66"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana, isolado IBCB 66",
+                "grupo_quimico": "",
+                "concentracao": "1 x 10^9 UFC/mL",
+                "unidade_medida": "UFC/mL",
+                "percentual": "10%"
+            }
+        ],
+        "modo_acao": [
+            "Controle microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Via aérea",
+            "Via terrestre",
+            "Pulverizador"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Bemisia tabaci raça B",
+                "praga_nome_comum": [
+                    "mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Banana",
+                "praga_nome_cientifico": "Cosmopolites sordidus",
+                "praga_nome_comum": [
+                    "moleque da bananeira"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "ácaro rajado"
+                ]
+            },
+            {
+                "cultura": "Milho",
+                "praga_nome_cientifico": "Dalbulus maidis",
+                "praga_nome_comum": [
+                    "cigarrinha do milho"
+                ]
+            },
+            {
+                "cultura": "Cana-de-açúcar",
+                "praga_nome_cientifico": "Sphenophorus levis",
+                "praga_nome_comum": [
+                    "gorgulho da cana"
+                ]
+            },
+            {
+                "cultura": "Café",
+                "praga_nome_cientifico": "Hypothenemus hampei",
+                "praga_nome_comum": [
+                    "broca-do-café"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_15726",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=553523&p_nm_file=F386245354/BULA TEC WHITE OF_05_05_26.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "08426",
+        "marca_comercial": [
+            "GAIA CONTROL NEEM"
+        ],
+        "titular_registro": "GAIA AGROSOLUTIONS COMÉRCIO, IMPORTAÇÃO E EXPORTAÇÃO LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida",
+            "Fungicida"
+        ],
+        "formulacao": "Concentrado emulsionável (EC)",
+        "ingrediente_ativo": [
+            "Óleo de Nim (Azadirachta indica)"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Óleo de Nim (Azadirachta indica)",
+                "grupo_quimico": "Triterpenoide",
+                "concentracao": "700,00",
+                "unidade_medida": "g/L",
+                "percentual": "70,000% m/v"
+            },
+            {
+                "ingrediente_ativo": "Azadiractina A",
+                "grupo_quimico": "Triterpenoide",
+                "concentracao": "2,278",
+                "unidade_medida": "g/L",
+                "percentual": "0,2278% m/v"
+            },
+            {
+                "ingrediente_ativo": "Azadiractina B",
+                "grupo_quimico": "Triterpenoide",
+                "concentracao": "0,722",
+                "unidade_medida": "g/L",
+                "percentual": "0,0722% m/v"
+            }
+        ],
+        "modo_acao": [
+            "Bloqueador de hormônios de insetos"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Bemisia tabaci",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Bemisia argentifolii",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Mudas de fumo no sistema 'floating'",
+                "praga_nome_cientifico": "Bradysia impatiens",
+                "praga_nome_comum": [
+                    "Larva-da-mosca-do-float"
+                ]
+            },
+            {
+                "cultura": "Feijão",
+                "praga_nome_cientifico": "Erysiphe polygoni",
+                "praga_nome_comum": [
+                    "Oídio do feijoeiro"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_08426",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=552360&p_nm_file=F1068981965/2026.04.24-GAIA CONTROL NEEM_Bula.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "22026",
+        "marca_comercial": [
+            "JATASP AN",
+            "CINERAGRO BEAUVERIA + METARHIZIUM"
+        ],
+        "titular_registro": "GHENVET BIOTECNOLOGIA LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana",
+            "Metarhizium anisopliae"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana",
+                "grupo_quimico": "",
+                "concentracao": "2",
+                "unidade_medida": "g/kg",
+                "percentual": "0,2"
+            },
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae",
+                "grupo_quimico": "",
+                "concentracao": "2",
+                "unidade_medida": "g/kg",
+                "percentual": "0,2"
+            }
+        ],
+        "modo_acao": [
+            "Organismos vivos de uso restrito ao controle de pragas"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação tratorizada e aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens",
+                    "Cigarrinha-dos-capinzais"
+                ]
+            },
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Euschistus heros",
+                "praga_nome_comum": [
+                    "Percevejo marrom"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_22026",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=566797&p_nm_file=F1023028570/BULA_JATASPAN-GHENVET_21092026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "16426",
+        "marca_comercial": [
+            "LALSTOP K61 WS"
+        ],
+        "titular_registro": "LALLEMAND SOLUÇÕES BIOLÓGICAS LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida Microbiológico"
+        ],
+        "formulacao": "Pó para Preparação de Pasta em Água (WS)",
+        "ingrediente_ativo": [
+            "Streptomyces griseoviridis"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Streptomyces griseoviridis",
+                "grupo_quimico": "",
+                "concentracao": "300",
+                "unidade_medida": "g/Kg",
+                "percentual": "30% m/m"
+            }
+        ],
+        "modo_acao": [
+            "Microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Tratamento de sementes"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Macrophomina phaseolina",
+                "praga_nome_comum": [
+                    "Podridão-preta-das-raízes"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 - Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Produto Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_16426",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=554563&p_nm_file=F1726600796/LALSTOP K61 WS (BR) LABEL BOOKLET 1.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "22426",
+        "marca_comercial": [
+            "AGBOVE"
+        ],
+        "titular_registro": "NAVE BIO SCIENCE LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida",
+            "Acaricida Microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana, isolado IBCB 66"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana, isolado IBCB 66",
+                "grupo_quimico": "",
+                "concentracao": "3,1 x 10^9 UFC/g",
+                "unidade_medida": "g/kg",
+                "percentual": "10"
+            }
+        ],
+        "modo_acao": [
+            "Microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Bemisia tabaci raça B",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Cosmopolites sordidus",
+                "praga_nome_comum": [
+                    "Moleque-da-bananeira"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "Ácaro-rajado"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Dalbulus maidis",
+                "praga_nome_comum": [
+                    "Cigarrinha-do-milho"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Sphenophorus levis",
+                "praga_nome_comum": [
+                    "Bicudo-da-cana-de-açúcar"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Hypothenemus hampei",
+                "praga_nome_comum": [
+                    "Broca-do-café"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 - Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_22426",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=560694&p_nm_file=F169518601/BULA_AGBOVE_04072026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "21926",
+        "marca_comercial": [
+            "IN-24-34"
+        ],
+        "titular_registro": "INFLORA BIOCIÊNCIA LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Trichoderma harzianum"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Trichoderma harzianum",
+                "grupo_quimico": "",
+                "concentracao": "250,00",
+                "unidade_medida": "g/kg",
+                "percentual": "25,00"
+            }
+        ],
+        "modo_acao": [
+            "Controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Sclerotinia sclerotiorum",
+                "praga_nome_comum": [
+                    "Mofo-branco"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV - Pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_21926",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=559970&p_nm_file=F2143550370/BULA_IN-24-34_REGISTRO_REV.02_30.06.2026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "14626",
+        "marca_comercial": [
+            "TETRA-MAX"
+        ],
+        "titular_registro": "VALENTTO BIODEFENSORES LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Agente Biológico de Controle (Inimigos naturais)"
+        ],
+        "formulacao": "Insetos vivos (Endoparasitoide de lagartas e pupas, em estágio de pupa para controle biológico)",
+        "ingrediente_ativo": [
+            "Tetrastichus howardi"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Tetrastichus howardi",
+                "grupo_quimico": "",
+                "concentracao": "375",
+                "unidade_medida": "indivíduos/mL",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            "Endoparasitoide de lagartas e pupas"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação Terrestre",
+            "Aplicação Aérea (via drone)"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Diatraea saccharalis",
+                "praga_nome_comum": [
+                    "Broca-da-cana"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Thyrinteina arnobia",
+                "praga_nome_comum": [
+                    "Lagarta-parda"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Não Classificado – Produto Não Classificado",
+        "classificacao_ambiental": "Classe IV – Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_14626",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=555403&p_nm_file=F1750181176/BULA_TETRA-MAX_04.04.26.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "24726",
+        "marca_comercial": [
+            "VERANEIO EVO"
+        ],
+        "titular_registro": "KOPPERT DO BRASIL HOLDING S.A.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Nematicida Microbiológico"
+        ],
+        "formulacao": "Pó Molhável (WP)",
+        "ingrediente_ativo": [
+            "Bacillus amyloliquefaciens"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus amyloliquefaciens",
+                "grupo_quimico": "",
+                "concentracao": "60,0",
+                "unidade_medida": "g/kg",
+                "percentual": "6,0"
+            }
+        ],
+        "modo_acao": [
+            "Coloniza o sistema radicular, formando um biofilme ao redor da raiz e atuando no controle dos nematoides"
+        ],
+        "tecnica_aplicacao": [
+            "Tratamento de sementes",
+            "Aplicação no sulco de plantio"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Meloidogyne incognita",
+                "praga_nome_comum": [
+                    "Nematoide-das-galhas"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Meloidogyne javanica",
+                "praga_nome_comum": [
+                    "Nematoide-das-galhas"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Pratylenchus brachyurus",
+                "praga_nome_comum": [
+                    "Nematoide-das-lesões"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Heterodera glycines",
+                "praga_nome_comum": [
+                    "Nematoide-de-cisto-da-soja"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "CATEGORIA 5 – PRODUTO IMPROVÁVEL DE CAUSAR DANO AGUDO",
+        "classificacao_ambiental": "CLASSE IV – PRODUTO POUCO PERIGOSO AO MEIO AMBIENTE",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_24726",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=564325&p_nm_file=F1512586157/Bula_AGROFIT_Veraneio EVO_14_08_2026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "22626",
+        "marca_comercial": [
+            "BIONOVA SANUS META SC"
+        ],
+        "titular_registro": "NOVA DO BRASIL LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Metarhizium anisopliae, isolado IBCB 425"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae, isolado IBCB 425",
+                "grupo_quimico": "",
+                "concentracao": "1,0 x 10^9 conídios viáveis /mL",
+                "unidade_medida": "g/L",
+                "percentual": "4,2"
+            }
+        ],
+        "modo_acao": [
+            "Controle microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverizadores hidropneumáticos tratorizados ou tracionados"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Mahanarva fimbriolata",
+                "praga_nome_comum": [
+                    "Cigarrinha-da-raiz"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Zulia entreriana",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "Cigarrinha-dos-capinzais"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_22626",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=560094&p_nm_file=F724660190/Bionova Sanus Meta SC - Bula 22_06_26.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "04526",
+        "marca_comercial": [
+            "METATOP"
+        ],
+        "titular_registro": "Agribiol – Biológicos Agrícolas LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Pó molhavel (WP)",
+        "ingrediente_ativo": [
+            "Metarhizium anisopliae"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae",
+                "grupo_quimico": "",
+                "concentracao": "200",
+                "unidade_medida": "g/kg",
+                "percentual": "20% m/m"
+            }
+        ],
+        "modo_acao": [
+            "Agente microbiológico de controle"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverizador costal manual ou motorizado",
+            "Equipamento tratorizado"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Mahanarva fimbriolata",
+                "praga_nome_comum": [
+                    "Cigarrinha-da-raiz"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Zulia entreriana",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "Cigarrinha-dos-capinzais"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 - Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_04526",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=547191&p_nm_file=F1363071612/Bula Metatop 02032026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "22326",
+        "marca_comercial": [
+            "ANT-03 WP",
+            "BioTitan WP"
+        ],
+        "titular_registro": "LALLEMAND SOLUÇÕES BIOLÓGICAS LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida Microbiológico"
+        ],
+        "formulacao": "Pó molhável (WP)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana cepa ANT-03"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana cepa ANT-03",
+                "grupo_quimico": "",
+                "concentracao": "10,0",
+                "unidade_medida": "g/Kg",
+                "percentual": "1,0% m/m"
+            }
+        ],
+        "modo_acao": [
+            "Controle de pragas"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização foliar",
+            "Equipamentos terrestres",
+            "Equipamentos aéreos"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Hypothenemus hampei",
+                "praga_nome_comum": [
+                    "Broca-do-café"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Bemisia tabaci",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Thrips tabaci",
+                "praga_nome_comum": [
+                    "Tripes"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Diaphorina citri",
+                "praga_nome_comum": [
+                    "Psilídeo"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV – Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_22326",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=561678&p_nm_file=F1507641159/ANT-03 WP-BioTitan WP_Bula.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "04726",
+        "marca_comercial": [
+            "AGRITÉSIA"
+        ],
+        "titular_registro": "RL CONTROLE BIOLÓGICO LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "inseticida biológico"
+        ],
+        "formulacao": "pupas de insetos vivos (vespa endoparasitóide para controle biológico)",
+        "ingrediente_ativo": [
+            "Cotesia flavipes"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Cotesia flavipes",
+                "grupo_quimico": "",
+                "concentracao": "",
+                "unidade_medida": "",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            "controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "liberação inundativa",
+            "aplicação terrestre",
+            "aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "cana-de-açúcar",
+                "praga_nome_cientifico": "Diatraea saccharalis",
+                "praga_nome_comum": [
+                    "Broca-da-cana"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Não Classificado – Produto Não Classificado",
+        "classificacao_ambiental": "IV – Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_04726",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=556591&p_nm_file=F1328610292/Bula AGRITESIA Completa para Agrofit_.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "14726",
+        "marca_comercial": [
+            "BTP 170 -21A"
+        ],
+        "titular_registro": "TOTAL BIOTECNOLOGIA INDÚSTRIA E COMÉRCIO S/A",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida Fitoquímico"
+        ],
+        "formulacao": "Emulsão de Óleo em Água (EW)",
+        "ingrediente_ativo": [
+            "Extrato de Melaleuca alternifolia"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Extrato de Melaleuca alternifolia",
+                "grupo_quimico": "Terpeno",
+                "concentracao": "309,62",
+                "unidade_medida": "g/L",
+                "percentual": "30,96"
+            }
+        ],
+        "modo_acao": [
+            "Contato",
+            "Indutor de resistência"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação em área total",
+            "Aplicação foliar",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Morango",
+                "praga_nome_cientifico": "Botrytis cinerea",
+                "praga_nome_comum": [
+                    "Mofo-cinzento"
+                ]
+            },
+            {
+                "cultura": "Banana",
+                "praga_nome_cientifico": "Mycosphaerella fijiensis Morelet",
+                "praga_nome_comum": [
+                    "Sigatoka-Negra"
+                ]
+            },
+            {
+                "cultura": "Rosa",
+                "praga_nome_cientifico": "Sphaerotheca pannosa",
+                "praga_nome_comum": [
+                    "Branco-da-roseira"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV – Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_14726",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=554912&p_nm_file=F1317055467/BTP 170-21A Bula Registro.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "08326",
+        "marca_comercial": [
+            "DERMAOURO"
+        ],
+        "titular_registro": "Valeouro Biotec S/A",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida microbiológico"
+        ],
+        "formulacao": "Pó molhável (WP)",
+        "ingrediente_ativo": [
+            "Trichoderma harzianum isolado IB19/17"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Trichoderma harzianum isolado IB19/17",
+                "grupo_quimico": "",
+                "concentracao": "150",
+                "unidade_medida": "g/Kg",
+                "percentual": "15,0% m/m"
+            }
+        ],
+        "modo_acao": [
+            "Controle de mofo-branco (Sclerotinia sclerotiorum)"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverizador costal ou tratorizado",
+            "Aeronaves agrícolas"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Feijão",
+                "praga_nome_cientifico": "Sclerotinia sclerotiorum",
+                "praga_nome_comum": [
+                    "Mofo-branco"
+                ]
+            },
+            {
+                "cultura": "Soja",
+                "praga_nome_cientifico": "Sclerotinia sclerotiorum",
+                "praga_nome_comum": [
+                    "Mofo-branco"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV – Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_08326",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=554442&p_nm_file=F170451150/Bula_DERMAOURO_V02.26.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "22726",
+        "marca_comercial": [
+            "DAUBKILL"
+        ],
+        "titular_registro": "ON FARM BIOINSUMOS LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Suspensão concentrada (SC)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana",
+            "Metarhizium anisopliae"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana",
+                "grupo_quimico": "",
+                "concentracao": "30",
+                "unidade_medida": "mL/L",
+                "percentual": "3 % v/v"
+            },
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae",
+                "grupo_quimico": "",
+                "concentracao": "30",
+                "unidade_medida": "mL/L",
+                "percentual": "3 % v/v"
+            }
+        ],
+        "modo_acao": [
+            "Organismos vivos de uso restrito ao controle de pragas"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação tratorizada",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens",
+                    "Cigarrinha-dos-capinzais"
+                ]
+            },
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Euschistus heros",
+                "praga_nome_comum": [
+                    "Percevejo marrom"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_22726",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=564490&p_nm_file=F863740509/20. Bula_DAUBKILL.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "21826",
+        "marca_comercial": [
+            "IN-24-45"
+        ],
+        "titular_registro": "INFLORA BIOCIÊNCIA LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida",
+            "Acaricida microbiológico"
+        ],
+        "formulacao": "Concentrado Emulsionável (EC)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana (isolado IBCB 66)"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana (isolado IBCB 66)",
+                "grupo_quimico": "",
+                "concentracao": "50,00",
+                "unidade_medida": "g/L",
+                "percentual": "5,00%"
+            }
+        ],
+        "modo_acao": [
+            "Microbiológico"
+        ],
+        "tecnica_aplicacao": [
+            "Iscas",
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Bemisia tabaci raça B",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Cosmopolites sordidus",
+                "praga_nome_comum": [
+                    "Moleque-da-bananeira"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "Ácaro-rajado"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Dalbulus maidis",
+                "praga_nome_comum": [
+                    "Cigarrinha-do-milho"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Sphenophorus levis",
+                "praga_nome_comum": [
+                    "Gorgulho-da-cana",
+                    "Bicudo da cana-de-açúcar"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas",
+                "praga_nome_cientifico": "Hypothenemus hampei",
+                "praga_nome_comum": [
+                    "Broca-do-café"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV - Pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_21826",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=559975&p_nm_file=F42164433/BULA_IN-24-45_REGISTRO_REV.02_30.06.2026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "08126",
+        "marca_comercial": [
+            "Redxodus"
+        ],
+        "titular_registro": "KIMITEC DO BRASIL IMPORTAÇÃO E EXPORTAÇÃO DE BIOTECNOLOGIA AGRÍCOLA LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Acaricida Fitoquímico"
+        ],
+        "formulacao": "Microemulsão (ME)",
+        "ingrediente_ativo": [
+            "Óleo Essencial de Eucalyptus globulus",
+            "Geraniol"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Óleo Essencial de Eucalyptus globulus",
+                "grupo_quimico": "Éter cíclico e Monoterpenóide",
+                "concentracao": "150,0",
+                "unidade_medida": "g/L",
+                "percentual": "15,0"
+            },
+            {
+                "ingrediente_ativo": "Geraniol",
+                "grupo_quimico": "Álcool alifático",
+                "concentracao": "150,0",
+                "unidade_medida": "g/L",
+                "percentual": "15,0"
+            }
+        ],
+        "modo_acao": [
+            "Contato"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverizador costal ou tratorizado",
+            "Aeronaves agrícolas"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Citros",
+                "praga_nome_cientifico": "Brevipalpus phoenicis",
+                "praga_nome_comum": [
+                    "Ácaro-da-leprose"
+                ]
+            },
+            {
+                "cultura": "Milho",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "Ácaro-rajado"
+                ]
+            },
+            {
+                "cultura": "Milheto",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "Ácaro-rajado"
+                ]
+            },
+            {
+                "cultura": "Sorgo",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "Ácaro-rajado"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 - Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV – Produto Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_08126",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=555463&p_nm_file=F172115169/V.02_2026 -Bula_REDXODUS.docx",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "16126",
+        "marca_comercial": [
+            "AVAST PLUS",
+            "FXT Upper"
+        ],
+        "titular_registro": "J. A. Moura Goncalves Fertilizantes Eireli",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida Microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Metarhizium anisopliae",
+            "Beauveria bassiana",
+            "Cordyceps fumosorosea"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae",
+                "grupo_quimico": "",
+                "concentracao": "30,0",
+                "unidade_medida": "g/L",
+                "percentual": "3,0%"
+            },
+            {
+                "ingrediente_ativo": "Beauveria bassiana",
+                "grupo_quimico": "",
+                "concentracao": "30,0",
+                "unidade_medida": "g/L",
+                "percentual": "3,0%"
+            },
+            {
+                "ingrediente_ativo": "Cordyceps fumosorosea",
+                "grupo_quimico": "",
+                "concentracao": "30,0",
+                "unidade_medida": "g/L",
+                "percentual": "3,0%"
+            }
+        ],
+        "modo_acao": [
+            "Controle de pragas por ação microbiológica"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização terrestre",
+            "Pulverização aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Bemisia tabaci",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Produto pouco perigoso ao meio ambiente - Classe IV",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_16126",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=564693&p_nm_file=F2096348355/AVAST PLUS - BULA 08.2026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "22526",
+        "marca_comercial": [
+            "BVM0722"
+        ],
+        "titular_registro": "VITTIA S.A.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Agente Biológico de Controle",
+            "Inseticida biológico"
+        ],
+        "formulacao": "Insetos vivos (ovos do hospedeiro parasitados por Ooencyrtus submetallicus)",
+        "ingrediente_ativo": [
+            "Ooencyrtus submetallicus"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Ooencyrtus submetallicus",
+                "grupo_quimico": "",
+                "concentracao": "0,8 indivíduos/ovos",
+                "unidade_medida": "indivíduos/mL",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            "Parasitismo de ovos de percevejos"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Euschistus heros",
+                "praga_nome_comum": [
+                    "Percevejo-marrom"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Não Classificado – Produto Não Classificado",
+        "classificacao_ambiental": "IV – Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_22526",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=562425&p_nm_file=F495093326/Bula GHS BVM0722 - REV 01 - 27_07_26.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "24426",
+        "marca_comercial": [
+            "KBR-MAWP"
+        ],
+        "titular_registro": "KOPPERT DO BRASIL HOLDING S.A.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Pó molhável (WP)",
+        "ingrediente_ativo": [
+            "Metarhizium anisopliae (Metsch.) Sorok., cepa E9"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae (Metsch.) Sorok., cepa E9",
+                "grupo_quimico": "",
+                "concentracao": "50",
+                "unidade_medida": "g/kg",
+                "percentual": "5%"
+            }
+        ],
+        "modo_acao": [
+            "Fungo entomopatogênico que adere ao tegumento do inseto, germina e libera enzimas e metabólitos que levam o inseto à morte"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Mahanarva fimbriolata",
+                "praga_nome_comum": [
+                    "Cigarrinha-da-raiz"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV - Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "26726",
+        "marca_comercial": [
+            "OxyMax",
+            "Amantik"
+        ],
+        "titular_registro": "Avgust Crop Protection Importação e Exportação Ltda",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Acaricida",
+            "Inseticida"
+        ],
+        "formulacao": "Concentrado solúvel (SL)",
+        "ingrediente_ativo": [
+            "Oximatrine"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Oximatrine",
+                "grupo_quimico": "Alcalóides quinolizidínicos",
+                "concentracao": "2",
+                "unidade_medida": "g/L",
+                "percentual": "0,2% m/v"
+            }
+        ],
+        "modo_acao": [
+            "Sistêmico",
+            "Contato"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização terrestre",
+            "Pulverização aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Abóbora, Abobrinha, Berinjela, Chuchu, Jiló, Pimenta, Pimentão, Quiabo",
+                "praga_nome_cientifico": "Tuta absoluta",
+                "praga_nome_comum": [
+                    "Traça-do-tomateiro"
+                ]
+            },
+            {
+                "cultura": "Acelga, Agrião, Alface, Almeirão, Chicória, Espinafre, Rúcula",
+                "praga_nome_cientifico": "Frankliniella schultzei",
+                "praga_nome_comum": [
+                    "Tripes"
+                ]
+            },
+            {
+                "cultura": "Algodão",
+                "praga_nome_cientifico": "Polyphagotarsonemus latus",
+                "praga_nome_comum": [
+                    "Ácaro-branco"
+                ]
+            },
+            {
+                "cultura": "Algodão",
+                "praga_nome_cientifico": "Heliothis virescens",
+                "praga_nome_comum": [
+                    "Lagarta-das-maçãs"
+                ]
+            },
+            {
+                "cultura": "Café",
+                "praga_nome_cientifico": "Oligonychus ilicis",
+                "praga_nome_comum": [
+                    "Ácaro-vermelho"
+                ]
+            },
+            {
+                "cultura": "Café",
+                "praga_nome_cientifico": "Polyphagotarsonemus latus",
+                "praga_nome_comum": [
+                    "Ácaro-branco"
+                ]
+            },
+            {
+                "cultura": "Café",
+                "praga_nome_cientifico": "Leocoptera coffeella",
+                "praga_nome_comum": [
+                    "Bicho-mineiro"
+                ]
+            },
+            {
+                "cultura": "Citros, Açaí, Cacau, Dendê, Guaraná, Mamão, Manga, Maracujá, Pupunha",
+                "praga_nome_cientifico": "Brevipalpus phoenicis",
+                "praga_nome_comum": [
+                    "Ácaro-da-leprose"
+                ]
+            },
+            {
+                "cultura": "Citros, Abacate, Abacaxi, Anonáceas, Cacau, Cupuaçu",
+                "praga_nome_cientifico": "Phyllocoptruta oleivora",
+                "praga_nome_comum": [
+                    "Ácaro-da-falsa ferrugem"
+                ]
+            },
+            {
+                "cultura": "Eucalipto",
+                "praga_nome_cientifico": "Glena bipennaria bipennaria",
+                "praga_nome_comum": [
+                    "Lagarta-desfolhadora"
+                ]
+            },
+            {
+                "cultura": "Maçã, Ameixa, Marmelo, Nectarina, Nêspera, Pêra, Pêssego",
+                "praga_nome_cientifico": "Grapholita molesta",
+                "praga_nome_comum": [
+                    "Mariposa-oriental"
+                ]
+            },
+            {
+                "cultura": "Acerola, Amora, Azeitona, Framboesa, Mirtilo, Morango, Pitanga, Seriguela",
+                "praga_nome_cientifico": "Tetranychus urticae",
+                "praga_nome_comum": [
+                    "Ácaro-rajado"
+                ]
+            },
+            {
+                "cultura": "Soja, Amendoim, Canola, Ervilha, Feijões, Gergelim, Girassol, Lentilha",
+                "praga_nome_cientifico": "Bemisia tabaci raça B",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Soja, Amendoim, Ervilha, Feijões, Girassol, Lentilha",
+                "praga_nome_cientifico": "Anticarsia gemmatalis",
+                "praga_nome_comum": [
+                    "Lagarta-da-soja"
+                ]
+            },
+            {
+                "cultura": "Tomate",
+                "praga_nome_cientifico": "Bemisia tabaci raça B",
+                "praga_nome_comum": [
+                    "Mosca-branca"
+                ]
+            },
+            {
+                "cultura": "Tomate",
+                "praga_nome_cientifico": "Tuta absoluta",
+                "praga_nome_comum": [
+                    "Traça-do-tomateiro"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 4 – Produto Pouco Tóxico",
+        "classificacao_ambiental": "Classe IV – Produto Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_26726",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=563346&p_nm_file=F824505203/2026_118_OxyMax_Bula Completa.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "32626",
+        "marca_comercial": [
+            "LABIM 41",
+            "SFERA VELEZ",
+            "GRATTO VELEZ"
+        ],
+        "titular_registro": "UBY AGROQUÍMICA S.A.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Bacillus velezensis cepa CMRP 6330"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus velezensis cepa CMRP 6330",
+                "grupo_quimico": "",
+                "concentracao": "1,0 x 10^9",
+                "unidade_medida": "UFC/mL",
+                "percentual": "96,44%"
+            }
+        ],
+        "modo_acao": [
+            "Controle de Antracnose",
+            "Controle de Mancha-de-Phaeosphaeria"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização terrestre"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Feijão",
+                "praga_nome_cientifico": "Colletotrichum lindemuthianum",
+                "praga_nome_comum": [
+                    "Antracnose"
+                ]
+            },
+            {
+                "cultura": "Milho",
+                "praga_nome_cientifico": "Phaeosphaeria maydis",
+                "praga_nome_comum": [
+                    "Mancha-de-Phaeosphaeria"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Produto Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_32626",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=568547&p_nm_file=F840325294/LABIM 41_Bula final_Agrofit_V01_21-09-2026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "28126",
+        "marca_comercial": [
+            "BIOFLEX B.M"
+        ],
+        "titular_registro": "H.T.M COMERCIO E LABORATORIOS DE CORRETIVOS DO SOLO LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Suspensão concentrada (SC)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana",
+            "Metarhizium anisopliae"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana",
+                "grupo_quimico": "",
+                "concentracao": "115,0",
+                "unidade_medida": "g/L",
+                "percentual": "10,39% m/v"
+            },
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae",
+                "grupo_quimico": "",
+                "concentracao": "115,0",
+                "unidade_medida": "g/L",
+                "percentual": "10,39% m/v"
+            }
+        ],
+        "modo_acao": [
+            "Controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverizadores de barra (tratorizados) e costal (manual ou motorizado)"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens",
+                    "Cigarrinha-dos-capinzais"
+                ]
+            },
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Euschistus heros",
+                "praga_nome_comum": [
+                    "Percevejo-marrom"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV – Pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_28126",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=563466&p_nm_file=F2026926957/bula_26-08-05.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "30426",
+        "marca_comercial": [
+            "TEC-003-B"
+        ],
+        "titular_registro": "TECNOMYL BRASIL DISTRIBUIDORA DE PRODUTOS AGRÍCOLAS LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Nematicida microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Bacillus licheniformis",
+            "Bacillus subtilis subsp. subtilis",
+            "Bacillus thuringiensis var. kurstaki"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus licheniformis",
+                "grupo_quimico": "",
+                "concentracao": "13,6",
+                "unidade_medida": "g/L",
+                "percentual": "1,36% m/v"
+            },
+            {
+                "ingrediente_ativo": "Bacillus subtilis subsp. subtilis",
+                "grupo_quimico": "",
+                "concentracao": "13,6",
+                "unidade_medida": "g/L",
+                "percentual": "1,36% m/v"
+            },
+            {
+                "ingrediente_ativo": "Bacillus thuringiensis var. kurstaki",
+                "grupo_quimico": "",
+                "concentracao": "13,6",
+                "unidade_medida": "g/L",
+                "percentual": "1,36% m/v"
+            }
+        ],
+        "modo_acao": [
+            "Contato e ingestão"
+        ],
+        "tecnica_aplicacao": [
+            "Tratamento de sementes",
+            "Via sulco de plantio",
+            "Via foliar"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Pratylenchus brachyurus",
+                "praga_nome_comum": [
+                    "Nematoide de lesões"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Heterodera glycines",
+                "praga_nome_comum": [
+                    "Nematoide do cisto"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência dos alvos biológicos",
+                "praga_nome_cientifico": "Meloidogyne javanica",
+                "praga_nome_comum": [
+                    "Nematoide das galhas"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Pratylenchus zeae",
+                "praga_nome_comum": [
+                    "Nematoide de lesões"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV – Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_30426",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=566144&p_nm_file=F660078024/BL_TEC-003-B_AGROFIT_02092026.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "28026",
+        "marca_comercial": [
+            "THYMOX CONTROL"
+        ],
+        "titular_registro": "PROPHYTO COMÉRCIO E SERVIÇOS LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida"
+        ],
+        "formulacao": "Concentrado Emulsionável (EC)",
+        "ingrediente_ativo": [
+            "Óleo de Thymus Vulgaris"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Óleo de Thymus Vulgaris",
+                "grupo_quimico": "Fenol",
+                "concentracao": "286,2",
+                "unidade_medida": "g/L",
+                "percentual": "28,62"
+            }
+        ],
+        "modo_acao": [
+            "Rompimento das estruturas da membrana celular do patógeno"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização foliar",
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Soja",
+                "praga_nome_cientifico": "Phakopsora pachyrhizi",
+                "praga_nome_comum": [
+                    "Ferrugem-asiática"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto Improvável de Causar Dano Agudo",
+        "classificacao_ambiental": "Classe IV - Produto Pouco Perigoso ao Meio Ambiente",
+        "inflamavel": true,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_28026",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=564651&p_nm_file=F1805756164/V.01_2026 - BULA_Thymox Control.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "34426",
+        "marca_comercial": [
+            "SPARTANO"
+        ],
+        "titular_registro": "BIONAT SOLUÇÕES BIOLÓGICAS LTDA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida micro biológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Bacillus velezensis ESALQ-6195"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Bacillus velezensis ESALQ-6195",
+                "grupo_quimico": "",
+                "concentracao": "20",
+                "unidade_medida": "g/L",
+                "percentual": "2%"
+            }
+        ],
+        "modo_acao": [
+            "Contato e indução de resistência"
+        ],
+        "tecnica_aplicacao": [
+            "Pulverizador costal",
+            "Pulverizador tratorizado",
+            "Pulverizador aéreo"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Colletotrichum truncatum",
+                "praga_nome_comum": [
+                    "Antracnose"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Phakopsora pachyrhizi",
+                "praga_nome_comum": [
+                    "Ferrugem da soja"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Corynespora cassicola",
+                "praga_nome_comum": [
+                    "Mancha alvo"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV – Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_34426",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=567225&p_nm_file=F1320501816/Bula - Spartano.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "30126",
+        "marca_comercial": [
+            "SLT - 25"
+        ],
+        "titular_registro": "SOLATUS BIOTECNOLOGIA E INSUMOS LTDA.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Beauveria bassiana IBCB 66",
+            "Metarhizium anisopliae isolado IBCB 425"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Beauveria bassiana IBCB 66",
+                "grupo_quimico": "",
+                "concentracao": "3,5",
+                "unidade_medida": "g/L",
+                "percentual": "0,35% m/v"
+            },
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae isolado IBCB 425",
+                "grupo_quimico": "",
+                "concentracao": "3,5",
+                "unidade_medida": "g/L",
+                "percentual": "0,35% m/v"
+            }
+        ],
+        "modo_acao": [
+            "Organismos vivos de uso restrito ao controle de pragas"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens",
+                    "Cigarrinha-dos-capinzais"
+                ]
+            },
+            {
+                "cultura": "Soja",
+                "praga_nome_cientifico": "Euschistus heros",
+                "praga_nome_comum": [
+                    "Percevejo marrom"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "CATEGORIA 5 – PRODUTO IMPROVÁVEL DE CAUSAR DANO AGUDO",
+        "classificacao_ambiental": "CLASSE IV – PRODUTO POUCO PERIGOSO AO MEIO AMBIENTE",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_30126",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=565481&p_nm_file=F2137505360/2026.07.28_Bula_SLT-25 (1).pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "25926",
+        "marca_comercial": [
+            "Metabolic Protection"
+        ],
+        "titular_registro": "SIMBIOSE BIOCIÊNCIAS S/A",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Fungicida Microbiológico"
+        ],
+        "formulacao": "Suspensão Concentrada (SC)",
+        "ingrediente_ativo": [
+            "Pseudomonas fluorescens"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Pseudomonas fluorescens",
+                "grupo_quimico": "",
+                "concentracao": "15",
+                "unidade_medida": "g/L",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            ""
+        ],
+        "tecnica_aplicacao": [
+            "Pulverização foliar, terrestre ou aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Colletotrichum truncatum",
+                "praga_nome_comum": [
+                    "Antracnose"
+                ]
+            },
+            {
+                "cultura": "Em todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Corynespora cassicola",
+                "praga_nome_comum": [
+                    "Mancha-alvo"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5: Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Pouco Perigoso ao meio ambiente - CLASSE IV",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_25926",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=563252&p_nm_file=F700203744/Bula - Metabolic Protection (2).pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "26626",
+        "marca_comercial": [
+            "ANISO"
+        ],
+        "titular_registro": "Biota Innovations Ind. e Com. de Bioprodutos Ltda.",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida Microbiológico"
+        ],
+        "formulacao": "Concentrado Emulsionável (EC)",
+        "ingrediente_ativo": [
+            "Metarhizium anisopliae IBCB 425"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Metarhizium anisopliae IBCB 425",
+                "grupo_quimico": "",
+                "concentracao": "150",
+                "unidade_medida": "g/L",
+                "percentual": "15%"
+            }
+        ],
+        "modo_acao": [
+            "Controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre: pulverizador costal ou tratorizado"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Mahanarva fimbriolata",
+                "praga_nome_comum": [
+                    "Cigarrinha-da-raiz"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Zulia entreriana",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens"
+                ]
+            },
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Deois flavopicta",
+                "praga_nome_comum": [
+                    "Cigarrinha-das-pastagens",
+                    "Cigarrinha-dos-capinzais"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Categoria 5 – Produto improvável de causar dano agudo",
+        "classificacao_ambiental": "Classe IV – Pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_26626",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=564264&p_nm_file=F1729660858/BULA ANISO.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": true,
+        "url_agrofit": ""
+    },
+    {
+        "numero_registro": "48525",
+        "marca_comercial": [
+            "SMART BIO Cotesia"
+        ],
+        "titular_registro": "SÃO MARTINHO SA",
+        "produto_biologico": true,
+        "classe_categoria_agronomica": [
+            "Inseticida Biológico"
+        ],
+        "formulacao": "Insetos vivos (vespa endoparasitoide para controle biológico)",
+        "ingrediente_ativo": [
+            "Cotesia flavipes"
+        ],
+        "ingrediente_ativo_detalhado": [
+            {
+                "ingrediente_ativo": "Cotesia flavipes",
+                "grupo_quimico": "",
+                "concentracao": "750",
+                "unidade_medida": "unidades de vespas/tubete",
+                "percentual": ""
+            }
+        ],
+        "modo_acao": [
+            "Controle biológico"
+        ],
+        "tecnica_aplicacao": [
+            "Aplicação terrestre",
+            "Aplicação aérea"
+        ],
+        "indicacao_uso": [
+            {
+                "cultura": "Todas as culturas com ocorrência do alvo biológico",
+                "praga_nome_cientifico": "Diatraea saccharalis",
+                "praga_nome_comum": [
+                    "Broca-da-cana"
+                ]
+            }
+        ],
+        "classificacao_toxicologica": "Não classificado",
+        "classificacao_ambiental": "Classe IV - Produto pouco perigoso ao meio ambiente",
+        "inflamavel": false,
+        "corrosivo": false,
+        "documento_cadastrado": [
+            {
+                "descricao": "BULA_48525",
+                "tipo_documento": "Bula",
+                "data_inclusao": "",
+                "url": "https://agrofit.agricultura.gov.br/agrofit_cons/agrofit.ap_download_blob_agrofit?p_id_file=544666&p_nm_file=F800862283/ANEXO 03.a - Bula SMART BIO Cotesia NOV-2025.pdf",
+                "origem": "Bula, Rótulo e Certificado"
+            }
+        ],
+        "produto_agricultura_organica": false,
+        "url_agrofit": ""
+    },
+    {
         "numero_registro": "291",
         "marca_comercial": [
             "Dipel"
