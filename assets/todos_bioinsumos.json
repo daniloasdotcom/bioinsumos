@@ -3451,14 +3451,105 @@
     ],
     "indicacao_uso": [
       {
-        "cultura": "Abóbora, Abobrinha, Berinjela, Chuchu, Jiló, Pimenta, Pimentão, Quiabo",
+        "cultura": "Abóbora",
         "praga_nome_cientifico": "Tuta absoluta",
         "praga_nome_comum": [
           "Traça-do-tomateiro"
         ]
       },
       {
-        "cultura": "Acelga, Agrião, Alface, Almeirão, Chicória, Espinafre, Rúcula",
+        "cultura": "Abobrinha",
+        "praga_nome_cientifico": "Tuta absoluta",
+        "praga_nome_comum": [
+          "Traça-do-tomateiro"
+        ]
+      },
+      {
+        "cultura": "Berinjela",
+        "praga_nome_cientifico": "Tuta absoluta",
+        "praga_nome_comum": [
+          "Traça-do-tomateiro"
+        ]
+      },
+      {
+        "cultura": "Chuchu",
+        "praga_nome_cientifico": "Tuta absoluta",
+        "praga_nome_comum": [
+          "Traça-do-tomateiro"
+        ]
+      },
+      {
+        "cultura": "Jiló",
+        "praga_nome_cientifico": "Tuta absoluta",
+        "praga_nome_comum": [
+          "Traça-do-tomateiro"
+        ]
+      },
+      {
+        "cultura": "Pimenta",
+        "praga_nome_cientifico": "Tuta absoluta",
+        "praga_nome_comum": [
+          "Traça-do-tomateiro"
+        ]
+      },
+      {
+        "cultura": "Pimentão",
+        "praga_nome_cientifico": "Tuta absoluta",
+        "praga_nome_comum": [
+          "Traça-do-tomateiro"
+        ]
+      },
+      {
+        "cultura": "Quiabo",
+        "praga_nome_cientifico": "Tuta absoluta",
+        "praga_nome_comum": [
+          "Traça-do-tomateiro"
+        ]
+      },
+      {
+        "cultura": "Acelga",
+        "praga_nome_cientifico": "Frankliniella schultzei",
+        "praga_nome_comum": [
+          "Tripes"
+        ]
+      },
+      {
+        "cultura": "Agrião",
+        "praga_nome_cientifico": "Frankliniella schultzei",
+        "praga_nome_comum": [
+          "Tripes"
+        ]
+      },
+      {
+        "cultura": "Alface",
+        "praga_nome_cientifico": "Frankliniella schultzei",
+        "praga_nome_comum": [
+          "Tripes"
+        ]
+      },
+      {
+        "cultura": "Almeirão",
+        "praga_nome_cientifico": "Frankliniella schultzei",
+        "praga_nome_comum": [
+          "Tripes"
+        ]
+      },
+      {
+        "cultura": "Chicória",
+        "praga_nome_cientifico": "Frankliniella schultzei",
+        "praga_nome_comum": [
+          "Tripes"
+        ]
+      },
+      {
+        "cultura": "Espinafre",
+        "praga_nome_cientifico": "Frankliniella schultzei",
+        "praga_nome_comum": [
+          "Tripes"
+        ]
+      },
+      {
+        "cultura": "Rúcula",
         "praga_nome_cientifico": "Frankliniella schultzei",
         "praga_nome_comum": [
           "Tripes"
@@ -3479,7 +3570,63 @@
         ]
       },
       {
-        "cultura": "Citros, Açaí, Cacau, Dendê, Guaraná, Mamão, Manga, Maracujá, Pupunha",
+        "cultura": "Citros",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Açaí",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Cacau",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Dendê",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Guaraná",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Mamão",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Manga",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Maracujá",
+        "praga_nome_cientifico": "Brevipalpus phoenicis",
+        "praga_nome_comum": [
+          "Ácaro-da-leprose"
+        ]
+      },
+      {
+        "cultura": "Pupunha",
         "praga_nome_cientifico": "Brevipalpus phoenicis",
         "praga_nome_comum": [
           "Ácaro-da-leprose"
