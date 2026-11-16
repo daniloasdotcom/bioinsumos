@@ -1791,7 +1791,7 @@
     "titular_registro": "Biopar Produtos Biológicos do Paraná Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -1833,7 +1833,7 @@
     "titular_registro": "VIVA SOLUÇÕES BIOLÓGICAS LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -2091,7 +2091,7 @@
     "titular_registro": "Biopar Produtos Biológicos do Paraná Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -2189,7 +2189,8 @@
     "titular_registro": "Agribiol – Biológicos Agrícolas LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida e acaricida microbiológico de Contato"
+      "Inseticida Microbiológico",
+      "Acaricida Microbiológico"
     ],
     "formulacao": "Pó Molhável (WP)",
     "ingrediente_ativo": [
@@ -2278,7 +2279,7 @@
     "titular_registro": "TOPBIO – INSUMOS BIOLÓGICOS, INDÚSTRIA E COMÉRCIO LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Pó Molhável (WP)",
     "ingrediente_ativo": [
@@ -2335,7 +2336,7 @@
     "titular_registro": "BC Ecocare Biotecnologia LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Agente Biológico de Controle (Inseticida Biológico)"
+      "Agente Biológico de Controle"
     ],
     "formulacao": "insetos vivos (endoparasitóide de ovo, em fase de pupa)",
     "ingrediente_ativo": [
@@ -2388,7 +2389,7 @@
     "titular_registro": "SÃO MARTINHO SA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida Biológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Insetos vivos (vespa endoparasitoide para controle biológico)",
     "ingrediente_ativo": [
@@ -2441,7 +2442,7 @@
     "titular_registro": "FMC QUÍMICA DO BRASIL LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Dispersão de óleo (OD)",
     "ingrediente_ativo": [
@@ -2520,7 +2521,7 @@
     "titular_registro": "VSF Agricultura Sustentável e Comércio LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Pó molhável (WP)",
     "ingrediente_ativo": [
@@ -2602,7 +2603,7 @@
     "titular_registro": "TOPBIO – INSUMOS BIOLÓGICOS, INDÚSTRIA E COMÉRCIO LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida Biológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "fêmeas fertilizadas do parasitoide",
     "ingrediente_ativo": [
@@ -2715,7 +2716,7 @@
     "titular_registro": "Agribiol – Biológicos Agrícolas LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico de contato"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -2791,7 +2792,7 @@
     "titular_registro": "VSF Agricultura Sustentável e Comércio LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Acaricida biológico"
+      "Acaricida Microbiológico"
     ],
     "formulacao": "Ácaros vivos na fase adulta e/ou juvenil",
     "ingrediente_ativo": [
@@ -2848,7 +2849,7 @@
     "titular_registro": "Vital Brasil Chemical Ind. e Com. Prod. Químicos SA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Nematicida microbiológico"
+      "Nematicida Microbiológico"
     ],
     "formulacao": "Suspensão concentrada (SC)",
     "ingrediente_ativo": [
@@ -2919,7 +2920,7 @@
     "titular_registro": "B PLANT LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "INSETICIDA MICROBIOLÓGICO"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Suspensão concentrada (SC)",
     "ingrediente_ativo": [
@@ -3049,7 +3050,7 @@
     "titular_registro": "GENOMA BIOTECNOLOGIA LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Pó Molhável (WP)",
     "ingrediente_ativo": [
@@ -3102,7 +3103,8 @@
     "titular_registro": "UPL do Brasil Indústria e Comércio de Insumos Agropecuários S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida e acaricida microbiológico"
+      "Inseticida Microbiológico",
+      "Acaricida Microbiológico"
     ],
     "formulacao": "Concentrado Emulsionável (EC)",
     "ingrediente_ativo": [
@@ -3197,7 +3199,7 @@
     "titular_registro": "INFLORA BIOCIÊNCIA LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -3339,7 +3341,8 @@
     "titular_registro": "SOLUBIO TECNOLOGIAS AGRÍCOLAS S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida e acaricida microbiológico"
+      "Inseticida Microbiológico",
+      "Acaricida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -3428,7 +3431,8 @@
     "titular_registro": "Avgust Crop Protection Importação e Exportação Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Acaricida e Inseticida"
+      "Acaricida",
+      "Inseticida"
     ],
     "formulacao": "Concentrado solúvel (SL)",
     "ingrediente_ativo": [
@@ -3718,7 +3722,7 @@
     "titular_registro": "UBY AGROQUÍMICA S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -3778,7 +3782,7 @@
     "titular_registro": "H.T.M COMERCIO E LABORATORIOS DE CORRETIVOS DO SOLO LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Suspensão concentrada (SC)",
     "ingrediente_ativo": [
@@ -3940,7 +3944,7 @@
     "titular_registro": "GHENVET BIOTECNOLOGIA LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Pó Molhável (WP)",
     "ingrediente_ativo": [
@@ -4062,7 +4066,8 @@
     "titular_registro": "NAVE BIO SCIENCE LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida e Acaricida Microbiológico"
+      "Inseticida Microbiológico",
+      "Acaricida Microbiológico"
     ],
     "formulacao": "Pó Molhável (WP)",
     "ingrediente_ativo": [
@@ -4147,7 +4152,7 @@
     "titular_registro": "TECNOMYL BRASIL DISTRIBUIDORA DE PRODUTOS AGRÍCOLAS LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Nematicida microbiológico"
+      "Nematicida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -4247,7 +4252,7 @@
     "titular_registro": "INFLORA BIOCIÊNCIA LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Pó Molhável (WP)",
     "ingrediente_ativo": [
@@ -4443,7 +4448,7 @@
     "titular_registro": "NOVA DO BRASIL LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -4570,7 +4575,7 @@
     "titular_registro": "BIONAT SOLUÇÕES BIOLÓGICAS LT DA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida micro biológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -4639,7 +4644,7 @@
     "titular_registro": "SOLATUS BIOTECNOLOGIA E INSUMOS LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Suspensão Concentrada (SC)",
     "ingrediente_ativo": [
@@ -4707,7 +4712,7 @@
     "titular_registro": "Agribiol – Biológicos Agrícolas LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Pó molhável (WP)",
     "ingrediente_ativo": [
@@ -4984,7 +4989,7 @@
     "titular_registro": "RL CONTROLE BIOLÓGICO LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "inseticida biológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "pupas de insetos vivos (vespa endoparasitóide para controle biológico)",
     "ingrediente_ativo": [
@@ -5108,7 +5113,7 @@
     "titular_registro": "Valeouro Biotec S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "Pó molhável (WP)",
     "ingrediente_ativo": [
@@ -5168,7 +5173,7 @@
     "titular_registro": "ON FARM BIOINSUMOS LTDA.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Suspensão concentrada (SC)",
     "ingrediente_ativo": [
@@ -5237,7 +5242,7 @@
     "produto_biologico": true,
     "classe_categoria_agronomica": [
       "Inseticida",
-      "Acaricida microbiológico"
+      "Acaricida Microbiológico"
     ],
     "formulacao": "Concentrado Emulsionável (EC)",
     "ingrediente_ativo": [
@@ -5487,7 +5492,7 @@
     "produto_biologico": true,
     "classe_categoria_agronomica": [
       "Agente Biológico de Controle",
-      "Inseticida biológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Insetos vivos (ovos do hospedeiro parasitados por Ooencyrtus submetallicus)",
     "ingrediente_ativo": [
@@ -5542,7 +5547,7 @@
     "titular_registro": "KOPPERT DO BRASIL HOLDING S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Inseticida microbiológico"
+      "Inseticida Microbiológico"
     ],
     "formulacao": "Pó molhável (WP)",
     "ingrediente_ativo": [
@@ -5604,7 +5609,7 @@
     "titular_registro": "AgCONTROL INDÚSTRIA E COMÉRCIO DE AGENTES BIOLÓGICOS Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Agente biológico de controle (acaricida biológico)"
+      "Agente Biológico de Controle"
     ],
     "formulacao": "Ácaros vivos",
     "ingrediente_ativo": [
@@ -7139,7 +7144,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -7274,7 +7279,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -7471,7 +7476,7 @@
     "titular_registro": "Basf S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -7966,7 +7971,7 @@
     "titular_registro": "Santo Expedito 333 Industria e Comercio de Produtos Agropecuários LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -8056,7 +8061,7 @@
     "titular_registro": "Iharabras S.A. Indústria Químicas",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -9192,7 +9197,7 @@
     "titular_registro": "Ballagro Agro Tecnologia Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -9390,7 +9395,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -10846,7 +10851,7 @@
     "titular_registro": "TZ Biotec Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "GL - Gel Emulsionável",
     "ingrediente_ativo": [
@@ -11166,7 +11171,7 @@
     "titular_registro": "Apoena Biosoluções do Brasil Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -11308,7 +11313,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -11926,7 +11931,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -12052,7 +12057,7 @@
     "titular_registro": "Bioma Indústria Comércio e Distribuição Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -12250,7 +12255,7 @@
     "titular_registro": "Indústria Química Guerra Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -12421,7 +12426,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -12548,7 +12553,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -12746,7 +12751,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -13351,7 +13356,7 @@
     "titular_registro": "Gaia Agro Solutions Comércio, Importação e Exportação Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -13653,7 +13658,7 @@
     "titular_registro": "Bem da Terra Biológicos S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -13979,7 +13984,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -14591,7 +14596,7 @@
     "titular_registro": "Uby Agroquímica S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -14888,7 +14893,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -14986,7 +14991,7 @@
     "titular_registro": "Alfa Agrotec Produtos Agrícolas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -15181,7 +15186,7 @@
     "titular_registro": "Bionat Soluções Biologicas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -15371,7 +15376,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -15459,7 +15464,7 @@
     "titular_registro": "Promip Manejo Integrado de Pragas Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -15547,7 +15552,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -19325,7 +19330,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "OD - Dispersão de Óleo",
@@ -19457,7 +19462,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
@@ -20558,7 +20563,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "OD - Dispersão de Óleo",
@@ -20747,7 +20752,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
@@ -20916,7 +20921,7 @@
     "titular_registro": "Agrivalle Brasil Indústria e Comércio de Produtos Agrícolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -21214,7 +21219,7 @@
     "titular_registro": "Massen Produtos Biologicos S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -21476,7 +21481,7 @@
     "titular_registro": "Hubio Biopar Agro Indústria e Comércio de Produtos Químicos e Biológicos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -21596,7 +21601,7 @@
     "titular_registro": "Syngenta Proteção de Cultivos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -21889,7 +21894,7 @@
     "titular_registro": "Rizobacter do Brasil Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -21979,7 +21984,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
@@ -22177,7 +22182,7 @@
     "titular_registro": "Rizobacter do Brasil Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -22760,7 +22765,7 @@
     "titular_registro": "FMC Química do Brasil Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -22963,7 +22968,7 @@
     "titular_registro": "Tradecorp do Brasil Comércio de Insumos Agrícolas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -23204,7 +23209,7 @@
     "titular_registro": "Superbac Biotecnology Solutions S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
@@ -23560,7 +23565,7 @@
     "titular_registro": "Solatus Biotecnologia e Insumos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -23649,7 +23654,7 @@
     "produto_biologico": true,
     "classe_categoria_agronomica": [
       "Bactericida Microbiológico",
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -23878,7 +23883,7 @@
     "titular_registro": "Serquibio Biotecnologia Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "EC - Concentrado Emulsionável",
     "ingrediente_ativo": [
@@ -24166,7 +24171,7 @@
     "titular_registro": "Agrivalle Brasil Indústria e Comércio de Produtos Agrícolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -24323,7 +24328,7 @@
     "titular_registro": "Agrivalle Brasil Indústria e Comércio de Produtos Agrícolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -24458,7 +24463,7 @@
     "titular_registro": "Sinon do Brasil Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -25000,7 +25005,7 @@
     "titular_registro": "Solubio Tecnologias Agricolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -25273,7 +25278,7 @@
     "titular_registro": "Bayer S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -26442,7 +26447,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -26538,7 +26543,7 @@
     "titular_registro": "Bioma Indústria Comércio e Distribuição Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -26633,7 +26638,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -26728,7 +26733,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "OD - Dispersão de Óleo",
     "ingrediente_ativo": [
@@ -27458,7 +27463,7 @@
     "titular_registro": "Superbac Biotechnology Solutions S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "",
     "ingrediente_ativo": [
@@ -27606,7 +27611,7 @@
     "titular_registro": "Superbac Biotechnology Solutions S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -27719,7 +27724,7 @@
     "titular_registro": "Superbac Biotechnology Solutions S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -27815,7 +27820,7 @@
     "titular_registro": "Industria de Fertilizantes Macrobio Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -27935,7 +27940,7 @@
     "titular_registro": "Industria de Fertilizantes Macrobio Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -28368,7 +28373,7 @@
     "titular_registro": "Ecosolução Agrociências e Soluções Ambientais Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -28493,7 +28498,7 @@
     "titular_registro": "Apoena Biosoluções do Brasil Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -28580,7 +28585,7 @@
     "titular_registro": "Apoena Biosoluções do Brasil Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -28770,7 +28775,7 @@
     "titular_registro": "Superbac Biotechnology Solutions S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
@@ -28978,7 +28983,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -29065,7 +29070,7 @@
     "titular_registro": "Syngenta Proteção de Cultivos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -29456,7 +29461,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -30949,7 +30954,7 @@
     "titular_registro": "Compostec Soluçôes Agroambientais Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -31981,7 +31986,7 @@
     "titular_registro": "Symborg Participações Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -32085,7 +32090,7 @@
     "titular_registro": "Solatus Biotecnologia e Insumos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -32209,7 +32214,7 @@
     "titular_registro": "Massen Produtos Biologicos S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -32654,7 +32659,7 @@
     "titular_registro": "Bioma Indústria Comércio e Distribuição Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -32750,7 +32755,7 @@
     "titular_registro": "Bioma Indústria Comércio e Distribuição Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -32840,7 +32845,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -32918,7 +32923,7 @@
     "titular_registro": "J. A. Moura Gonçalves Fertilizantes Eireli",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -33206,7 +33211,7 @@
     "titular_registro": "Vittia S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "OD - Dispersão de Óleo",
     "ingrediente_ativo": [
@@ -33304,7 +33309,7 @@
     "titular_registro": "Vittia S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida"
     ],
     "formulacao": "EC - Concentrado Emulsionável",
@@ -33736,7 +33741,7 @@
     "titular_registro": "Café Brasil Indústria Comércio Importação e Exportação S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -33823,7 +33828,7 @@
     "titular_registro": "JCO Indústria e Comércio de Fertilizantes Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -33942,7 +33947,7 @@
     "titular_registro": "HB Industria e Comercio de Insumos Agricolas e Fertilizantes Eireli",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -34340,7 +34345,7 @@
     "titular_registro": "Viva Soluções Biologicas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "EC - Concentrado Emulsionável",
     "ingrediente_ativo": [
@@ -34429,7 +34434,7 @@
     "titular_registro": "Dillon Biotecnologia Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -34517,7 +34522,7 @@
     "titular_registro": "Bom Futuro Agrícola Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -34639,7 +34644,7 @@
     "titular_registro": "Companhia Nitro Química Brasileira",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -34726,7 +34731,7 @@
     "titular_registro": "Novozymes BioAg Produtos para Agricultura Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "EC - Concentrado Emulsionável",
     "ingrediente_ativo": [
@@ -34851,7 +34856,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "FS - Suspensão Concentrada p/ Trat. Sementes",
@@ -35000,7 +35005,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -35117,7 +35122,7 @@
     "titular_registro": "Biossíntese Pesquisa e Desenvolvimento Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -35539,7 +35544,7 @@
     "titular_registro": "TZ Biotec Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "GL - Gel Emulsionável",
     "ingrediente_ativo": [
@@ -35627,7 +35632,7 @@
     "titular_registro": "TZ Biotec Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "GL - Gel Emulsionável",
     "ingrediente_ativo": [
@@ -35736,7 +35741,7 @@
     "titular_registro": "TZ Biotec Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "GL - Gel Emulsionável",
     "ingrediente_ativo": [
@@ -35932,7 +35937,7 @@
     "titular_registro": "JCO Indústria e Comércio de Fertilizantes Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -36020,7 +36025,7 @@
     "titular_registro": "Coopavel Cooperativa Agroindustrial",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -36108,7 +36113,7 @@
     "titular_registro": "Coopavel Cooperativa Agroindustrial",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -36273,7 +36278,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -36397,7 +36402,7 @@
     "titular_registro": "Solubio Tecnologias Agricolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -36681,7 +36686,7 @@
     "titular_registro": "Arconi Biotecnologia Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -36782,7 +36787,7 @@
     "titular_registro": "Ballagro Agro Tecnologia Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -36878,7 +36883,7 @@
     "titular_registro": "Nooa Ciencia e Tecnologia Agricola Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -36965,7 +36970,7 @@
     "titular_registro": "Biopar Produtos Biologicos do Parana LTDA",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -37188,7 +37193,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -37308,7 +37313,7 @@
     "titular_registro": "Agrobiológica Soluções Naturais Ltda - Leme/SP",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SL - Concentrado Solúvel",
     "ingrediente_ativo": [
@@ -37718,7 +37723,7 @@
     "titular_registro": "Agrivalle Brasil Indústria e Comércio de Produtos Agrícolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -38447,7 +38452,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -40066,7 +40071,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -40414,7 +40419,7 @@
     "titular_registro": "Superbac Biotechnology Solutions S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
@@ -40512,7 +40517,7 @@
     "titular_registro": "Biota Innovations Industria e Comercio de Bioprodutos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -40800,7 +40805,7 @@
     "titular_registro": "Companhia Nitro Química Brasileira",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -40911,7 +40916,7 @@
     "titular_registro": "Toyobo do Brasil Produtos Biológicos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -41293,7 +41298,7 @@
     "titular_registro": "Lallemand Solucoes Biologicas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -41382,7 +41387,7 @@
     "titular_registro": "Lallemand Solucoes Biologicas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "DS - Pó para Tratamento a Seco de Sementes",
     "ingrediente_ativo": [
@@ -43046,7 +43051,7 @@
     "titular_registro": "MB Enzymas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -43289,7 +43294,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -49216,7 +49221,7 @@
     "titular_registro": "Tradecorp do Brasil Comércio de Insumos Agrícolas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "EC - Concentrado Emulsionável",
     "ingrediente_ativo": [
@@ -50111,7 +50116,7 @@
     "titular_registro": "Bio Insumos Nativa do Brasil Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -50434,7 +50439,7 @@
     "titular_registro": "Mezfer BR Soluções Agrícolas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -50539,7 +50544,7 @@
     "titular_registro": "Elo Simbiotica Agro Tecnologia Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -52163,7 +52168,7 @@
     "titular_registro": "UPL do Brasil Indústria e Comércio de Insumos Agropecuários S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Ativador de planta",
+      "Ativador de Planta",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -52309,7 +52314,7 @@
     "titular_registro": "Vittia S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -52651,7 +52656,7 @@
     "titular_registro": "Noduagri Biotecnologia Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -53797,7 +53802,7 @@
     "titular_registro": "Oligos Biotecnologia Fabricação de Defensivos Agrícolas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -54413,7 +54418,7 @@
     "titular_registro": "Lallemand Solucoes Biologicas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -54760,7 +54765,7 @@
     "titular_registro": "Tradecorp do Brasil Comércio de Insumos Agrícolas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -55845,7 +55850,7 @@
     "titular_registro": "Ballagro Agro Tecnologia Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -56697,7 +56702,7 @@
     "titular_registro": "Dinagro Agropecuária Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -57702,7 +57707,7 @@
     "titular_registro": "Agrobiológica Sustentabilidade S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SL - Concentrado Solúvel",
     "ingrediente_ativo": [
@@ -57805,7 +57810,7 @@
     "titular_registro": "Ballagro Agro Tecnologia Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -58640,7 +58645,7 @@
     "titular_registro": "Adama Brasil S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -58801,7 +58806,7 @@
     "titular_registro": "FMC Química do Brasil Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -59194,7 +59199,7 @@
     "titular_registro": "Lallemand Solucoes Biologicas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -59771,7 +59776,7 @@
     "titular_registro": "F1rst Agbiotech Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -60680,7 +60685,7 @@
     "titular_registro": "Syngenta Proteção de Cultivos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -60826,7 +60831,7 @@
     "titular_registro": "Cooperativa Mista de Desenvolvimento do Agronegócio/COMDEAGRO",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -61026,7 +61031,7 @@
     "titular_registro": "FMC Química do Brasil Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -61366,7 +61371,7 @@
     "titular_registro": "Andermatt do Brasil Soluções Biológicas Ltda - ME",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -62654,7 +62659,7 @@
     "titular_registro": "Ballagro Agro Tecnologia Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -63054,7 +63059,7 @@
     "titular_registro": "Bem da Terra Biológicos S.A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -63396,7 +63401,7 @@
     "titular_registro": "B Plant Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -63903,7 +63908,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -64005,7 +64010,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -64086,7 +64091,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -64182,7 +64187,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -65533,7 +65538,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -65667,7 +65672,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -65786,7 +65791,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -67254,7 +67259,7 @@
     "titular_registro": "Dillon Biotecnologia Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -67714,7 +67719,7 @@
     "produto_biologico": true,
     "classe_categoria_agronomica": [
       "Bactericida Microbiológico",
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -71077,7 +71082,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -71266,7 +71271,7 @@
     "titular_registro": "Simbiose Biociencias S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -72387,7 +72392,7 @@
     "titular_registro": "Solubio Tecnologias Agricolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -73089,7 +73094,7 @@
     "titular_registro": "Solubio Tecnologias Agricolas S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -73832,7 +73837,7 @@
     "produto_biologico": true,
     "classe_categoria_agronomica": [
       "Bactericida Microbiológico",
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -74710,7 +74715,7 @@
     "titular_registro": "Oligos Biotecnologia Fabricação de Defensivos Agrícolas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "OD - Dispersão de Óleo",
     "ingrediente_ativo": [
@@ -74880,7 +74885,7 @@
     "titular_registro": "Bionat Soluções Biologicas Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -74980,7 +74985,7 @@
     "titular_registro": "Vittia S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -76337,7 +76342,7 @@
     "titular_registro": "Genetica Tecnologias Ambientais Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -77175,7 +77180,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -77446,7 +77451,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -78106,7 +78111,7 @@
     "titular_registro": "Agronatural Comércio de Defensivos Biológicos e Serviços Técnicos Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -78826,7 +78831,7 @@
     "titular_registro": "Serquibio Biotecnologia Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "EC - Concentrado Emulsionável",
     "ingrediente_ativo": [
@@ -79354,7 +79359,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -79957,7 +79962,7 @@
     "titular_registro": "Biomip Controle Biológico S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -80080,7 +80085,7 @@
     "titular_registro": "Indigo Brazil Agricultura Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "DS - Pó para Tratamento a Seco de Sementes",
     "ingrediente_ativo": [
@@ -80316,7 +80321,7 @@
     "titular_registro": "Indigo Brazil Agricultura Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "",
@@ -80428,7 +80433,7 @@
     "titular_registro": "Toyobo do Brasil Produtos Biológicos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -81072,7 +81077,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -84758,7 +84763,7 @@
     "titular_registro": "Brandt Soluções em Agricultura Ltda,",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -85841,7 +85846,7 @@
     "titular_registro": "FMC Química do Brasil Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WG - Grânulos Dispersíveis em Água",
     "ingrediente_ativo": [
@@ -86413,7 +86418,7 @@
     "titular_registro": "VSF Agricultura Sustentável e Comércio Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Inseticida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
@@ -86504,7 +86509,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -87204,7 +87209,7 @@
     "titular_registro": "Syngenta Proteção de Cultivos Ltda.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -88578,7 +88583,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -88666,7 +88671,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
@@ -92473,7 +92478,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -92569,7 +92574,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -92658,7 +92663,7 @@
     "titular_registro": "Total Biotecnologia Industria e Comercio S/A",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -92754,7 +92759,7 @@
     "titular_registro": "Koppert do Brasil Holding S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico",
+      "Fungicida Microbiológico",
       "Nematicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
@@ -93364,7 +93369,7 @@
     "titular_registro": "Adama Brasil S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -93445,7 +93450,7 @@
     "titular_registro": "Binova Agro Industrial Ltda",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -93877,7 +93882,7 @@
     "titular_registro": "Massen Produtos Biologicos S.A.",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -94028,7 +94033,7 @@
     "titular_registro": "Genica Inovação Biotecnologica S.A..",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -94779,7 +94784,7 @@
     "titular_registro": "Agrobiológica Soluções Naturais Ltda - Leme/SP",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -94961,7 +94966,7 @@
     "titular_registro": "Cooperativa Mista de Desenvolvimento do Agronegócio/COMDEAGRO",
     "produto_biologico": true,
     "classe_categoria_agronomica": [
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SC - Suspensão Concentrada",
     "ingrediente_ativo": [
@@ -95057,7 +95062,7 @@
     "produto_biologico": true,
     "classe_categoria_agronomica": [
       "Bactericida Microbiológico",
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "SL - Concentrado Solúvel",
     "ingrediente_ativo": [
@@ -95407,7 +95412,7 @@
     "produto_biologico": true,
     "classe_categoria_agronomica": [
       "Bactericida Microbiológico",
-      "Fungicida microbiológico"
+      "Fungicida Microbiológico"
     ],
     "formulacao": "WP - Pó Molhável",
     "ingrediente_ativo": [
